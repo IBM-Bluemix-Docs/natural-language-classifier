@@ -83,11 +83,11 @@ After a classifier is trained and available, you can check how well it classifie
     - If the response is correct but the confidence is low, add it to your training data by clicking **Approve**.
 1.  Click **Add to training data** to add the approved and flagged responses to your training data.
 1.  On the **Training data** page, review and update the classes that are assigned to the texts that you flagged.
-1.  To update your classifier with this new training data, you'll create another one. Click **Create classifier**. After it is trained, test the new classifier to see how it improved.
+1.  To update your classifier with this new training data, you must create another one. Click **Create classifier**. After it is trained, test the new classifier to see how it improved.
 
 ### Upload data to test your classifier
 
-Entering texts to classify one by one is effective for quick tests. However if you have a *test set*, you can upload the set to the toolkit to classify many at the same time. A test set is a group of example texts that are not in your training data,. You use the set to check the performance of the classifier.
+Entering texts to classify one by one is effective for quick tests. However if you have a *test set*, you can upload the set to the toolkit to classify many at the same time. A test set is a group of example texts that are not in your training data. You use the set to check the performance of the classifier.
 
 1.  Create a test set file:
     - The file can use the same format as the training data (in other words, it can include the correct classes) or include only texts, one on each line. Make sure that the texts (and classes) adhere to the [file format](/docs/services/natural-language-classifier/using-your-data.html) requirements.
