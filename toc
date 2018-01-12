@@ -8,12 +8,7 @@ Natural Language Classifier
     getting-started.md
     natural-language-classifier-overview.md
     [Demo](https://natural-language-classifier-demo.ng.bluemix.net/)
-
-    {: .topicgroup}
-    Additional resources
-        [Blog](https://developer.ibm.com/watson/blog/)
-        [Webinars](http://www.ibm.com/watson/building-with-watson-webinar.html)
-        [Videos](https://www.youtube.com/user/IBMWatsonSolutions)
+    resources.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -31,6 +26,7 @@ Natural Language Classifier
         [Node.js SDK](https://github.com/watson-developer-cloud/node-sdk)
         [Python SDK](https://github.com/watson-developer-cloud/python-sdk)
         [.NET SDK](https://github.com/watson-developer-cloud/dotnet-standard-sdk)
+        [Salesforce SDK](https://github.com/watson-developer-cloud/salesforce-sdk)
         [Swift SDK](https://github.com/watson-developer-cloud/swift-sdk)
         [Unity SDK](https://github.com/watson-developer-cloud/unity-sdk)
 
