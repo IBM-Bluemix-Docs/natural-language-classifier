@@ -24,7 +24,7 @@ Links to resources that can help you to get started faster and go further.
 
 ## Developer resources
 
-- [Classify health injuries with ICD-10 codes ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/stevemart/nlc-icd10-demo){: new_window}. This is an application that uses Natural Language Classifier and the Python SDK to classify health injuries. You can view a [video walkthrough ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://youtu.be/N0eKEZxdwsQ){: new_window} of the process.
+- [Classify health injuries with ICD-10 codes ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/stevemart/nlc-icd10-demo){: new_window}. This is a demo application that uses Natural Language Classifier and the Python SDK to classify health injuries. You can view a [video walkthrough ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://youtu.be/N0eKEZxdwsQ){: new_window} of the process.
 
 ## Videos in the documentation
 
