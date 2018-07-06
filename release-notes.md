@@ -50,7 +50,7 @@ You can use {{site.data.keyword.DSX}} with all your existing {{site.data.keyword
 
 **Download your training data for the new tool**
 
-The existing {{{site.data.keyword.nlclassifiershort}} classic toolkit is scheduled to shut down July 31, 2018. The planned replacement for the toolkit is **{{site.data.keyword.DSX}}**, the new integrated environment. [{{site.data.keyword.DSX}} ![External link icon](../../icons/launch-glyph.svg "External link icon")][watson-studio-reg]{: new_window} already supports {{site.data.keyword.visualrecognitionshort}} and other {{site.data.keyword.cloud_notm}} services and resources.
+The existing {{site.data.keyword.nlclassifiershort}} classic toolkit is scheduled to shut down July 31, 2018. The planned replacement for the toolkit is **{{site.data.keyword.DSX}}**, the new integrated environment. [{{site.data.keyword.DSX}} ![External link icon](../../icons/launch-glyph.svg "External link icon")][watson-studio-reg]{: new_window} already supports {{site.data.keyword.visualrecognitionshort}} and other {{site.data.keyword.cloud_notm}} services and resources.
 
 We expect that all of your existing classifiers will be available in {{site.data.keyword.DSX}}. However, if you want to make sure that you can re-create your existing classifiers, [download the training data](/docs/services/natural-language-classifier/tool-overview.html#download) from the classic toolkit before July 31, 2018.
 
