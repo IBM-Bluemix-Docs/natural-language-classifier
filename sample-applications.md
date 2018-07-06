@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-05-31"
+lastupdated: "2018-07-06"
 
 ---
 
@@ -24,6 +24,15 @@ Explore our sample applications to help you understand what you can develop with
 
 These apps are created by the community of developers and are not supported by IBM. They might not work as expected and they might not be available all the time.
 {: tip}
+
+## Job description categorization
+
+Classify job postings. This app categorizes jobs by the description, such as requirements and qualifications. The classifier is trained on current job postings from the City of New York’s official jobs site found on NYC Open Data.
+
+- [Read more ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://medium.com/ibm-watson/classify-job-descriptions-with-watson-natural-language-classifier-fca735ff2f3c){: new_window}
+- [View the demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://nlc-job-descriptions.mybluemix.net/){: new_window}
+- [Video walkthrough ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.youtube.com/watch?v=KyaC-8vfyPg){: new_window}
+- [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/yalondg/nlc-job-descriptions){: new_window}
 
 ## E-commerce product categorization
 
