@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-06-18"
+lastupdated: "2018-07-06"
 
 ---
 
@@ -10,43 +10,61 @@ lastupdated: "2018-06-18"
 {:shortdesc: .shortdesc}
 {:tip: .tip}
 
-# Managing classifiers with the toolkit
+<!-- Link definitions -->
+
+[cloud-dashboard-watson]: https://console.{DomainName}/dashboard/apps?category=watson
+[watson-studio-reg]: https://dataplatform.ibm.com/registration/stepone?context=wdp
+
+# Managing classifiers with the tool
 {: #managing-toolkit}
 
+---
+
+**This classic {{site.data.keyword.nlclassifiershort}} classic toolkit is deprecated and replaced by {{site.data.keyword.DSX}}.**
+
+- You can use {{site.data.keyword.DSX}} with all your existing instances and classifiers.
+- Get started: You can get to {{site.data.keyword.DSX}} from the service page for your instance. Go to the [Dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")][cloud-dashboard-watson]{: new_window}, click on an instance, and then click **Launch tool**.
+- You can continue to use this classic toolkit with your existing Cloud Foundry service instances until the toolkit is shut down on July 31, 2018.
+- For other details, see the [Release notes](/docs/services/natural-language-classifier/release-notes.html#05july2018)
 
 ---
 
-**The beta {{site.data.keyword.nlclassifiershort}} toolkit is migrating to {{site.data.keyword.DSX}}.** *To preserve the data used to train your classifiers, log into the toolkit and [download the training data](#download) from the Classifiers page before **July 31, 2018***.
-
-You can continue to use the beta toolkit with your Cloud Foundry services until the migration to  {{site.data.keyword.DSX}} is complete. This change to the toolkit does not change how you call the service directly with the API.
-
----
-
-You can manage your training data and classifiers by using the {{site.data.keyword.nlclassifierfull}} Toolkit web application. The toolkit gives you a unified view of all the classifiers that are running in the same {{site.data.keyword.cloud_notm}} service instance.
+You can train, manage, and test your classifiers by using the {{site.data.keyword.nlclassifierfull}} tool. The tool gives you a unified view of all the classifiers that are running in the same {{site.data.keyword.cloud_notm}} service instance.
 {: shortdesc}
 
-This is a beta release of the toolkit. The beta version of this toolkit might not be supported after a new release or after the toolkit exits beta status. Do not use the toolkit for production use.
+## About {{site.data.keyword.DSX}}
+{: #studio}
 
-The web interface of the toolkit simplifies how you train and test a classifier. Your domain experts can use the toolkit to focus on the quality of your training data.
+{{site.data.keyword.DSX_full}} is the replacement for the earlier classic toolkit. {{site.data.keyword.DSX}} provides a collaborative environment in the cloud where you can work with {{site.data.keyword.nlclassifiershort}}.
 
-## Getting access
+You can find a link to {{site.data.keyword.DSX}} on the {{site.data.keyword.cloud_notm}} service dashboard page for your instance of {{site.data.keyword.nlclassifiershort}}.
+
+### Getting access to {{site.data.keyword.DSX}}
+
+1.  Click a {{site.data.keyword.nlclassifiershort}} service instance from the [Dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")][cloud-dashboard-watson]{: new_window}.
+1.  Click **Launch tool** on the Manage page.
+
+If you don't have a service instance for {{site.data.keyword.nlclassifiershort}}, run through those steps in the [Before you begin](/docs/services/natural-language-classifier/getting-started.html#prerequisites) section of the "Getting started tutorial."
+{: tip}
+
+### Updating classifiers trained outside {{site.data.keyword.DSX}}
+
+{{site.data.keyword.DSX}} provides a feature that supports easily updating the training data and creating another classifier. This **Edit and Retrain** feature is not available for classifiers created outside of {{site.data.keyword.DSX}} because that data is not available to the tool.
+
+To update an older classifier, [access the classic toolkit](#getting-access) through {{site.data.keyword.DSX}}, and then [download](#download) the training data. Return to {{site.data.keyword.DSX}} to create a classifier with this data. You might want to delete the older classifier from the tutorial to avoid extra charges.
+
+## The classic toolkit
 {: #getting-access}
 
-You can find a link to the toolkit on the {{site.data.keyword.cloud_notm}} service dashboard page for your instance of {{site.data.keyword.nlclassifiershort}}.
+You can find the link to the classic toolkit from {{site.data.keyword.DSX}}. This toolkit will be shut down on July 31, 2018.
 
-### Accessing the toolkit yourself
+1.  Go to [{{site.data.keyword.DSX}} ![External link icon](../../icons/launch-glyph.svg "External link icon")][watson-studio-reg]{: new_window}.
+1.  Select "Watson Services" from the **Services** top menu. This lists all your {{site.data.keyword.nlclassifiershort}} service instances.
+1.  Click the {{site.data.keyword.nlclassifiershort}} service instance that you want to use.
+1.  At the top of the page, click the link to the classic tool.
+1.  Bookmark the URL for easy access to the toolkit for this instance.
 
-To find the link to the toolkit, follow these steps to get to your {{site.data.keyword.cloud_notm}} **service** dashboard:
-
-1.  Open your {{site.data.keyword.nlclassifiershort}} service tile by logging into your [{{site.data.keyword.cloud_notm}} Dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.{DomainName}/dashboard/services){: new_window}.
-
-    In the **Services** area, click your {{site.data.keyword.nlclassifiershort}} service tile to open the instance dashboard. (If you don't have a service tile, [create an instance ![External link icon](../../icons/launch-glyph.svg)](https://console.{DomainName}/catalog/services/natural-language-classifier/){: new_window} of the {{site.data.keyword.nlclassifiershort}} service.)
-1.  In the service dashboard, click **Open tool**.
-
-    Bookmark the URL for easy access to the toolkit later.
-    {: tip}
-
-### Giving access to your toolkit to others
+### Giving access to the classic toolkit to others
 
 You can allow others to use your toolkit by adding them in {{site.data.keyword.cloud_notm}}.
 
@@ -56,64 +74,14 @@ You can allow others to use your toolkit by adding them in {{site.data.keyword.c
 1.  Expand the **Cloud Foundry access** section.
 1.  Select the organization that holds your classifier service.
 1.  Select the **Auditor** organization role.
-1.  Select the **Developer** space role. For details about roles, see [Cloud Foundry roles
-](/docs/iam/cfaccess.html#cfroles).
+1.  Select the **Developer** space role. For details about roles, see [Cloud Foundry roles](/docs/iam/cfaccess.html#cfroles).
 1.  In a separate email, send the URL of your toolkit (that you bookmarked earlier) to the users.
 
 ## Downloading training data
 {: #download}
 
-You can use the beta toolkit to download the training data used to train your classifiers. You can then use that training data to create another classifier.
+You can use the classic toolkit to download the training data used to train your classifiers. You can then use that training data to create another classifier in {{site.data.keyword.DSX}}.
 
 1.  On the **Classifiers** page of the toolkit, find the classifier.
 1.  Click the **Download data used to train this classifier** icon ![Download training data icon](images/download-training-data.png) to save the data as a backup.
 1.  Rename the .csv file with a name that identifies the classifier.
-
-## Example uses
-{: #example-uses}
-
-In these examples, you create and modify training data, test a classifier interactively or from a set of test data, and update training data from the results.
-
-### Create training data in the toolkit
-
-Get familiar with the {{site.data.keyword.nlclassifiershort}} toolkit by creating a small set of training data with the toolkit.
-
-Before you can create a classifier, you need training data. You can create the data by typing texts and classes, or you can upload your training data from a CSV file that matches the [file format](/docs/services/natural-language-classifier/using-your-data.html).
-
-1.  On the **Training data** page of the toolkit, add a text. If you can't think of one, add, `Where is the nearest ATM`.
-1.  Assign a class to the text by typing it in. For the ATM example, type `location`.
-1.  Continue adding texts and classes to your training data. You can assign classes to texts in the following ways:
-    - Select a class by clicking it, and then click **Add text**. Or select a text, and then click **Assign classes**.
-    - Select a class, then drag a text to it. Or select a text, and then drag a class to it.
-
-    You can work on more than one class or text at a time by pressing Ctrl and clicking the text or class (press Command on a Mac). Try them out.
-1.  After you worked with your training data for a while, click **Download training data** to save the data as a backup.
-    You can also upload this file to the toolkit to work with the training data again later.
-    {: tip}
-1.  When you've assigned classes to at least five texts, you can create a classifier from this training data. Click **Create classifier**. {{site.data.keyword.watson}} starts training the classifier.
-
-### Test your classifier and update your training data
-
-After a classifier is trained and available, you can check how well it classifies texts that it hasn't seen before. You can test a series of texts and improve the training data by adding the incorrect or low confidence responses.
-
-1.  On the **Classifiers** page, click **Test and improve performance** for the classifier that you want to test.
-1.  On the **Improve performance** page, enter a text that is not in your training data and click **Classify**. {{site.data.keyword.watson}} returns relevant classes and their confidence levels.
-1.  Add more texts to test the performance.
-1.  Review the responses. Flag or approve the results that you want to add to your training data:
-    - If the classification is not correct, flag the result.
-    - If the response is correct but the confidence is low, add it to your training data by clicking **Approve**.
-1.  Click **Add to training data** to add the approved and flagged responses to your training data.
-1.  On the **Training data** page, review and update the classes that are assigned to the texts that you flagged.
-1.  To update your classifier with this new training data, you create another classifier. (It's not possible to retrain a classifier.) Click **Create classifier**. After training is complete, test the new classifier to see how it improved.
-
-### Upload data to test your classifier
-
-Entering texts to classify one by one is effective for quick tests. However if you have a *test set*, you can upload the set to the toolkit to classify many at the same time. A test set is a group of example texts that are not in your training data,. You use the set to check the performance of the classifier.
-
-1.  Create a test set file:
-    - The file can use the same format as the training data (in other words, it can include the correct classes) or include only texts, one on each line. Make sure that the texts (and classes) adhere to the [file format](/docs/services/natural-language-classifier/using-your-data.html) requirements.
-    - Save the file with a `.csv` extension.
-1.  On the **Classifiers** page, click **Test and improve performance** for the classifier that you want to test.
-1.  On the **Improve performance** page, click **Use test data**. {{site.data.keyword.watson}} uploads the data, classifies each text, and returns a response.
-1.  Compare the responses against the correct classification and also look for low confidence.
-1.  Improve the training data by adding more examples. Don't add examples that exist in your test set if you want to continue to use it to assess the performance of the classifier.
