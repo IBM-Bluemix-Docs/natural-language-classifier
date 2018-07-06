@@ -37,7 +37,7 @@ The following new features and changes to the service are available.
 ### 6 July 2018
 {: #06july2018}
 
-#### New beta tool available: {{site.data.keyword.DSX}}**
+**New beta tool available: {{site.data.keyword.DSX}}**
 
 {{site.data.keyword.DSX}} is the new integrated environment that includes a replacement for the earlier classic {{site.data.keyword.nlclassifiershort}} toolkit. To get started with {{site.data.keyword.DSX}}, click **Launch tool** from a {{site.data.keyword.nlclassifiershort}} service instance dashboard. For details, see [Managing classifiers with the toolkit](/docs/services/natural-language-classifier/tool-overview.html#studio).
 
@@ -48,7 +48,7 @@ You can use {{site.data.keyword.DSX}} with all your existing {{site.data.keyword
 ### 8 June 2018
 {: #08june2018}
 
-#### Download your training data for the new tool**
+**Download your training data for the new tool**
 
 The existing {site.data.keyword.nlclassifiershort}} classic toolkit is scheduled to shut down July 31, 2018. The planned replacement for the toolkit is **{{site.data.keyword.DSX}}**, the new integrated environment. [{{site.data.keyword.DSX}} ![External link icon](../../icons/launch-glyph.svg "External link icon")][watson-studio-reg]{: new_window} already supports {{site.data.keyword.visualrecognitionshort}} and other {{site.data.keyword.cloud_notm}} services and resources.
 
