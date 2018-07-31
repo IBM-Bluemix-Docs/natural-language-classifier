@@ -24,7 +24,7 @@ lastupdated: "2018-07-06"
 
 - You can use {{site.data.keyword.DSX}} with all your existing instances and classifiers.
 - Get started: You can get to {{site.data.keyword.DSX}} from the service page for your instance. Go to the [Dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")][cloud-dashboard-watson]{: new_window}, click on an instance, and then click **Launch tool**.
-- You can continue to use this classic toolkit with your existing Cloud Foundry service instances until the toolkit is shut down on July 31, 2018.
+- You can continue to use this classic toolkit with your existing Cloud Foundry service instances until the toolkit is shut down on August 7, 2018.
 - For other details, see the [Release notes](/docs/services/natural-language-classifier/release-notes.html#06july2018)
 
 ---
