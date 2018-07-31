@@ -43,7 +43,7 @@ The following new features and changes to the service are available.
 
 {{site.data.keyword.DSX}} supports not only {{site.data.keyword.nlclassifiershort}} but also {{site.data.keyword.visualrecognitionshort}} and many other {{site.data.keyword.cloud_notm}} services and resources. {{site.data.keyword.DSX}} provides a collaborative environment in the cloud. With {{site.data.keyword.DSX}}, developers, subject matter experts, data scientists, and others can build and train {{site.data.keyword.nlclassifiershort}} and other AI models. You can also use {{site.data.keyword.DSX}} to test your classifiers.
 
-You can use {{site.data.keyword.DSX}} with all your existing {{site.data.keyword.nlclassifiershort}} instances and classifiers. The classic toolkit remains available until July 31, 2018.
+You can use {{site.data.keyword.DSX}} with all your existing {{site.data.keyword.nlclassifiershort}} instances and classifiers. The classic toolkit remains available until August 7, 2018.
 
 ### 8 June 2018
 {: #08june2018}
