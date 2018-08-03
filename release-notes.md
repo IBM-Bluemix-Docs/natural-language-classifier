@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-08-03"
 
 ---
 
@@ -39,7 +39,7 @@ The following new features and changes to the service are available.
 
 **Migrate your training data to {{site.data.keyword.DSX}}**
 
-You can now [migrate](/docs/services/natural-language-classifier/tool-overview.html#migrating) the training data for classifiers created outside of {{site.data.keyword.DSX}}. After you migrate, you can easily update the training data and creating another classifier within {{site.data.keyword.DSX}}.
+You can now [migrate](/docs/services/natural-language-classifier/tool-overview.html#migrating) the training data for classifiers created outside of {{site.data.keyword.DSX}}. After you migrate, you can easily update the training data and create another classifier within {{site.data.keyword.DSX}}.
 
 You can migrate data until September 30, 2018.
 

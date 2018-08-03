@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-08-03"
 
 ---
 
@@ -76,7 +76,7 @@ You might want to delete the older classifier to avoid extra charges.
 ## The classic toolkit
 {: #getting-access}
 
-You can find the link to the classic toolkit from {{site.data.keyword.DSX}}. Access to this toolkit will be shut down on August 7, 2018
+You can find the link to the classic toolkit from {{site.data.keyword.DSX}}. Access to this toolkit will be shut down on August 7, 2018.
 
 #### Getting to the classic toolkit
 
