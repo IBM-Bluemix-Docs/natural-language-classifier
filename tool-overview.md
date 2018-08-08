@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-08-03"
+lastupdated: "2018-08-08"
 
 ---
 
@@ -20,12 +20,12 @@ lastupdated: "2018-08-03"
 
 ---
 
-**The {{site.data.keyword.nlclassifiershort}} classic toolkit is deprecated and replaced by {{site.data.keyword.DSX}}.**
+**The {{site.data.keyword.nlclassifiershort}} classic toolkit is shut down as of August 7, 2018 and is replaced by  [{{site.data.keyword.DSX}} ![External link icon](../../icons/launch-glyph.svg "External link icon")][watson-studio-reg]{: new_window}.**
 
-- You can use {{site.data.keyword.DSX}} with all your classifiers. You can also [import](#migrating) the training data for classifiers created outside of {{site.data.keyword.DSX}}.
+- You can use {{site.data.keyword.DSX}} with all your classifiers.
+- You can [import](#migrating) the training data for classifiers created outside of {{site.data.keyword.DSX}} until September 30, 2018.
+- For other details, see the [Release notes](/docs/services/natural-language-classifier/release-notes.html#06july2018).
 - Get started: You can get to {{site.data.keyword.DSX}} from the service page for your instance. Go to the [Dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")][cloud-dashboard-watson]{: new_window}, click on an instance, and then click **Launch tool**.
-- You can continue to use this classic toolkit with your existing Cloud Foundry service instances until the toolkit is shut down on August 7, 2018. You can migrate data until September 30, 2018.
-- For other details, see the [Release notes](/docs/services/natural-language-classifier/release-notes.html#06july2018)
 
 ---
 
@@ -72,25 +72,3 @@ You might want to delete the older classifier to avoid extra charges.
 1.  Select "Watson Services" from the **Services** top menu. This lists all your {{site.data.keyword.nlclassifiershort}} service instances.
 1.  Click **Launch tool** for the service that contains the older classifier that you migrated.
 1.  Click the Options menu for the classifier and select **Delete**.
-
-## The classic toolkit
-{: #getting-access}
-
-You can find the link to the classic toolkit from {{site.data.keyword.DSX}}. Access to this toolkit will be shut down on August 7, 2018.
-
-#### Getting to the classic toolkit
-
-1.  Go to [{{site.data.keyword.DSX}} ![External link icon](../../icons/launch-glyph.svg "External link icon")][watson-studio-reg]{: new_window}.
-1.  Select "Watson Services" from the **Services** top menu. This lists all your {{site.data.keyword.nlclassifiershort}} service instances.
-1.  Click the {{site.data.keyword.nlclassifiershort}} service instance that you want to use.
-1.  At the top of the page, click the link to the classic tool.
-1.  Bookmark the URL for easy access to the toolkit for this instance.
-
-#### Downloading training data
-{: #download}
-
-You can use the classic toolkit to download the training data used to train your classifiers. If you want to use that training data to create another classifier in {{site.data.keyword.DSX}}, consider [migrating](#migrating) the data instead.
-
-1.  On the **Classifiers** page of the toolkit, find the classifier.
-1.  Click the **Download data used to train this classifier** icon ![Download training data icon](images/download-training-data.png) to save the data as a backup.
-1.  Rename the .csv file with a name that identifies the classifier.
