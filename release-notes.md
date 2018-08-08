@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-08-03"
+lastupdated: "2018-08-08"
 
 ---
 
@@ -33,6 +33,15 @@ The following new features and changes to the service are available.
 {: #changelog}
 
 The following new features and changes to the service are available.
+
+### 7 August 2018
+{: #07august2018}
+
+**Classic toolkit replaced**
+
+The classic toolkit is shut down as of August 7, 2018 and is replaced by  [{{site.data.keyword.DSX}} ![External link icon](../../icons/launch-glyph.svg "External link icon")][watson-studio-reg]{: new_window}.
+
+You can [migrate](/docs/services/natural-language-classifier/tool-overview.html#migrating) the training data for classifiers created outside of {{site.data.keyword.DSX}} until September 30, 2018. After you migrate, you can easily update the training data and create another classifier within {{site.data.keyword.DSX}}.
 
 ### 2 August 2018
 {: #02august2018}
