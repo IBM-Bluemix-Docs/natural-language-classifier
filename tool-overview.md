@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-08-08"
+lastupdated: "2018-09-14"
 
 ---
 
@@ -15,29 +15,21 @@ lastupdated: "2018-08-08"
 [cloud-dashboard-watson]: https://console.{DomainName}/dashboard/apps?category=watson
 [watson-studio-reg]: https://dataplatform.ibm.com/registration/stepone?context=wdp
 
-# Managing classifiers with {{site.data.keyword.DSX}}
-{: #managing-toolkit}
-
----
-
-**The {{site.data.keyword.nlclassifiershort}} classic toolkit is shut down as of August 7, 2018 and is replaced by  [{{site.data.keyword.DSX}} ![External link icon](../../icons/launch-glyph.svg "External link icon")][watson-studio-reg]{: new_window}.**
-
-- You can use {{site.data.keyword.DSX}} with all your classifiers.
-- You can [import](#migrating) the training data for classifiers created outside of {{site.data.keyword.DSX}} until September 30, 2018.
-- For other details, see the [Release notes](/docs/services/natural-language-classifier/release-notes.html#06july2018).
-- Get started: You can get to {{site.data.keyword.DSX}} from the service page for your instance. Go to the [Dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")][cloud-dashboard-watson]{: new_window}, click on an instance, and then click **Launch tool**.
-
----
-
-You can train, manage, and test your classifiers by using {{site.data.keyword.DSX}}. {{site.data.keyword.DSX}} supports not only {{site.data.keyword.nlclassifierfull}} but also {{site.data.keyword.visualrecognitionshort}} and many other {{site.data.keyword.cloud_notm}} services and resources.
-{: shortdesc}
-
 ## About {{site.data.keyword.DSX}}
 {: #studio}
 
-{{site.data.keyword.DSX_full}} is the replacement for the earlier classic toolkit. {{site.data.keyword.DSX}} provides a collaborative environment in the cloud where you can work with {{site.data.keyword.nlclassifiershort}}.
+{{site.data.keyword.DSX}} provides a collaborative environment in the cloud where you can work with {{site.data.keyword.nlclassifiershort}}.
+
+
+You can train, manage, and test your classifiers by using our GUI tooling in {{site.data.keyword.DSX}}. The {{site.data.keyword.DSX}} tooling supports {{site.data.keyword.nlclassifierfull}}, {{site.data.keyword.visualrecognitionshort}}, and many other {{site.data.keyword.cloud_notm}} services and resources.
+{: shortdesc}
 
 You can find a link to {{site.data.keyword.DSX}} on the {{site.data.keyword.cloud_notm}} service dashboard page for your instance of {{site.data.keyword.nlclassifiershort}}.
+
+The following video walks you through the training of a financial loan classification use case with {{site.data.keyword.DSX}}.
+{: #video}
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="IBM Watson Studio: Create and train a Natural Language Classifier Model" type="text/html" width="560" height="315" src="https://www.youtube.com/embed/_gHeeX4lFwo" webkitallowfullscreen mozallowfullscreen allowfullscreen gesture="media" allow="encrypted-media"></iframe>
 
 ### Getting access to {{site.data.keyword.DSX}}
 {: #access-studio}
