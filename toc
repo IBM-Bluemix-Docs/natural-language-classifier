@@ -35,6 +35,7 @@ Natural Language Classifier
         [Node.js SDK](https://github.com/watson-developer-cloud/node-sdk)
         [Python SDK](https://github.com/watson-developer-cloud/python-sdk)
         [.NET SDK](https://github.com/watson-developer-cloud/dotnet-standard-sdk)
+        [Ruby SDK](https://github.com/watson-developer-cloud/ruby-sdk)
         [OpenWhisk SDK](https://github.com/watson-developer-cloud/openwhisk-sdk)
         [Salesforce SDK](https://github.com/watson-developer-cloud/salesforce-sdk)
         [Swift SDK](https://github.com/watson-developer-cloud/swift-sdk)
@@ -49,6 +50,6 @@ Natural Language Classifier
     {: .topicgroup}
     Developer community
         [StackOverflow](http://stackoverflow.com/questions/tagged/nl-classifier)
-        [developerWorks Answers](https://developer.ibm.com/answers/topics/natural-language-classifier.html)
+        [IBM Developer Answers](https://developer.ibm.com/answers/topics/natural-language-classifier.html)
         [WDC Slack channel](http://wdc-slack-inviter.mybluemix.net/)
     {: .navgroup-end}
