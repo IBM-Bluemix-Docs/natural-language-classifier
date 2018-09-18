@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-07-06"
+lastupdated: "2018-09-18"
 
 ---
 
@@ -43,7 +43,7 @@ Organize products in your e-commerce store. This Python app categorizes products
 - [Video walkthrough ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://youtu.be/JPMZxgpc_Uo){: new_window}
 - [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/erichensleyibm/NLC_product_classifier-demo){: new_window}
 
-## Phishing prediction
+## Phishing e-mail prediction
 
 Create and deploy a web app to predict phishing attempts in email. Try one of the samples or enter your own text, and see how it's classified.
 
