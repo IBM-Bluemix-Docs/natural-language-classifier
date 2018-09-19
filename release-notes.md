@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-09-17"
+lastupdated: "2018-09-19"
 
 ---
 
@@ -33,6 +33,13 @@ The following new features and changes to the service are available.
 {: #changelog}
 
 The following new features and changes to the service are available.
+
+### 19 September 2018
+{: #19september2018}
+
+**Rate limiting introduced**
+
+- API calls are now limited to 1500 requests per minute per service instance. If you exceed the limit, the HTTP status code `429 Too Many Requests` is returned.
 
 ### 7 August 2018
 {: #07august2018}
