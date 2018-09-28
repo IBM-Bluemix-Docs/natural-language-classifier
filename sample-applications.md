@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-07-06"
+lastupdated: "2018-09-28"
 
 ---
 
@@ -12,10 +12,6 @@ lastupdated: "2018-07-06"
 {:pre: .pre}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:swift: .ph data-hd-programlang='swift'}
 
 # Sample apps
 
@@ -24,6 +20,14 @@ Explore our sample applications to help you understand what you can develop with
 
 These apps are created by the community of developers and are not supported by IBM. They might not work as expected and they might not be available all the time.
 {: tip}
+
+## Email Routing Accelerator tutorial
+
+Many companies rely on using a unified email inbox as a single point of contact for customer requests. Processing the email often includes reading through each email and manually routing it to the appropriate person.
+
+Try out the Email Routing Accelerator and see in 15 minutes how much easier it is to use Natural Language Classifier  and Natural Language Understanding to classify and route email.
+
+- [Tutorial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloudcontent.mybluemix.net/cloud/garage/tutorials/ibm-watson-ilab-demos/email-routing-accelerator-tutorial){: new_window}
 
 ## Job description categorization
 
@@ -43,13 +47,14 @@ Organize products in your e-commerce store. This Python app categorizes products
 - [Video walkthrough ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://youtu.be/JPMZxgpc_Uo){: new_window}
 - [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/erichensleyibm/NLC_product_classifier-demo){: new_window}
 
-## Phishing prediction
+## Phishing email classification
 
-Create and deploy a web app to predict phishing attempts in email. Try one of the samples or enter your own text, and see how it's classified.
+Create and deploy a web app to predict phishing attempts in email. Try one of the samples or enter your own text to see how it's classified. Modify this application to create other categories and simplify your workflow.
 
-- [Read more ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://medium.com/ibm-watson/identify-spam-with-watson-natural-language-classifier-42f273d310f4){: new_window}
+- [Read more ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/patterns/predict-phishing-attempts-in-email-with-nlc/){: new_window}
 - [View the demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://nlc-email-spam.mybluemix.net/){: new_window}
-- [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/zmohammad01/nlc-email-spam){: new_window}
+- [Video walkthrough ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.youtube.com/watch?v=vnnUYAi9Zy4){: new_window}
+- [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/IBM/nlc-email-phishing){: new_window}
 
 ## Text message spam prediction
 
