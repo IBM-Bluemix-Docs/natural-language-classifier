@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-08-08"
+lastupdated: "2018-09-28"
 
 ---
 
@@ -12,7 +12,7 @@ lastupdated: "2018-08-08"
 
 <!-- Link definitions -->
 
-[cloud-dashboard-watson]: https://console.{DomainName}/dashboard/apps?category=watson
+[cloud-dashboard-watson]: https://console.{DomainName}/dashboard/apps?category=ai
 [watson-studio-reg]: https://dataplatform.ibm.com/registration/stepone?context=wdp
 
 # Managing classifiers with {{site.data.keyword.DSX}}
@@ -22,25 +22,25 @@ lastupdated: "2018-08-08"
 
 **The {{site.data.keyword.nlclassifiershort}} classic toolkit is shut down as of August 7, 2018 and is replaced by  [{{site.data.keyword.DSX}} ![External link icon](../../icons/launch-glyph.svg "External link icon")][watson-studio-reg]{: new_window}.**
 
-- You can use {{site.data.keyword.DSX}} with all your classifiers.
-- You can [import](#migrating) the training data for classifiers created outside of {{site.data.keyword.DSX}} until September 30, 2018.
-- For other details, see the [Release notes](/docs/services/natural-language-classifier/release-notes.html#06july2018).
-- Get started: You can get to {{site.data.keyword.DSX}} from the service page for your instance. Go to the [Dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")][cloud-dashboard-watson]{: new_window}, click on an instance, and then click **Launch tool**.
-
 ---
 
-You can train, manage, and test your classifiers by using {{site.data.keyword.DSX}}. {{site.data.keyword.DSX}} supports not only {{site.data.keyword.nlclassifierfull}} but also {{site.data.keyword.visualrecognitionshort}} and many other {{site.data.keyword.cloud_notm}} services and resources.
+You can train, manage, and test your classifiers by using {{site.data.keyword.DSX}}. {{site.data.keyword.DSX}} supports not only {{site.data.keyword.nlclassifierfull}}, {{site.data.keyword.visualrecognitionshort}}, and many other {{site.data.keyword.cloud_notm}} services and resources.
 {: shortdesc}
 
 ## About {{site.data.keyword.DSX}}
 {: #studio}
 
-{{site.data.keyword.DSX_full}} is the replacement for the earlier classic toolkit. {{site.data.keyword.DSX}} provides a collaborative environment in the cloud where you can work with {{site.data.keyword.nlclassifiershort}}.
+{{site.data.keyword.DSX}} provides a collaborative environment in the cloud. With {{site.data.keyword.DSX}}, developers, subject matter experts, data scientists, and others can build and train {{site.data.keyword.nlclassifiershort}} and other AI models. You can also use {{site.data.keyword.DSX}} to test your classifiers.
 
-You can find a link to {{site.data.keyword.DSX}} on the {{site.data.keyword.cloud_notm}} service dashboard page for your instance of {{site.data.keyword.nlclassifiershort}}.
+The following video walks you how to create and train a classifier with {{site.data.keyword.DSX}}.
+{: #video}
 
-### Getting access to {{site.data.keyword.DSX}}
+<iframe class="embed-responsive-item" id="youtubeplayer" title="IBM Watson Studio: Create and train a Natural Language Classifier Model" type="text/html" width="560" height="315" src="https://www.youtube.com/embed/_gHeeX4lFwo" webkitallowfullscreen mozallowfullscreen allowfullscreen gesture="media" allow="encrypted-media"></iframe>
+
+## Getting access to {{site.data.keyword.DSX}}
 {: #access-studio}
+
+You can get to {{site.data.keyword.DSX_full}} from the service page for your instance.
 
 1.  Click a {{site.data.keyword.nlclassifiershort}} service instance from the [Dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")][cloud-dashboard-watson]{: new_window}.
 1.  Click **Launch tool** on the Manage page.
@@ -48,12 +48,12 @@ You can find a link to {{site.data.keyword.DSX}} on the {{site.data.keyword.clou
 If you don't have a service instance for {{site.data.keyword.nlclassifiershort}}, go to  [{{site.data.keyword.DSX}} ![External link icon](../../icons/launch-glyph.svg "External link icon")][watson-studio-reg]{: new_window} and follow the steps in the docs.
 {: tip}
 
-### Updating classifiers trained outside {{site.data.keyword.DSX}}
+## Updating classifiers trained outside {{site.data.keyword.DSX}}
 {: #migrating}
 
 {{site.data.keyword.DSX}} supports easily updating the training data and creating another classifier. This **Edit and Retrain** feature is not available for classifiers created outside of {{site.data.keyword.DSX}} until you import the training data.
 
-#### Migrating the training data
+### Migrating the training data
 To update an older classifier, you associate the classifier with a project in {{site.data.keyword.DSX}} and import the training data.
 
 1.  Go to [{{site.data.keyword.DSX}} ![External link icon](../../icons/launch-glyph.svg "External link icon")][watson-studio-reg]{: new_window}.
@@ -65,7 +65,7 @@ To update an older classifier, you associate the classifier with a project in {{
 
 After the training data is imported, you can train the new classifier (model).
 
-#### Deleting the older classifier
+### Deleting the older classifier
 You might want to delete the older classifier to avoid extra charges.
 
 1.  Go to [{{site.data.keyword.DSX}} ![External link icon](../../icons/launch-glyph.svg "External link icon")][watson-studio-reg]{: new_window}.
