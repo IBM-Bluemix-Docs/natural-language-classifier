@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-09-28"
+lastupdated: "2018-10-11"
 
 ---
 
@@ -71,6 +71,13 @@ Build a Python app based on the Flask microframework. The app uses the Watson Py
 - [Read more ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/code/patterns/classify-icd-10-data-with-watson/){: new_window}
 - [Video walkthrough ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://youtu.be/N0eKEZxdwsQ){: new_window}
 - [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/stevemart/nlc-icd10-demo){: new_window}
+
+## Programming Language Classification
+
+In this Code Pattern, we will use Jupyter Notebooks in IBM Watson Studio to build a model that predicts a code's programming language based on its text. The model will then be evaluated using IBM's Watson Natural Language classifier.
+
+- [Read more ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/patterns/programming-language-classification-with-watson-and-github/){: new_window}
+- [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/IBM/programming-language-classifier){: new_window}
 
 ## Factoid assistant
 
