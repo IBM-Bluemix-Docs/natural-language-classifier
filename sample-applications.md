@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-09-28"
+lastupdated: "2018-10-12"
 
 ---
 
@@ -25,7 +25,7 @@ These apps are created by the community of developers and are not supported by I
 
 Many companies rely on using a unified email inbox as a single point of contact for customer requests. Processing the email often includes reading through each email and manually routing it to the appropriate person.
 
-Try out the Email Routing Accelerator and see in 15 minutes how much easier it is to use Natural Language Classifier  and Natural Language Understanding to classify and route email.
+Try out the Email Routing Accelerator and see in 15 minutes how much easier it is to use Natural Language Classifier and Natural Language Understanding to classify and route email.
 
 - [Tutorial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloudcontent.mybluemix.net/cloud/garage/tutorials/ibm-watson-ilab-demos/email-routing-accelerator-tutorial){: new_window}
 
@@ -71,6 +71,13 @@ Build a Python app based on the Flask microframework. The app uses the Watson Py
 - [Read more ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/code/patterns/classify-icd-10-data-with-watson/){: new_window}
 - [Video walkthrough ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://youtu.be/N0eKEZxdwsQ){: new_window}
 - [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/stevemart/nlc-icd10-demo){: new_window}
+
+## Programming language classification
+
+Use a Jupyter notebook inside {{site.data.keyword.DSX_full}} along with {{site.data.keyword.nlclassifiershort}} to predict the programming language of code in a GitHub project.
+
+- [Read more ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/patterns/programming-language-classification-with-watson-and-github/){: new_window}
+- [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/IBM/programming-language-classifier){: new_window}
 
 ## Factoid assistant
 
