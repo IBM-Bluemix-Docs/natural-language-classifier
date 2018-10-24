@@ -25,6 +25,9 @@ Although the default language is English, you can specify the language of the tr
 
 The classifier supports English (en), Arabic (ar), French (fr), German (de), Italian (it), Japanese (ja), Korean (ko), Portuguese (Brazilian) (pt), and Spanish (es).
 
+## Classify Multiple Phrases
+In most cases, you will use the "classify" method to submit text to be classified sequentially. With the "classify_collection" method, you are able to send up to **30** text phrases in a single request. Thereby, saving time when calling API. All languages mentioned in the previous section are supported by this feature. For details, see the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/watson/developercloud/natural-language-classifier/api/v1/){:new_window}.
+
 Classifying Japanese texts with the **Classify multiple phrases** method is a beta feature.
 {: tip}
 
