@@ -158,4 +158,4 @@ You have a basic understanding of how to use {{site.data.keyword.nlclassifiersho
 - Learn how to [prepare your data](/docs/services/natural-language-classifier/using-your-data.html) to train a classifier
 - Read about the API in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/natural-language-classifier/api/){:new_window}
 - Interact with the API in the [API explorer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://watson-api-explorer.mybluemix.net/apis/natural-language-classifier-v1){:new_window}
-- Look at the [Node.js starter application](https://github.com/watson-developer-cloud/natural-language-classifier-nodejs){:new_window} for an example web app
+- Check out our [Sample Applications](https://console.bluemix.net/docs/services/natural-language-classifier/sample-applications.html#sample-apps){:new_window} for examples of how to use Natural Language Classifier
