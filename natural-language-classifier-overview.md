@@ -47,3 +47,4 @@ With {{site.data.keyword.nlclassifiershort}}, the data is yours to parse and cat
 
 - [Get started](/docs/services/natural-language-classifier/getting-started.html) with the service.
 - Try out the [demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://natural-language-classifier-demo.ng.bluemix.net/){:new_window}.
+- Check out our [Sample Applications](https://console.bluemix.net/docs/services/natural-language-classifier/sample-applications.html#sample-apps){:new_window} for examples of how to use Natural Language Classifier.
