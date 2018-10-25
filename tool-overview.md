@@ -20,10 +20,6 @@ lastupdated: "2018-09-28"
 
 ---
 
-**The {{site.data.keyword.nlclassifiershort}} classic toolkit is shut down as of August 7, 2018 and is replaced by  [{{site.data.keyword.DSX}} ![External link icon](../../icons/launch-glyph.svg "External link icon")][watson-studio-reg]{: new_window}.**
-
----
-
 You can train, manage, and test your classifiers by using {{site.data.keyword.DSX}}. {{site.data.keyword.DSX}} supports not only {{site.data.keyword.nlclassifierfull}}, {{site.data.keyword.visualrecognitionshort}}, and many other {{site.data.keyword.cloud_notm}} services and resources.
 {: shortdesc}
 
@@ -52,23 +48,3 @@ If you don't have a service instance for {{site.data.keyword.nlclassifiershort}}
 {: #migrating}
 
 {{site.data.keyword.DSX}} supports easily updating the training data and creating another classifier. This **Edit and Retrain** feature is not available for classifiers created outside of {{site.data.keyword.DSX}} until you import the training data.
-
-### Migrating the training data
-To update an older classifier, you associate the classifier with a project in {{site.data.keyword.DSX}} and import the training data.
-
-1.  Go to [{{site.data.keyword.DSX}} ![External link icon](../../icons/launch-glyph.svg "External link icon")][watson-studio-reg]{: new_window}.
-1.  Select "Watson Services" from the **Services** top menu. This lists all your {{site.data.keyword.nlclassifiershort}} service instances.
-1.  Click the {{site.data.keyword.nlclassifiershort}} service instance that contains the classifier that you want to migrate.
-1.  A banner is displayed if the service contains classifiers to import. Click **Get Started**.
-1.  Associate the classifier with a new project. Name the project, select the service instance if you have more than one, and click **Create**.
-1.  Import the training data. In the "Import data from classic tool" window, enter a new name for the classifier (called "model" in {{site.data.keyword.DSX}}}) and click **Import**. Your training data is imported to use in {{site.data.keyword.DSX}}.
-
-After the training data is imported, you can train the new classifier (model).
-
-### Deleting the older classifier
-You might want to delete the older classifier to avoid extra charges.
-
-1.  Go to [{{site.data.keyword.DSX}} ![External link icon](../../icons/launch-glyph.svg "External link icon")][watson-studio-reg]{: new_window}.
-1.  Select "Watson Services" from the **Services** top menu. This lists all your {{site.data.keyword.nlclassifiershort}} service instances.
-1.  Click **Launch tool** for the service that contains the older classifier that you migrated.
-1.  Click the Options menu for the classifier and select **Delete**.
