@@ -93,9 +93,9 @@ Looking for a fun DIY project that combines code, Arduino, and hardware? This ap
 - [Read how ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://dreamtolearn.com/ryan/data_analytics_viz/97){: new_window}
 - [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/rustyoldrake/Harry_Potter_Sorting_Hat_Simple){: new_window}
 
-## Node.js Starter App
+## Weather demo
 
-Take the NLC demo user interface and make it your own!
+Make this Node.js demo your own.
 
-- [Check out the Demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://natural-language-classifier-demo.ng.bluemix.net){: new_window}
+- [View the Demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://natural-language-classifier-demo.ng.bluemix.net){: new_window}
 - [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/watson-developer-cloud/natural-language-classifier-nodejs){: new_window}
