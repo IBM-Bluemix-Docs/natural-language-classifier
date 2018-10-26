@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-10-12"
+lastupdated: "2018-10-26"
 
 ---
 
@@ -47,6 +47,12 @@ Organize products in your e-commerce store. This Python app categorizes products
 - [Video walkthrough ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://youtu.be/JPMZxgpc_Uo){: new_window}
 - [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/erichensleyibm/NLC_product_classifier-demo){: new_window}
 
+## Automated customer support for email
+
+This code pattern walks you through creating an automated and cognitive method of providing customer support. Using the telecommunications domain as an example, it steps you through a few customer support scenarios. You learn how to combine {{site.data.keyword.nlclassifiershort}}, {{site.data.keyword.nlushort}}, and {{site.data.keyword.knowledgestudioshort}} into a single solution.
+
+- [View the Code Pattern ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/patterns/email-support-automation-for-telco/){: new_window}
+
 ## Phishing email classification
 
 Create and deploy a web app to predict phishing attempts in email. Try one of the samples or enter your own text to see how it's classified. Modify this application to create other categories and simplify your workflow.
@@ -60,7 +66,8 @@ Create and deploy a web app to predict phishing attempts in email. Try one of th
 
 Create a Python app to predict spam. The training data is a public set of 5,574 English SMS messages collected for mobile phone spam research.
 
-- Watch a [video walkthrough ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.youtube.com/watch?v=upK42t7Ojls){: new_window} or [read more ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://medium.com/ibm-watson/identify-spam-with-watson-natural-language-classifier-42f273d310f4){: new_window}
+- [Read more ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://medium.com/ibm-watson/identify-spam-with-watson-natural-language-classifier-42f273d310f4){: new_window}
+- [Video walkthrough ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.youtube.com/watch?v=upK42t7Ojls){: new_window}
 - [View the demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://watsonnlcspam.mybluemix.net/){: new_window}
 - [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/cdimascio/watson-nlc-spam){: new_window}
 
