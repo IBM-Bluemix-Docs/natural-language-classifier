@@ -47,9 +47,9 @@ Organize products in your e-commerce store. This Python app categorizes products
 - [Video walkthrough ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://youtu.be/JPMZxgpc_Uo){: new_window}
 - [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/erichensleyibm/NLC_product_classifier-demo){: new_window}
 
-## Automated customer support for emails
+## Automated customer support for email
 
-This code pattern walks you through creating an automated and cognitive method of providing customer support. Using the telecommunications domain as an example, it steps you through various customer support scenarios such as enabling a service, disabling a service, changing a plan, and adding a family member to a plan. In this code pattern you will learn how to combine Watson Natural Language Classifier, Watson Natural Language Understanding, and Watson Knowledge Studio into a single solution.
+This code pattern walks you through creating an automated and cognitive method of providing customer support. Using the telecommunications domain as an example, it steps you through a few customer support scenarios. You learn how to combine {{site.data.keyword.nlclassifiershort}}, {{site.data.keyword.nlushort}}, and {{site.data.keyword.knowledgestudioshort}} into a single solution.
 
 - [View the Code Pattern ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/patterns/email-support-automation-for-telco/){: new_window}
 
@@ -67,7 +67,7 @@ Create and deploy a web app to predict phishing attempts in email. Try one of th
 Create a Python app to predict spam. The training data is a public set of 5,574 English SMS messages collected for mobile phone spam research.
 
 - [Read more ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://medium.com/ibm-watson/identify-spam-with-watson-natural-language-classifier-42f273d310f4){: new_window}
-- Watch a [video walkthrough ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.youtube.com/watch?v=upK42t7Ojls){: new_window}
+- [Video walkthrough ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.youtube.com/watch?v=upK42t7Ojls){: new_window}
 - [View the demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://watsonnlcspam.mybluemix.net/){: new_window}
 - [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/cdimascio/watson-nlc-spam){: new_window}
 
