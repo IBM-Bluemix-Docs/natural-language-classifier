@@ -2,13 +2,14 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-10-15"
+lastupdated: "2018-10-30"
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 {:tip: .tip}
+{:important: .important}
 {:pre: .pre}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -29,29 +30,33 @@ The following new features and changes to the service are available.
 
 {{site.data.keyword.IBM_notm}} releases services, features, and language support for your evaluation that are classified as beta. These features might be unstable, might change frequently, and might be discontinued with short notice. Beta features also might not provide the same level of performance or compatibility that generally available features provide and are not intended for use in a production environment. Beta features are supported only on [IBM Developer Answers ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/topics/natural-language-classifier.html){: new_window}.
 
-## New API authentication process
-{: #iam-authentication}
-
-On 30 October 2018, the US South and Germany regions will transition from using Cloud Foundry to using token-based Identity and Access Management (IAM) authentication. (See [Authenticating with IAM tokens ![External link icon](../../icons/launch-glyph.svg "External link icon")](/docs/services/watson/getting-started-iam.html) for more information.)
-{: tip}
-
-The {{site.data.keyword.nlclassifiershort}} service has a new API authentication process for service instances that are hosted in the following regions:
-
-- US East (Washington, DC) as of 12 October 2018
-
-{{site.data.keyword.Bluemix}} is migrating to token-based Identity and Access Management (IAM) authentication. With some service instances, you authenticate to the API by using IAM.
-
-- With *new* service instances that you create in the regions and dates listed earlier, you authenticate to the API by using IAM. You can pass either a bearer token in an Authorization header or an API key. Tokens support authenticated requests without embedding service credentials in every call. API keys use basic authentication. Learn more about [IAM](/docs/services/watson/getting-started-iam.html).
-
-    When you use any of the {{site.data.keyword.watson}} SDKs, you can pass the API key and let the SDK manage the lifecycle of the tokens. For more information and examples, see [Authentication ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/natural-language-classifier/api/v1/java.html?java#authentication){: new_window} in the API reference.
--   With *existing* service instances that you created before the indicated dates, you continue to authenticate by providing the username and password for the service instance. You can use these services until October 2019, when you must migrate to IAM. For more information about migration, see [Migrating Cloud Foundry service instances to a resource group](/docs/resources/instance_migration.html).
-
-To learn which authentication process to use with your service instance, view the service credentials by clicking the instance on the {{site.data.keyword.Bluemix_notm}} [Dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/dashboard/apps?watson){: new_window}.
-
 ## Changes
 {: #changelog}
 
 The following new features and changes to the service are available.
+
+## 30 October 2018
+{: #30october2018}
+
+On 30 October 2018, the US South and Germany regions transitioned to using token-based Identity and Access Management (IAM) authentication. {{site.data.keyword.nlclassifiershort}} migrated each region on the following dates:
+
+- US South: 30 October 2018
+- Germany: 30 October 2018
+- US East: 12 October 2018
+
+The migration to IAM authentication affects new and existing service instances differently:
+
+- With *new* service instances that you create in the regions and dates listed earlier, you authenticate to the API by using IAM. You can pass either a bearer token in an Authorization header or an API key. Tokens support authenticated requests without embedding service credentials in every call. API keys use basic authentication.
+
+    When you use any of the {{site.data.keyword.watson}} SDKs, you can pass the API key and let the SDK manage the lifecycle of the tokens.
+- With *existing* service instances that you created before the indicated dates, you continue to authenticate by providing the username and password for the service instance. You can use these services until October 2019, when you must migrate to IAM.
+
+More information:
+- To learn which authentication process to use with your service instance, view the service credentials by clicking the instance on the {{site.data.keyword.cloud_notm}} [Dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.{DomainName}/dashboard/apps?watson){: new_window}.
+- For more information and examples about the SDK, see [Authentication ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.{DomainName}/apidocs/natural-language-classifier?language=java#authentication){: new_window} in the API reference.
+- For more information about using IAM tokens with Watson services, see [Authenticating with IAM tokens](/docs/services/watson/getting-started-iam.html).
+- For more information about using IAM API keys with Watson services, see [IAM service API keys](/docs/services/watson/apikey-bp.html).
+- For more information about migrating Cloud Foundry instances, see [Migrating Cloud Foundry service instances to a resource group](/docs/resources/instance_migration.html).
 
 ### 19 September 2018
 {: #19september2018}
@@ -98,7 +103,7 @@ The existing {{site.data.keyword.nlclassifiershort}} classic toolkit is schedule
 
 We expect that all of your existing classifiers will be available in {{site.data.keyword.DSX}}. However, if you want to make sure that you can re-create your existing classifiers, download the training data from the classic toolkit before July 31, 2018.
 
-For those who use the [API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/watson/developercloud/natural-language-classifier/api/v1){: new_window} directly, there is no change with the tool migration.
+For those who use the [API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.{DomainName}/apidocs/natural-language-classifier){: new_window} directly, there is no change with the tool migration.
 
 ### 16 March 2018
 {: #16march2018}
@@ -107,7 +112,7 @@ For those who use the [API ![External link icon](../../icons/launch-glyph.svg "E
 
     A new **Classify multiple phrases** method is available that supports sending up to 30 text phrases in one request. The `POST /v1/classifiers/{classifier_id}/classify_collection` method supports classifying phrases in the same languages as for the original method, except for Japanese, which launches as a beta feature.
 
-    For details about the API call, see the **Classify multiple phrases** method in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/watson/developercloud/natural-language-classifier/api/v1/curl.html?curl#classify-multiple-phrases){:new_window}.
+    For details about the API call, see the **Classify multiple phrases** method in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.{DomainName}/apidocs/natural-language-classifier#classify-multiple-phrases){:new_window}.
 
 - **Train with larger data sets**
 
@@ -118,7 +123,7 @@ For those who use the [API ![External link icon](../../icons/launch-glyph.svg "E
 
 **Additional languages:** The service now supports Korean in addition to Arabic, English, French, German, Japanese, Italian, Portuguese, and Spanish. The language of the training data must match the language of the text that you intend to classify.
 
-For details about languages, see [Using your own data](/docs/services/natural-language-classifier/using-your-data.html#languages). For details about the API call, see the `Create classifier` method in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/watson/developercloud/natural-language-classifier/api/v1/){:new_window}.
+For details about languages, see [Using your own data](/docs/services/natural-language-classifier/using-your-data.html#languages). For details about the API call, see the `Create classifier` method in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.{DomainName}/apidocs/natural-language-classifier){:new_window}.
 
 ### 06 April 2016
 {: #06april2016}
