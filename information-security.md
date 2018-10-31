@@ -39,3 +39,5 @@ Learn more about IBM's own GDPR readiness journey and our GDPR capabilities and 
 {: #gdpr-in-service}
 
 {{site.data.keyword.nlclassifiershort}} does not support Personal Data in the training data when you create a classifier. No Personal Data is to be entered into the training data. In addition, no data is captured or retained when you classify a phrase or classify multiple phrases.
+
+Training data is stored for the life of the classifier. Delete your NLC classifier in order to remove training data from the IBM Cloud.
