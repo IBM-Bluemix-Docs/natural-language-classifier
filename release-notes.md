@@ -35,7 +35,7 @@ The following new features and changes to the service are available.
 
 The following new features and changes to the service are available.
 
-## 30 October 2018
+### 30 October 2018
 {: #30october2018}
 
 On 30 October 2018, the US South and Germany regions transitioned to using token-based Identity and Access Management (IAM) authentication. {{site.data.keyword.nlclassifiershort}} migrated each region on the following dates:
