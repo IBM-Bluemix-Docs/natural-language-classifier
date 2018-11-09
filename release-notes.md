@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-10-30"
+lastupdated: "2018-11-08"
 
 ---
 
@@ -35,18 +35,25 @@ The following new features and changes to the service are available.
 
 The following new features and changes to the service are available.
 
+### 9 November 2018
+{: #9November2018}
+
+**New Tokyo location**
+
+- You can now create {{site.data.keyword.nlclassifiershort}} service instances that are hosted in the Tokyo location.
+
 ### 30 October 2018
 {: #30october2018}
 
-On 30 October 2018, the US South and Germany regions transitioned to using token-based Identity and Access Management (IAM) authentication. {{site.data.keyword.nlclassifiershort}} migrated each region on the following dates:
+On 30 October 2018, the US South and Germany locations transitioned to using token-based Identity and Access Management (IAM) authentication. {{site.data.keyword.nlclassifiershort}} migrated each location on the following dates:
 
-- US South: 30 October 2018
-- Germany: 30 October 2018
+- US South (Dallas): 30 October 2018
+- Germany (Frankfurt): 30 October 2018
 - US East: 12 October 2018
 
 The migration to IAM authentication affects new and existing service instances differently:
 
-- With *new* service instances that you create in the regions and dates listed earlier, you authenticate to the API by using IAM. You can pass either a bearer token in an Authorization header or an API key. Tokens support authenticated requests without embedding service credentials in every call. API keys use basic authentication.
+- With *new* service instances that you create in the locations and dates listed earlier, you authenticate to the API by using IAM. You can pass either a bearer token in an Authorization header or an API key. Tokens support authenticated requests without embedding service credentials in every call. API keys use basic authentication.
 
     When you use any of the {{site.data.keyword.watson}} SDKs, you can pass the API key and let the SDK manage the lifecycle of the tokens.
 - With *existing* service instances that you created before the indicated dates, you continue to authenticate by providing the username and password for the service instance. You can use these services until October 2019, when you must migrate to IAM.
@@ -116,7 +123,7 @@ For those who use the [API ![External link icon](../../icons/launch-glyph.svg "E
 
 - **Train with larger data sets**
 
-    You can now include up to 20,000 records in your training data. Classifier training is now enhanced by IBM Deep Learning as a Service. This offering is a neural network training infrastructure that uses an elastic cluster of graphics processing units (GPU) to handle larger data sets. The maximum size of the training data remains at 15,000 records for users in the Frankfurt region or users with {{site.data.keyword.Bluemix_dedicated_notm}}.
+    You can now include up to 20,000 records in your training data. Classifier training is now enhanced by IBM Deep Learning as a Service. This offering is a neural network training infrastructure that uses an elastic cluster of graphics processing units (GPU) to handle larger data sets. The maximum size of the training data remains at 15,000 records for users in the Frankfurt location or users with {{site.data.keyword.Bluemix_dedicated_notm}}.
 
 ### 10 July 2017
 {: #10july2017}
