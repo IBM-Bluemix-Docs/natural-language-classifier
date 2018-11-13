@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-03-16"
+lastupdated: "2018-11-13"
 
 ---
 
@@ -52,5 +52,5 @@ Make sure that your CSV training data adheres to the following format requiremen
 
 There are both minimum and maximum limits to the training data:
 
-- The training data must have at least five records (rows) and no more than 20,000 records.
+- The training data must have at least five records (rows), no more than 20,000 records, and no more than 3,000 classes.
 - The maximum total length of a text value is 1024 characters.
