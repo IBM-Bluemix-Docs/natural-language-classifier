@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-11-08"
+lastupdated: "2018-11-13"
 
 ---
 
@@ -34,6 +34,13 @@ The following new features and changes to the service are available.
 {: #changelog}
 
 The following new features and changes to the service are available.
+
+### 13 November 2018
+{: #18November2018}
+
+**Maximum number of classes**
+
+- Training data can now support a maximum of 3,000 classes, although fewer classes might result in better performance. For details, see [Data preparation](/docs/services/natural-language-classifier/using-your-data.html#training-limits) and [Best practices for classifiers](/docs/services/natural-language-classifier/best-practices.html#training-guidelines).
 
 ### 9 November 2018
 {: #9November2018}
