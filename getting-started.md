@@ -2,25 +2,30 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-10-30"
+lastupdated: "2018-11-16"
 
 ---
 
-<!-- Attribute definitions -->
-
-{:curl: #curl .ph data-hd-programlang='curl'}
-{:javascript: #javascript .ph data-hd-programlang='javascript'}
-{:java: #java .ph data-hd-programlang='java'}
-{:python: #python .ph data-hd-programlang='python'}
-{:swift: data-hd-programlang='swift'}
-{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
-{:screen: .screen}
+{:new_window: target="_blank"}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
+{:curl: #curl .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:ruby: .ph data-hd-programlang='ruby'}
+{:swift: .ph data-hd-programlang='swift'}
 {:pre: .pre}
 {:codeblock: .codeblock}
+{:screen: .screen}
 {:download: .download}
-{:tip: .tip}
-{:tool-button: #ext-dashboard .button .ext-dashboard}
+{:hide-dashboard: .hide-dashboard}
+{:apikey: data-credential-placeholder='apikey'}
+{:url: data-credential-placeholder='url'}
 
 # Getting started tutorial
 {: #natural-language-classifier}
@@ -32,14 +37,16 @@ You can create and train a classifier in less than 15 minutes.
 
 ## Before you begin
 {: #prerequisites}
+{: hide-dashboard}
 
 - Create an instance of the service:
-    1.  Go to the [{{site.data.keyword.nlclassifiershort}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.{DomainName}/catalog/services/natural-language-classifier){: new_window} page in the {{site.data.keyword.cloud_notm}} Catalog.
+    1.  Go to the [{{site.data.keyword.nlclassifiershort}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/catalog/services/natural-language-classifier){: new_window} page in the {{site.data.keyword.cloud_notm}} Catalog.
     1.  Sign up for a free {{site.data.keyword.cloud_notm}} account or log in.
     1.  Click **Create**.
 - Copy the credentials to authenticate to your service instance:
     1.  Click **Show** to view your credentials.
     1.  Copy the `API Key` and `Url` values.
+{: hide-dashboard}}
 
 The following video walks you through this tutorial.
 {: #video}
@@ -55,7 +62,7 @@ The classifier learns from examples before it can return information for texts t
 
     The file is in a CSV format in two columns. The first column is the text input. The second column is the class for that text: temperature or condition. View the file to see the entries.
 1.  Issue the following command to call the `POST /v1/classifiers/` method, which uploads the training data and creates the classifier:
-    - Replace `{apikey_value}` and `{url}` with the credentials that you copied in the prerequisites.
+    - {: hide-dashboard}Replace `{apikey_value}` and `{url}` with the credentials that you copied in the prerequisites.
     - Modify the location of the training data to point to where you saved the `weather_data_train.csv` file.
 
     ```bash
@@ -94,7 +101,7 @@ The classifier learns from examples before it can return information for texts t
 
 Now that the classifier is trained, you can query it.
 
-1.  Classify some weather-related questions to review how your newly trained classifier responds. Here is an example call. Replace `{apikey_value}`, `{url}`, and `{classifier_id}` with your information:
+1.  Classify some weather-related questions to review how your newly trained classifier responds. Here is an example call.<span class="hide-dashboard">Replace `{apikey_value}`, `{url}`, and `{classifier_id}` with your information.</span>
 
     ```bash
     curl -G --user "apikey:{apikey_value}"{: apikey} \
@@ -141,7 +148,7 @@ Now that the classifier is trained, you can query it.
 
 You're done! You created, trained, and queried a classifier in the {{site.data.keyword.nlclassifiershort}} service.
 
-This tutorial classifies a single phrase. {{site.data.keyword.nlclassifiershort}} also supports classifying multiple phrases in a single call. For details, see the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.{DomainName}/apidocs/natural-language-classifier#classify-multiple-phrases){: new_window}.
+This tutorial classifies a single phrase. {{site.data.keyword.nlclassifiershort}} also supports classifying multiple phrases in a single call. For details, see the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier#classify-multiple-phrases){: new_window}.
 {: tip}
 
 ## Delete the tutorial classifier
@@ -149,10 +156,11 @@ This tutorial classifies a single phrase. {{site.data.keyword.nlclassifiershort}
 So that you can create classifiers for your own use and with your own training data, you might want to delete this classifier from the tutorial. To delete the classifier, call the `DELETE /classifiers/{classifier_id}` method.
 
 Replace `{apikey_value}`, `{url}`, and `{classifier_id}` with your information in the following command.
+{: hide-dashboard}
 
 ```bash
 curl -X DELETE --user "apikey:{apikey_value}" \
-"{url}/v1/classifiers/{classifier_id}"
+"{url}/v1/classifiers/{classifier_id}"{: url}
 ```
 {: pre}
 
@@ -163,5 +171,5 @@ You have a basic understanding of how to use {{site.data.keyword.nlclassifiersho
 
 - This tutorial uses an API key to authenticate. For production uses, review the IAM service API keys [best practices](/docs/services/watson/apikey-bp.html#api-bp).
 - Learn how to [prepare your data](/docs/services/natural-language-classifier/using-your-data.html) to train a classifier
-- Read about the API in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.{DomainName}/apidocs/natural-language-classifier){:new_window}
+- Read about the API in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier){:new_window}
 - Explore the [Sample apps](/docs/services/natural-language-classifier/sample-applications.html) for example uses
