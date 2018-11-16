@@ -2,19 +2,21 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-10-30"
+lastupdated: "2018-10-29"
 
 ---
 
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
 {:deprecated: .deprecated}
 
 <!-- Link definitions -->
 
-[cloud-dashboard-watson]: https://console.{DomainName}/dashboard/apps?category=ai
-[watson-studio-reg]: https://dataplatform.ibm.com/registration/stepone?context=wdp
+[cloud-dashboard-watson]: https://{DomainName}/dashboard/apps?category=ai
+[watson-studio-reg]: https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp
 
 # Managing classifiers with {{site.data.keyword.DSX}}
 {: #managing-toolkit}
