@@ -24,7 +24,7 @@ Natural Language Classifier
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [API reference](https://console.bluemix.net/apidocs/natural-language-classifier)
+    [API reference](https://bluemix.net/apidocs/natural-language-classifier)
     sample-applications.md
     information-security.md
 
