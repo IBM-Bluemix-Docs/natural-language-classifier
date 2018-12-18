@@ -46,7 +46,7 @@ You can create and train a classifier in less than 15 minutes.
 - Copy the credentials to authenticate to your service instance:
     1.  Click **Show** to view your credentials.
     1.  Copy the `API Key` and `Url` values.
-{: hide-dashboard}}
+{: hide-dashboard}
 
 The following video walks you through this tutorial.
 {: #video}
@@ -62,7 +62,7 @@ The classifier learns from examples before it can return information for texts t
 
     The file is in a CSV format in two columns. The first column is the text input. The second column is the class for that text: temperature or condition. View the file to see the entries.
 1.  Issue the following command to call the `POST /v1/classifiers/` method, which uploads the training data and creates the classifier:
-    - {: hide-dashboard}Replace `{apikey_value}` and `{url}` with the credentials that you copied in the prerequisites.
+    - {: hide-dashboard} Replace `{apikey_value}` and `{url}` with the credentials that you copied in the prerequisites.
     - Modify the location of the training data to point to where you saved the `weather_data_train.csv` file.
 
     ```bash
