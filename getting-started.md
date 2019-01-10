@@ -685,7 +685,7 @@ puts JSON.pretty_generate(status.result)
 {: ruby}
 {: codeblock}
 
-The response ifs an empty JSON object.
+The response is an empty JSON object.
 
 ## Next steps
 You have a basic understanding of how to use {{site.data.keyword.nlclassifiershort}}. Now dive deeper:
