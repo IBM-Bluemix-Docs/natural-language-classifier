@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-01-09"
+lastupdated: "2019-01-10"
 
 ---
 
@@ -126,6 +126,7 @@ The classifier learns from examples before it can return information for texts t
 
     Windows users: Replace the backslash (`\`) at the end of each line with a caret (`^`). Make sure there are no trailing spaces.
     {: tip}
+    {: curl}
 
     ```go
     package main
