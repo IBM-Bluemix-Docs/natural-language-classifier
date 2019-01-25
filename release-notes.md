@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2018
-lastupdated: "2018-11-13"
+  years: 2015, 2019
+lastupdated: "2019-01-25"
 
 ---
 
@@ -37,19 +37,28 @@ The following new features and changes to the service are available.
 
 The following new features and changes to the service are available.
 
+### 25 January 2019
+{: #25jan2019}
+
+**Frankfurt location now supports training with larger data**
+
+{{site.data.keyword.nlclassifiershort}} service instances hosted in Frankfurt can now be trained on larger data sets. You can include up to 20,000 records in your training data.
+
+The larger data size is now supported in all {{site.data.keyword.nlclassifiershort}} locations. For more details about training data, see [Data preparation](/docs/services/natural-language-classifier/using-your-data.html).
+
 ### 13 November 2018
 {: #18November2018}
 
 **Maximum number of classes**
 
-- Training data can now support a maximum of 3,000 classes, although fewer classes might result in better performance. For details, see [Data preparation](/docs/services/natural-language-classifier/using-your-data.html#training-limits) and [Best practices for classifiers](/docs/services/natural-language-classifier/best-practices.html#training-guidelines).
+Training data can now support a maximum of 3,000 classes, although fewer classes might result in better performance. For details, see [Data preparation](/docs/services/natural-language-classifier/using-your-data.html#training-limits) and [Best practices for classifiers](/docs/services/natural-language-classifier/best-practices.html#training-guidelines).
 
 ### 9 November 2018
 {: #9November2018}
 
 **New Tokyo location**
 
-- You can now create {{site.data.keyword.nlclassifiershort}} service instances that are hosted in the Tokyo location.
+You can now create {{site.data.keyword.nlclassifiershort}} service instances that are hosted in the Tokyo location.
 
 ### 30 October 2018
 {: #30october2018}
