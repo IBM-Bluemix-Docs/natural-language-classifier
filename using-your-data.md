@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2018
-lastupdated: "2018-11-13"
+  years: 2015, 2019
+lastupdated: "2019-02-01"
 
 ---
 
@@ -10,6 +10,8 @@ lastupdated: "2018-11-13"
 {:shortdesc: .shortdesc}
 
 # Data preparation
+{: #using-your-data}
+
 After you create, train, and query an {{site.data.keyword.nlclassifierfull}} with the data in the [Getting started](/docs/services/natural-language-classifier/getting-started.html) example, you will want to create a classifier that works with your own data. You assemble and provide this training data.
 {:shortdesc}
 
