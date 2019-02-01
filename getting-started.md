@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-01-10"
+lastupdated: "2019-02-01"
 
 ---
 
@@ -401,6 +401,7 @@ The classifier learns from examples before it can return information for texts t
     {: codeblock}
 
 ## Step 2: Classify text
+{: #getting-started-classify}
 
 Now that the classifier is trained, you can query it.
 
@@ -569,6 +570,7 @@ This tutorial classifies a single phrase. {{site.data.keyword.nlclassifiershort}
 {: tip}
 
 ## Delete the tutorial classifier
+{: #getting-started-delete}
 
 So that you can create classifiers for your own use and with your own training data, you might want to delete this classifier from the tutorial.
 
@@ -688,6 +690,8 @@ puts JSON.pretty_generate(status.result)
 The response is an empty JSON object.
 
 ## Next steps
+{: #getting-started-next-steps}
+
 You have a basic understanding of how to use {{site.data.keyword.nlclassifiershort}}. Now dive deeper:
 
 - This tutorial uses an API key to authenticate. For production uses, review the IAM service API keys [best practices](/docs/services/watson/apikey-bp.html#api-bp).

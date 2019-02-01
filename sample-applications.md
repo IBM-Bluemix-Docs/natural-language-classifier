@@ -1,27 +1,31 @@
 ---
 
 copyright:
-  years: 2015, 2018
-lastupdated: "2018-10-26"
+  years: 2015, 2019
+lastupdated: "2019-02-01"
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
 {:screen: .screen}
 
 # Sample apps
+{: #sample-applications}
 
 Explore our sample applications to help you understand what you can develop with {{site.data.keyword.nlclassifiershort}}.
 {: shortdesc}
 
 These apps are created by the community of developers and are not supported by IBM. They might not work as expected and they might not be available all the time.
-{: tip}
+{: important}
 
 ## Email Routing Accelerator tutorial
+{: #sample-apps-accelerator}
 
 Many companies rely on using a unified email inbox as a single point of contact for customer requests. Processing the email often includes reading through each email and manually routing it to the appropriate person.
 
@@ -30,6 +34,7 @@ Try out the Email Routing Accelerator and see in 15 minutes how much easier it i
 - [Tutorial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloudcontent.mybluemix.net/cloud/garage/tutorials/ibm-watson-ilab-demos/email-routing-accelerator-tutorial){: new_window}
 
 ## Job description categorization
+{: #sample-apps-jobs}
 
 Classify job postings. This app categorizes jobs by the description, such as requirements and qualifications. The classifier is trained on current job postings from the City of New York’s official jobs site found on NYC Open Data.
 
@@ -39,6 +44,7 @@ Classify job postings. This app categorizes jobs by the description, such as req
 - [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/yalondg/nlc-job-descriptions){: new_window}
 
 ## E-commerce product categorization
+{: #sample-apps-ecommerce}
 
 Organize products in your e-commerce store. This Python app categorizes products from a text description or from a link to a product. The training data comes from two public e-commerce data sets found on Kaggle.com (Flipkart and JCPenny).
 
@@ -48,12 +54,14 @@ Organize products in your e-commerce store. This Python app categorizes products
 - [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/erichensleyibm/NLC_product_classifier-demo){: new_window}
 
 ## Automated customer support for email
+{: #sample-apps-email-support}
 
 This code pattern walks you through creating an automated and cognitive method of providing customer support. Using the telecommunications domain as an example, it steps you through a few customer support scenarios. You learn how to combine {{site.data.keyword.nlclassifiershort}}, {{site.data.keyword.nlushort}}, and {{site.data.keyword.knowledgestudioshort}} into a single solution.
 
 - [View the Code Pattern ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/patterns/email-support-automation-for-telco/){: new_window}
 
 ## Phishing email classification
+{: #sample-apps-email-classification}
 
 Create and deploy a web app to predict phishing attempts in email. Try one of the samples or enter your own text to see how it's classified. Modify this application to create other categories and simplify your workflow.
 
@@ -63,6 +71,7 @@ Create and deploy a web app to predict phishing attempts in email. Try one of th
 - [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/IBM/nlc-email-phishing){: new_window}
 
 ## Text message spam prediction
+{: #sample-apps-text-spam}
 
 Create a Python app to predict spam. The training data is a public set of 5,574 English SMS messages collected for mobile phone spam research.
 
@@ -72,6 +81,7 @@ Create a Python app to predict spam. The training data is a public set of 5,574 
 - [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/cdimascio/watson-nlc-spam){: new_window}
 
 ## Health injury classification with ICD-10 codes
+{: #sample-apps-icd-10}
 
 Build a Python app based on the Flask microframework. The app uses the Watson Python SDK and the ICD-10 API.
 
@@ -80,6 +90,7 @@ Build a Python app based on the Flask microframework. The app uses the Watson Py
 - [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/stevemart/nlc-icd10-demo){: new_window}
 
 ## Programming language classification
+{: #sample-apps-programming}
 
 Use a Jupyter notebook inside {{site.data.keyword.DSX_full}} along with {{site.data.keyword.nlclassifiershort}} to predict the programming language of code in a GitHub project.
 
@@ -87,6 +98,7 @@ Use a Jupyter notebook inside {{site.data.keyword.DSX_full}} along with {{site.d
 - [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/IBM/programming-language-classifier){: new_window}
 
 ## Factoid assistant
+{: #sample-apps-factoid}
 
 Ask questions and gain insights from them. This Node.js app takes a factoid question, connects with DBpedia, uses {{site.data.keyword.nlushort}} to detect entities and concepts, and classifies the question with {{site.data.keyword.nlclassifiershort}}. Use your own database to customize the app for your users' questions.
 
@@ -94,6 +106,7 @@ Ask questions and gain insights from them. This Node.js app takes a factoid ques
 - [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/biosopher/nlc-factoid-assistant){: new_window}
 
 ## Harry Potter sorting hat
+{: #sample-apps-sorting-hat}
 
 Looking for a fun DIY project that combines code, Arduino, and hardware? This app uses {{site.data.keyword.nlclassifiershort}} and {{site.data.keyword.speechtotextshort}} to create a Harry Potter sorting hat.
 
@@ -101,6 +114,7 @@ Looking for a fun DIY project that combines code, Arduino, and hardware? This ap
 - [Fork the code ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/rustyoldrake/Harry_Potter_Sorting_Hat_Simple){: new_window}
 
 ## Weather demo
+{: #sample-apps-weather}
 
 Make this Node.js demo your own.
 

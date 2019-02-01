@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2018
-lastupdated: "2018-10-26"
+  years: 2015, 2019
+lastupdated: "2019-02-01"
 
 ---
 
@@ -18,6 +18,7 @@ lastupdated: "2018-10-26"
 {{site.data.keyword.nlclassifiershort}} can help your application understand the language of short texts and make predictions about how to handle them. A classifier learns from your example data and then can return information for texts that it is not trained on.
 
 ## How you use the service
+{: #overview-how-to-use}
 
 The following image shows the process of creating and using the classifier:
 

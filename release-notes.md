@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-01-25"
+lastupdated: "2019-02-01"
 
 ---
 
@@ -23,6 +23,7 @@ lastupdated: "2019-01-25"
 [watson-studio-product-page]: https://www.ibm.com/cloud/watson-studio
 
 # Release notes
+{: #release-notes}
 
 The following new features and changes to the service are available.
 {: shortdesc}

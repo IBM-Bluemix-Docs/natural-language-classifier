@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2018
-lastupdated: "2018-10-26"
+  years: 2015, 2019
+lastupdated: "2019-02-01"
 
 ---
 
@@ -14,6 +14,8 @@ lastupdated: "2018-10-26"
 {:deprecated: .deprecated}
 
 # Best practices for classifiers
+{: #best-practices-overview}
+
 By following some guidelines and adopting some design patterns, you can provide the best experience for your users and help ensure that your application can handle what you want it to classify.
 
 ## Number of classifiers
@@ -22,6 +24,8 @@ By following some guidelines and adopting some design patterns, you can provide 
 Each instance of the {{site.data.keyword.nlclassifiershort}} service can have up to 8 classifiers, each with a unique classifier ID. To support more than 8 classifiers, create another instance of {{site.data.keyword.nlclassifiershort}}. You can create a service instance from the {{site.data.keyword.watson}} console [Browse Services ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/developer/watson/services){: new_window} page.
 
 ## Classify Multiple Phrases
+{: #best-practices-multiple}
+
 You use the **Classify a phrase** method to classify a single text string. With the **Classify multiple phrases** method, you can send up to 30 text phrases in a single request. For details, see the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier#classify-multiple-phrases){:new_window}.
 
 ## Languages
@@ -52,6 +56,8 @@ The following guidelines are not enforced by the API. However, the classifier te
     However, don't connect adjacent words to create new terms not found in the language of the training data. For example, instead of defining `dish-ran-away` or `with_the_spoon`, define the relevant phrases as separate words (`dish ran away` and `with the spoon`) with the appropriate class.
 
 ## Constructing training data
+{: #best-practices-training-data}
+
 Machine learning describes a process of learning some properties from a set of data and then applying the properties to new data. The {{site.data.keyword.nlclassifiershort}} service follows this process. It is trained to connect predefined classes to example texts and then applies those classes to new inputs.
 
 So, the trained classifier is only as good as the training data. Each text value in the data must represent the kinds of texts that you expect the classifier to predict. Every class that you expect to return must also be in the training data, and the classes that you associate with each text must be correct.
@@ -61,6 +67,6 @@ For example, when the texts in your training data are questions, use questions t
 This representative and accurate nature of the data is important because it drives all the processes of and results from the classifier. In addition, the more records that you include in the training data, the more opportunity the classifier has to find a match.
 
 ## Additional resources
-{: #next-steps}
+{: #best-practices-next-steps}
 
 See more [Best practices and design patterns ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/assets-watson/pdf/Watson-NLC-Links-Best-Practices-Design-Patterns.pdf){: new_window} for {{site.data.keyword.nlclassifiershort}}.
