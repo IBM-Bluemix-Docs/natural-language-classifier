@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="natural-language-classifier" audience="service" arm="342" href="/docs/services/natural-language-classifier/getting-started.html" path="services/natural-language-classifier"}
+{: .toc subcollection="natural-language-classifier" audience="service" arm="342" href="/docs/services/natural-language-classifier?topic=natural-language-classifier-natural-language-classifier#natural-language-classifier" path="services/natural-language-classifier"}
 Natural Language Classifier
 
     {: .navgroup id="learn"}
@@ -27,19 +27,7 @@ Natural Language Classifier
     [API reference](https://cloud.ibm.com/apidocs/natural-language-classifier)
     sample-applications.md
     information-security.md
-
-    {: .topicgroup}
-    Watson SDKs
-        [Android SDK](https://github.com/watson-developer-cloud/android-sdk)
-        [Java SDK](https://github.com/watson-developer-cloud/java-sdk)
-        [Node.js SDK](https://github.com/watson-developer-cloud/node-sdk)
-        [Python SDK](https://github.com/watson-developer-cloud/python-sdk)
-        [.NET SDK](https://github.com/watson-developer-cloud/dotnet-standard-sdk)
-        [Ruby SDK](https://github.com/watson-developer-cloud/ruby-sdk)
-        [OpenWhisk SDK](https://github.com/watson-developer-cloud/openwhisk-sdk)
-        [Salesforce SDK](https://github.com/watson-developer-cloud/salesforce-sdk)
-        [Swift SDK](https://github.com/watson-developer-cloud/swift-sdk)
-        [Unity SDK](https://github.com/watson-developer-cloud/unity-sdk)
+    /watson/watson-using-sdks
 
     [Watson GitHub repos](https://github.com/watson-developer-cloud/)
     {: .navgroup-end}
