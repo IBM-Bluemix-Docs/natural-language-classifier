@@ -1,8 +1,12 @@
 ---
 
 copyright:
-  years: 2015, 2018
-lastupdated: "2018-11-26"
+  years: 2015, 2019
+lastupdated: "2019-03-06"
+
+keywords: GDPR,General Data Protection Regulation,deleting customer data,privacy
+
+subcollection: natural-language-classifier
 
 ---
 

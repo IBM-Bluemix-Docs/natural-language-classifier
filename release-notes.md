@@ -2,7 +2,11 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-01"
+lastupdated: "2019-03-06"
+
+keywords: new features,updates to Natural Language Classifier,what's new
+
+subcollection: natural-language-classifier
 
 ---
 
@@ -45,14 +49,14 @@ The following new features and changes to the service are available.
 
 {{site.data.keyword.nlclassifiershort}} service instances hosted in Frankfurt can now be trained on larger data sets. You can include up to 20,000 records in your training data.
 
-The larger data size is now supported in all {{site.data.keyword.nlclassifiershort}} locations. For more details about training data, see [Data preparation](/docs/services/natural-language-classifier/using-your-data.html).
+The larger data size is now supported in all {{site.data.keyword.nlclassifiershort}} locations. For more details about training data, see [Data preparation](/docs/services/natural-language-classifier?topic=natural-language-classifier-using-your-data#using-your-data).
 
 ### 13 November 2018
 {: #18November2018}
 
 **Maximum number of classes**
 
-Training data can now support a maximum of 3,000 classes, although fewer classes might result in better performance. For details, see [Data preparation](/docs/services/natural-language-classifier/using-your-data.html#training-limits) and [Best practices for classifiers](/docs/services/natural-language-classifier/best-practices.html#training-guidelines).
+Training data can now support a maximum of 3,000 classes, although fewer classes might result in better performance. For details, see [Data preparation](/docs/services/natural-language-classifier?topic=natural-language-classifier-using-your-data#training-limits) and [Best practices for classifiers](/docs/services/natural-language-classifier?topic=natural-language-classifier-best-practices-overview#training-guidelines).
 
 ### 9 November 2018
 {: #9November2018}
@@ -80,9 +84,9 @@ The migration to IAM authentication affects new and existing service instances d
 More information:
 - To learn which authentication process to use with your service instance, view the service credentials by clicking the instance on the {{site.data.keyword.cloud_notm}} [Dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/dashboard/apps?watson){: new_window}.
 - For more information and examples about the SDK, see [Authentication ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier?language=java#authentication){: new_window} in the API reference.
-- For more information about using IAM tokens with Watson services, see [Authenticating with IAM tokens](/docs/services/watson/getting-started-iam.html).
-- For more information about using IAM API keys with Watson services, see [IAM service API keys](/docs/services/watson/apikey-bp.html).
-- For more information about migrating Cloud Foundry instances, see [Migrating Cloud Foundry service instances to a resource group](/docs/resources/instance_migration.html).
+- For more information about using IAM tokens with Watson services, see [Authenticating with IAM tokens](/docs/services/watson?topic=watson-iam#iam).
+- For more information about using IAM API keys with Watson services, see [IAM service API keys](/docs/services/watson?topic=watson-api-key-bp#api-key-bp).
+- For more information about migrating Cloud Foundry instances, see [Migrating Cloud Foundry service instances to a resource group](/docs/resources?topic=resources-migrate#migrate).
 
 ### 19 September 2018
 {: #19september2018}
@@ -98,14 +102,14 @@ More information:
 
 The classic toolkit is shut down as of August 7, 2018 and is replaced by  [{{site.data.keyword.DSX}} ![External link icon](../../icons/launch-glyph.svg "External link icon")][watson-studio-reg]{: new_window}.
 
-You can [migrate](/docs/services/natural-language-classifier/tool-overview.html#migrating) the training data for classifiers created outside of {{site.data.keyword.DSX}} until September 30, 2018. After you migrate, you can easily update the training data and create another classifier within {{site.data.keyword.DSX}}.
+You can [migrate](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#migrating) the training data for classifiers created outside of {{site.data.keyword.DSX}} until September 30, 2018. After you migrate, you can easily update the training data and create another classifier within {{site.data.keyword.DSX}}.
 
 ### 2 August 2018
 {: #02august2018}
 
 **Migrate your training data to {{site.data.keyword.DSX}}**
 
-You can now [migrate](/docs/services/natural-language-classifier/tool-overview.html#migrating) the training data for classifiers created outside of {{site.data.keyword.DSX}}. After you migrate, you can easily update the training data and create another classifier within {{site.data.keyword.DSX}}.
+You can now [migrate](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#migrating) the training data for classifiers created outside of {{site.data.keyword.DSX}}. After you migrate, you can easily update the training data and create another classifier within {{site.data.keyword.DSX}}.
 
 You can migrate data until September 30, 2018.
 
@@ -114,7 +118,7 @@ You can migrate data until September 30, 2018.
 
 **New beta tool available: {{site.data.keyword.DSX}}**
 
-{{site.data.keyword.DSX}} is the new integrated environment that includes a replacement for the earlier classic {{site.data.keyword.nlclassifiershort}} toolkit. To get started with {{site.data.keyword.DSX}}, click **Launch tool** from a {{site.data.keyword.nlclassifiershort}} service instance dashboard. For details, see [Managing classifiers with {{site.data.keyword.DSX}}](/docs/services/natural-language-classifier/tool-overview.html#studio).
+{{site.data.keyword.DSX}} is the new integrated environment that includes a replacement for the earlier classic {{site.data.keyword.nlclassifiershort}} toolkit. To get started with {{site.data.keyword.DSX}}, click **Launch tool** from a {{site.data.keyword.nlclassifiershort}} service instance dashboard. For details, see [Managing classifiers with {{site.data.keyword.DSX}}](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#studio).
 
 {{site.data.keyword.DSX}} supports not only {{site.data.keyword.nlclassifiershort}} but also {{site.data.keyword.visualrecognitionshort}} and many other {{site.data.keyword.cloud_notm}} services and resources. {{site.data.keyword.DSX}} provides a collaborative environment in the cloud. With {{site.data.keyword.DSX}}, developers, subject matter experts, data scientists, and others can build and train {{site.data.keyword.nlclassifiershort}} and other AI models. You can also use {{site.data.keyword.DSX}} to test your classifiers.
 
@@ -149,7 +153,7 @@ For those who use the [API ![External link icon](../../icons/launch-glyph.svg "E
 
 **Additional languages:** The service now supports Korean in addition to Arabic, English, French, German, Japanese, Italian, Portuguese, and Spanish. The language of the training data must match the language of the text that you intend to classify.
 
-For details about languages, see [Using your own data](/docs/services/natural-language-classifier/using-your-data.html#languages). For details about the API call, see the `Create classifier` method in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier){:new_window}.
+For details about languages, see [Using your own data](/docs/services/natural-language-classifier?topic=natural-language-classifier-using-your-data#languages). For details about the API call, see the `Create classifier` method in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier){:new_window}.
 
 ### 06 April 2016
 {: #06april2016}

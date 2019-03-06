@@ -2,7 +2,11 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-01"
+lastupdated: "2019-03-06"
+
+keywords: data preparation,training data,size limitations,csv,file format,classes,texts
+
+subcollection: natural-language-classifier
 
 ---
 
@@ -12,7 +16,7 @@ lastupdated: "2019-02-01"
 # Data preparation
 {: #using-your-data}
 
-After you create, train, and query an {{site.data.keyword.nlclassifierfull}} with the data in the [Getting started](/docs/services/natural-language-classifier/getting-started.html) example, you will want to create a classifier that works with your own data. You assemble and provide this training data.
+After you create, train, and query an {{site.data.keyword.nlclassifierfull}} with the data in the [Getting started](/docs/services/natural-language-classifier?topic=natural-language-classifier-natural-language-classifier#natural-language-classifier) example, you will want to create a classifier that works with your own data. You assemble and provide this training data.
 {:shortdesc}
 
 ## Structure of training data
@@ -22,7 +26,7 @@ You can provide the data to train the {{site.data.keyword.nlclassifiershort}} in
 
 In the CSV format, a row in the file represents an example record. Each record has two or more columns. The first column is the representative text to classify. The additional columns are classes that apply to that text. The following image shows a CSV file that has four records. Each record in this sample includes the text input and one class, which are separated by a comma:
 
-![](images/train_sample.png)
+![](images/train_sample.svg)
 
 This example is a small sample. Proper training data includes many more records.
 
