@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-03-06"
 
-keywords: language support,supported languages,best practices,guidelines,
+keywords: language support,supported languages,best practices,guidelines
 
 subcollection: natural-language-classifier
 
