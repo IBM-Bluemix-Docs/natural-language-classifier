@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-01"
+lastupdated: "2019-03-04"
 
 ---
 
@@ -22,7 +22,7 @@ lastupdated: "2019-02-01"
 
 The following image shows the process of creating and using the classifier:
 
-![Classification process](images/classifier_process.png)
+![Classification process](images/classifier_process.svg)
 
 ## Use cases
 {: #use-cases}
@@ -46,6 +46,6 @@ With {{site.data.keyword.nlclassifiershort}}, the data is yours to parse and cat
 ## Next steps
 {: #next-steps}
 
-- [Get started](/docs/services/natural-language-classifier/getting-started.html) with the service.
+- [Get started](/docs/services/natural-language-classifier?topic=natural-language-classifier-natural-language-classifier#natural-language-classifier) with the service.
 - Try out the [demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://natural-language-classifier-demo.ng.bluemix.net/){:new_window}.
-- Explore the [Sample apps](/docs/services/natural-language-classifier/sample-applications.html) for example uses.
+- Explore the [Sample apps](/docs/services/natural-language-classifier?topic=natural-language-classifier-sample-applications#sample-applications) for example uses.

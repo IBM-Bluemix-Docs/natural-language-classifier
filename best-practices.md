@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-01"
+lastupdated: "2019-03-04"
 
 ---
 
@@ -51,7 +51,7 @@ The following guidelines are not enforced by the API. However, the classifier te
     - When experts interpret the text in different ways, multiple classes support those interpretations.
 
     However, if many texts in your training data include multiple classes, or if some texts have more than three classes, you might need to refine the classes. For example, review whether the classes are hierarchical. If they are hierarchical, include the leaf node as the class.
-- Include standard hyphenated terms when they are part of the training data (`back-to-back` or ` part-time job`).
+- Include standard hyphenated terms when they are part of the training data (`back-to-back` or `part-time job`).
 
     However, don't connect adjacent words to create new terms not found in the language of the training data. For example, instead of defining `dish-ran-away` or `with_the_spoon`, define the relevant phrases as separate words (`dish ran away` and `with the spoon`) with the appropriate class.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-01"
+lastupdated: "2019-03-04"
 
 ---
 
@@ -40,7 +40,7 @@ If you prefer to work in a graphical interface, use {{site.data.keyword.DSX}}. [
 {: #prerequisites}
 
 - {: hide-dashboard} Create an instance of the service:
-    1. Go to the [{{site.data.keyword.nlclassifiershort}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/catalog/services/natural-language-classifier){: new_window} page in the catalog.
+    1.  Go to the [{{site.data.keyword.nlclassifiershort}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/catalog/services/natural-language-classifier){: new_window} page in the catalog.
     1.  Sign up for a free {{site.data.keyword.Bluemix_notm}} account or log in.
     1.  Click **Create**.
 - {: hide-dashboard} Copy the credentials to authenticate to your service instance:
@@ -694,12 +694,12 @@ The response is an empty JSON object.
 
 You have a basic understanding of how to use {{site.data.keyword.nlclassifiershort}}. Now dive deeper:
 
-- This tutorial uses an API key to authenticate. For production uses, review the IAM service API keys [best practices](/docs/services/watson/apikey-bp.html#api-bp).
-- Learn how to [prepare your data](/docs/services/natural-language-classifier/using-your-data.html) to train a classifier.
+- This tutorial uses an API key to authenticate. For production uses, review the IAM service API keys [best practices](/docs/services/watson?topic=watson-api-key-bp#api-bp).
+- Learn how to [prepare your data](/docs/services/natural-language-classifier?topic=natural-language-classifier-using-your-data#using-your-data) to train a classifier.
 - {: curl} Read about the API in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier){:new_window}
 - {: go} Read about the API in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier?language=go){: new_window}.
 - {: java} Read about the API in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier?language=java){: new_window}.
 - {: javascript} Read about the API in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier?language=node){: new_window}.
 - {: python} Read about the API in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier?language=python){: new_window}.
 - {: ruby} Read about the API in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier?language=ruby){: new_window}.
-- Explore the [sample apps](/docs/services/natural-language-classifier/sample-applications.html) for example uses.
+- Explore the [sample apps](/docs/services/natural-language-classifier?topic=natural-language-classifier-sample-applications#sample-applications) for example uses.
