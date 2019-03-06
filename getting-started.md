@@ -2,7 +2,12 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-04"
+lastupdated: "2019-03-06"
+
+keywords: training data,examples,Natural Language Classifier,getting started,sample code
+
+
+subcollection: natural-language-classifier
 
 ---
 

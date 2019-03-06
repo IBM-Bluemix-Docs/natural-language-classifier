@@ -2,7 +2,11 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-04"
+lastupdated: "2019-03-06"
+
+keywords: new features,updates to Natural Language Classifier,what's new
+
+subcollection: natural-language-classifier
 
 ---
 
