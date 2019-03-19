@@ -128,7 +128,7 @@ subcollection: natural-language-classifier
     {: pre}
     {: curl}
 
-    Windows 사용자: 각 행의 끝에 있는 백슬래시(``\`)를 캐럿(``^`)으로 바꾸십시오. 끝에 공백이 없는지 확인하십시오.
+    Windows 사용자: 각 행의 끝에 있는 백슬래시(`\`)를 캐럿(`^`)으로 바꾸십시오. 끝에 공백이 없는지 확인하십시오.
     {: tip}
     {: curl}
 

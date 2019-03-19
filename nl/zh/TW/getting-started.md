@@ -131,7 +131,7 @@ subcollection: natural-language-classifier
     {: pre}
     {: curl}
 
-    Windows 使用者：將每行結尾的反斜線 (``\`) 取代為脫字符號 (``^`)。請確定沒有尾端空格。
+    Windows 使用者：將每行結尾的反斜線 (`\`) 取代為脫字符號 (`^`)。請確定沒有尾端空格。
     {: tip}
     {: curl}
 

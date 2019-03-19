@@ -130,7 +130,7 @@ di esempio sono indicati come "dati di formazione". Carichi i dati di formazione
     {: pre}
     {: curl}
 
-    Utenti Windows: sostituire la barra rovesciata (``\`) alla fine di ogni riga con un accento circonflesso (``^`). Assicurarsi che non ci siano spazi finali.
+    Utenti Windows: sostituire la barra rovesciata (`\`) alla fine di ogni riga con un accento circonflesso (`^`). Assicurarsi che non ci siano spazi finali.
     {: tip}
     {: curl}
 

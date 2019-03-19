@@ -129,7 +129,8 @@ Das Klassifikationsmerkmal muss zunächst anhand von Beispielen lernen, bevor es
     {: pre}
     {: curl}
 
-    Windows-Benutzer: Ersetzen Sie den umgekehrten Schrägstrich (``\`) am Ende jeder Zeile durch ein Winkelzeichen (``^`). Stellen Sie sicher, dass keine nachgestellten Leerzeichen vorhanden sind. {: tip}
+    Windows-Benutzer: Ersetzen Sie den umgekehrten Schrägstrich (`\`) am Ende jeder Zeile durch ein Winkelzeichen (`^`). Stellen Sie sicher, dass keine nachgestellten Leerzeichen vorhanden sind.
+    {: tip}
     {: curl}
 
     ```go
