@@ -130,7 +130,7 @@ upload dos dados de treinamento ao criar um classificador.
     {: pre}
     {: curl}
 
-    Usuários do Windows: substituam a barra invertida (``\`) no final de cada linha por um circunflexo (``^`). Certifiquem-se de que não haja espaços à direita.
+    Usuários do Windows: substituam a barra invertida (`\`) no final de cada linha por um circunflexo (`^`). Certifiquem-se de que não haja espaços à direita.
     {: tip}
     {: curl}
 
@@ -379,8 +379,8 @@ Agora que o classificador está treinado, será possível consultá-lo.
     - Substitua  ` { `  por suas informações.
 
     ```bash
-    curl -G -u "apikey: {"{: apikey} \
-    "{1}/classifiers/ { /classify"{: url} \
+    curl -G -u "apikey:{apikey}"{: apikey} \
+    "{url}/v1/classifiers/{classifier_id}/classify"{: url} \
     --data-urlencode "text=How hot will it be today?"
     ```
     {: pre}
@@ -527,7 +527,7 @@ Para que seja possível criar classificadores para seu próprio uso e com seus p
 
 ```bash
 curl -X DELETE -u "apikey:{apikey}"{: apikey} \
-"{url } /v1/classifiers/ { /v1/classifiers/ { " {
+"{url}/v1/classifiers/{classifier_id}"{: url}
 ```
 {: pre}
 {: curl}

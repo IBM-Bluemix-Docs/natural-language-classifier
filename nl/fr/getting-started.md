@@ -108,7 +108,7 @@ La vidéo suivante vous présente les étapes de ce tutoriel.
 
 <iframe class="embed-responsive-item" id="youtubeplayer" title="Vidéo de présentation détaillée du tutoriel d'initiation " type="text/html" width="560" height="315" src="https://www.youtube.com/embed/SUj826ybCdU?rel=0" webkitallowfullscreen mozallowfullscreen allowfullscreen gesture="media" allow="encrypted-media"></iframe>
 
-## Etape 1 : Création et entraînement d'un discriminant 
+## Etape 1 : Création et entraînement d'un discriminant
 {: #create-train}
 
 Le discriminant effectue son apprentissage à partir d'exemples avant de pouvoir renvoyer des informations pour des textes qu'il n'a jamais vus auparavant. Les exemples de données sont appelés "données d'apprentissage". Vous les téléchargez lorsque vous créez un discriminant.
@@ -129,7 +129,7 @@ Le discriminant effectue son apprentissage à partir d'exemples avant de pouvoir
     {: pre}
     {: curl}
 
-    Utilisateurs Windows : Remplacez la barre oblique inversée (``\`) à la fin de chaque ligne par un accent circonflexe (``^`). Vérifiez qu'il n'y a aucun espace de fin.
+    Utilisateurs Windows : Remplacez la barre oblique inversée (`\`) à la fin de chaque ligne par un accent circonflexe (`^`). Vérifiez qu'il n'y a aucun espace de fin.
     {: tip}
     {: curl}
 

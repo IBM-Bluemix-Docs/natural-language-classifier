@@ -130,7 +130,7 @@ subcollection: natural-language-classifier
     {: pre}
     {: curl}
 
-    Windows 用户：将每行末尾的反斜杠 (``\`) 替换为插入标记 (``^`)。确保无结尾空格。{: tip}
+    Windows 用户：将每行末尾的反斜杠 (`\`) 替换为插入标记 (`^`)。确保无结尾空格。{: tip}
     {: curl}
 
     ```go

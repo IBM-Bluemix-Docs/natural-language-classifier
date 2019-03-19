@@ -129,7 +129,7 @@ El clasificador aprende a partir de ejemplos antes de poder devolver informació
     {: pre}
     {: curl}
 
-    Usuarios de Windows: sustituya la barra inclinada invertida (``\`) que hay al final de cada línea por un signo (``^`). Asegúrese de que no haya espacios al final.
+    Usuarios de Windows: sustituya la barra inclinada invertida (`\`) que hay al final de cada línea por un signo (`^`). Asegúrese de que no haya espacios al final.
     {: tip}
     {: curl}
 
