@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="natural-language-classifier" audience="service" href="/docs/services/natural-language-classifier/getting-started.html" path="services/natural-language-classifier"}
+{: .toc subcollection="natural-language-classifier" audience="service" arm="342" href="/docs/services/natural-language-classifier?topic=natural-language-classifier-natural-language-classifier#natural-language-classifier" path="services/natural-language-classifier"}
 Natural Language Classifier
 
     {: .navgroup id="learn"}
@@ -11,38 +11,33 @@ Natural Language Classifier
 
     {: .topicgroup}
     Zusätzliche Ressourcen
-        [Blog](https://developer.ibm.com/watson/blog/)
+        [Blog](https://medium.com/ibm-watson)
         [Webinare](http://www.ibm.com/watson/building-with-watson-webinar.html)
         [Videos](https://www.youtube.com/user/IBMWatsonSolutions)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    best-practices.md
     using-your-data.md
+    [Kognitive Anwendungen erstellen (IBM Redbooks)](http://www.redbooks.ibm.com/redbooks/pdfs/sg248391.pdf)
     tool-overview.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [API-Referenz](http://www.ibm.com/watson/developercloud/natural-language-classifier/api/v1/)
+    [API-Referenz](https://cloud.ibm.com/apidocs/natural-language-classifier)
+    sample-applications.md
+    information-security.md
+    /watson/watson-using-sdks
 
-    {: .topicgroup}
-    Watson-SDKs
-        [SDK für Android](https://github.com/watson-developer-cloud/android-sdk)
-        [SDK für Apple iOS](https://github.com/watson-developer-cloud/ios-sdk)
-        [SDK für Java](https://github.com/watson-developer-cloud/java-sdk)
-        [SDK für Node.js](https://github.com/watson-developer-cloud/node-sdk)
-        [SDK für Python](https://github.com/watson-developer-cloud/python-sdk)
-        [SDK für Unity](https://github.com/watson-developer-cloud/unity-sdk)
-
-    [Watson GitHub-Repository](https://github.com/watson-developer-cloud/)
-    [Starter-Kits](https://www.ibm.com/watson/developercloud/starter-kits.html)
+    [Watson GitHub-Repositorys](https://github.com/watson-developer-cloud/)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
     release-notes.md
 
     {: .topicgroup}
-    Entwickler-Community
+    Entwicklercommunity
         [StackOverflow](http://stackoverflow.com/questions/tagged/nl-classifier)
-        [developerWorks Answers](https://developer.ibm.com/answers/topics/natural-language-classifier.html)
-        [WDC Slack channel](http://wdc-slack-inviter.mybluemix.net/)
+        [IBM Developer Answers](https://developer.ibm.com/answers/topics/natural-language-classifier.html)
+        [WDC Slack Channel](http://wdc-slack-inviter.mybluemix.net/)
     {: .navgroup-end}

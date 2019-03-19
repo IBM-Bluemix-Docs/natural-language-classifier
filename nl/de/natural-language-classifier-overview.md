@@ -1,40 +1,55 @@
 ---
 
 copyright:
-  years: 2015, 2017
-lastupdated: "2017-11-21"
+  years: 2015, 2019
+lastupdated: "2019-03-06"
+
+keywords: Natural Language Classifier service,Use cases,supported languages,language support
+
+subcollection: natural-language-classifier
 
 ---
 
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# Informationen zu Natural Language Classifier
+# Informationen
 {: #about}
 
 {{site.data.keyword.nlclassifierfull}} verwendet Algorithmen für maschinelles Lernen, um für kurze Texteingaben die vordefinierten Klassen zurückzugeben, die die höchste Übereinstimmung aufweisen.
 {:shortdesc}
 
-## Verwendung des Service 
+{{site.data.keyword.nlclassifiershort}} kann Ihre Anwendung dabei unterstützen, die Sprache kurzer Texte zu verstehen und Vorhersagen zu ihrer Verarbeitung zu erstellen. Ein Klassifikationsmerkmal ('Classifier') lernt anhand Ihrer Beispieldaten und kann anschließend Informationen zu Texten zurückgeben, anhand derer es nicht trainiert wurde.
 
-Die folgende Abbildung zeigt den Prozess für das Erstellen und Verwenden des Klassifikationsmerkmals an: 
+## Verwendung des Service
+{: #overview-how-to-use}
 
-![Klassifikationsprozess](images/classifier_process.png)
+Die folgende Abbildung zeigt den Prozess für das Erstellen und Verwenden des Klassifikationsmerkmals an:
 
-## Einsatzbereich des Service
+![Klassifikationsprozess](images/classifier_process.svg)
+
+## Anwendungsfälle
 {: #use-cases}
 
-Der Service {{site.data.keyword.nlclassifiershort}} unterstützt Ihre Anwendung, sodass sie die Sprache kurzer Texte verstehen und Vorhersagen zu ihrer Handhabung erstellen kann. Ein Klassifikationsmerkmal ('Classifier') lernt anhand Ihrer Beispieldaten und kann anschließend Informationen zu Texten zurückgeben, anhand derer es nicht trainiert wurde. 
+Sie können {{site.data.keyword.nlclassifiershort}} in vielen verschiedenen Anwendungen und Branchen verwenden. Hier einige Beispiele: 
 
-Der Service kann unter anderem im Kundendienst eingesetzt werden. Zum Beispiel können Sie mithilfe des Service vorausschauende Aktionen vornehmen, beispielsweise um Benutzerfragen an die zuständige Person weiterzuleiten oder um Probleme nach Schweregrad zu klassifizieren. Indem Sie den Service '{{site.data.keyword.speechtotextshort}}' in Ihre App integrieren, können Sie außerdem mithilfe einer Sprachunterstützung gestellte Fragen an eine bestimmte Abteilung weiterleiten. 
+- **Banken und Finanzwirtschaft**: Klassifizierung von Investitionen, Risiken und Transaktionen. 
+- **Hochschulen und Regierung**: Einsortierung von Texten oder Dokumenten in Kategorien. Nützlich für den akademischen und juristischen Bereich sowie für gemeinnützige Organisationen und andere Organisationen, die Klassifizierungsfunktionen benötigen. 
+- **E-Commerce und Einzelhandel**: Unterstützung der Benutzer bei der Auswahl von Produkten durch Eingrenzung der Auswahlmöglichkeiten nach Thema. Kennzeichnung von Produkten mit Tags oder Identifikation von betrügerischen Artikeln. 
+- **Services**: Kategorisierung von Serviceanfragen, Nachrichten und Antworten, um die Behebung von Problemen und die Bereitstellung von Lösungen zu beschleunigen. 
+- **Social Media**: Einordnung von Tweets, E-Mails, Beiträgen und geteilten Elementen in Kategorien oder Themen. 
+- **Lösungen für das Personalwesen**: Analyse von Lebensläufen und Bewerbungen, um versteckte Informationen zu finden. 
+
+Mit {{site.data.keyword.nlclassifiershort}} können Sie die Daten nach Belieben analysieren und kategorisieren. 
 
 ## Unterstützte Sprachen
 {: #supported-languages}
 
-Der Service '{{site.data.keyword.nlclassifiershort}}' unterstützt die Sprachen Englisch, Arabisch, Französisch, Deutsch, Japanisch, Koreanisch, Italienisch, Portugiesisch und Spanisch. 
+{{site.data.keyword.nlclassifiershort}} unterstützt Englisch, Arabisch, Französisch, Deutsch, Italienisch, Japanisch, Koreanisch, Portugiesisch (Brasilien) und Spanisch. 
 
 ## Nächste Schritte
 {: #next-steps}
 
-- [Los geht's](/docs/natural-language-classifier/overview.html) mit dem Service. 
-- Probieren Sie die [Demo ![Symbol 'Externer Link'](../../icons/launch-glyph.svg "Symbol 'Externer Link'")](https://natural-language-classifier-demo.ng.bluemix.net/){:new_window} aus. 
+- [Los geht's](/docs/services/natural-language-classifier?topic=natural-language-classifier-natural-language-classifier#natural-language-classifier) mit dem Service.
+- Probieren Sie die [Demo ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://natural-language-classifier-demo.ng.bluemix.net/){:new_window} aus.
+- Erkunden Sie die [Beispielapps](/docs/services/natural-language-classifier?topic=natural-language-classifier-sample-applications#sample-applications) mit Verwendungsbeispielen. 

@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="natural-language-classifier" audience="service" href="/docs/services/natural-language-classifier/getting-started.html" path="services/natural-language-classifier"}
+{: .toc subcollection="natural-language-classifier" audience="service" arm="342" href="/docs/services/natural-language-classifier?topic=natural-language-classifier-natural-language-classifier#natural-language-classifier" path="services/natural-language-classifier"}
 Natural Language Classifier
 
     {: .navgroup id="learn"}
@@ -11,30 +11,25 @@ Natural Language Classifier
 
     {: .topicgroup}
     추가 리소스
-        [블로그](https://developer.ibm.com/watson/blog/)
+        [블로그](https://medium.com/ibm-watson)
         [웹 세미나](http://www.ibm.com/watson/building-with-watson-webinar.html)
         [동영상](https://www.youtube.com/user/IBMWatsonSolutions)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    best-practices.md
     using-your-data.md
+    [코그너티브 애플리케이션 빌드(IBM Redbooks)](http://www.redbooks.ibm.com/redbooks/pdfs/sg248391.pdf)
     tool-overview.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [API 참조](http://www.ibm.com/watson/developercloud/natural-language-classifier/api/v1/)
-
-    {: .topicgroup}
-    Watson SDK
-        [Android SDK](https://github.com/watson-developer-cloud/android-sdk)
-        [Apple iOS SDK](https://github.com/watson-developer-cloud/ios-sdk)
-        [Java SDK](https://github.com/watson-developer-cloud/java-sdk)
-        [Node.js SDK](https://github.com/watson-developer-cloud/node-sdk)
-        [Python SDK](https://github.com/watson-developer-cloud/python-sdk)
-        [Unity SDK](https://github.com/watson-developer-cloud/unity-sdk)
+    [API 참조서](https://cloud.ibm.com/apidocs/natural-language-classifier)
+    sample-applications.md
+    information-security.md
+    /watson/watson-using-sdks
 
     [Watson GitHub 저장소](https://github.com/watson-developer-cloud/)
-    [스타터 킷](https://www.ibm.com/watson/developercloud/starter-kits.html)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
@@ -43,6 +38,6 @@ Natural Language Classifier
     {: .topicgroup}
     개발자 커뮤니티
         [StackOverflow](http://stackoverflow.com/questions/tagged/nl-classifier)
-        [developerWorks Answers](https://developer.ibm.com/answers/topics/natural-language-classifier.html)
+        [IBM Developer Answers](https://developer.ibm.com/answers/topics/natural-language-classifier.html)
         [WDC Slack 채널](http://wdc-slack-inviter.mybluemix.net/)
     {: .navgroup-end}
