@@ -135,7 +135,7 @@ upload dos dados de treinamento ao criar um classificador.
     {: curl}
 
     ```go
-    principal do pacote
+    package main
 
     import (
       "encoding/json"
@@ -144,13 +144,15 @@ upload dos dados de treinamento ao criar um classificador.
       "github.com/watson-developer-cloud/go-sdk/naturallanguageclassifierv1"
     )
 
-    func main () {
+    func main() {
 
-      naturalLanguageClassifier, naturalLanguageClassifierErr: = naturallinguageclassifierv1.
-        NewNaturalLanguageClassifierV1(&naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{ URL: "{url}"{: url}, IAMApiKey: "{apikey}"{: apikey},
+      naturalLanguageClassifier, naturalLanguageClassifierErr := naturallanguageclassifierv1.
+        NewNaturalLanguageClassifierV1(&naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{
+          URL: "{url}"{: url},
+          IAMApiKey: "{apikey}"{: apikey},
         })
-      if naturalLanguageClassifierErr! = nil {
-        pânico (naturalLanguageClassifierErr)
+      if naturalLanguageClassifierErr != nil {
+        panic(naturalLanguageClassifierErr)
       }
 
       metadata, metadataErr := os.Open("./metadata.json")
@@ -169,38 +171,44 @@ upload dos dados de treinamento ao criar um classificador.
           Metadata:     metadata,
         },
       )
-      if responseErr! = nil {
-        panic(responseErr) }
+      if responseErr != nil {
+        panic(responseErr)
+      }
       result := naturalLanguageClassifier.GetCreateClassifierResult(response)
       b, _ := json.MarshalIndent(result, "", "  ")
-      fmt.Println (string (b)) }
+      fmt.Println(string(b))
+    }
     ```
     {: go}
     {: codeblock}
 
     ```java
-    Opções de IamOptions = new IamOptions.Builder ()
-      .apiKey ("{"{: apikey})
-      .build ();
+    IamOptions options = new IamOptions.Builder()
+      .apiKey("{apikey}"{: apikey})
+      .build();
 
-    NaturalLanguageClassifier naturalLanguageClassifier = new NaturalLanguageClassifier(options); naturalLanguageClassifier.setEndPoint("{url}"{: url});
+    NaturalLanguageClassifier naturalLanguageClassifier = new NaturalLanguageClassifier(options);
+    naturalLanguageClassifier.setEndPoint("{url}"{: url});
 
-    CreateClassifierOptions createOptions = new CreateClassifierOptions.Builder ()
-      .metadata( "./metadata.json ")
-      .trainingData (new File ("./weather_data_train.csv "))
-      .trainingDataFilename ("weather_data_train.csv")
+    CreateClassifierOptions createOptions = new CreateClassifierOptions.Builder()
+      .metadata("./metadata.json")
+      .trainingData(new File("./weather_data_train.csv"))
+      .trainingDataFilename("weather_data_train.csv")
       .build();
     Classifier classifier = naturalLanguageClassifier.createClassifier(createOptions)
-    .execute(); System.out.println(classifier);
+    .execute();
+    System.out.println(classifier);
     ```
     {: java}
     {: codeblock}
 
     ```javascript
-    var NaturalLanguageClassifierV1 = require('watson-developer-cloud/natural-language-classifier/v1'); var fs = require('fs');
+    var NaturalLanguageClassifierV1 = require('watson-developer-cloud/natural-language-classifier/v1');
+    var fs = require('fs');
 
-    var naturalLanguageClassifier = new NaturalLanguageClassifierV1 ({
-      iam_apikey: '{apikey}'{: apikey}, url: '{url}'{: url}
+    var naturalLanguageClassifier = new NaturalLanguageClassifierV1({
+      iam_apikey: '{apikey}'{: apikey},
+      url: '{url}'{: url}
     });
 
     var params = {
@@ -212,17 +220,22 @@ upload dos dados de treinamento ao criar um classificador.
     naturalLanguageClassifier.createClassifier(params,
       function(err, response) {
         if (err) {
-          console.log('error:', err); } else {
-          console.log(JSON.stringify(response, null, 2)); }
+          console.log('error:', err);
+        } else {
+          console.log(JSON.stringify(response, null, 2));
+        }
     });
     ```
     {: javascript}
     {: codeblock}
 
     ```python
-    import json from watson_developer_cloud import NaturalLanguageClassifierV1
+    import json
+    from watson_developer_cloud import NaturalLanguageClassifierV1
 
-    natural_language_classifier = NaturalLanguageClassifierV1( iam_apikey='{apikey}'{: apikey}, url='{url}'{: url})
+    natural_language_classifier = NaturalLanguageClassifierV1(
+        iam_apikey='{apikey}'{: apikey},
+        url='{url}'{: url})
 
     with open('./weather_data_train.csv', 'rb') as training_data:
         with open('./metadata.json', 'rb') as metadata:
@@ -236,9 +249,13 @@ upload dos dados de treinamento ao criar um classificador.
     {: codeblock}
 
     ```ruby
-    require "json" require "ibm_watson/natural_language_classifier_v1" include IBMWatson
+    require "json"
+    require "ibm_watson/natural_language_classifier_v1"
+    include IBMWatson
 
-    natural_language_classifier = NaturalLanguageClassifierV1.new( iam_apikey: "{apikey}"{: apikey}, url: "{url}"{: url}
+    natural_language_classifier = NaturalLanguageClassifierV1.new(
+      iam_apikey: "{apikey}"{: apikey},
+      url: "{url}"{: url}
     )
 
     File.open("./training_data") do |training_data|
@@ -274,17 +291,20 @@ upload dos dados de treinamento ao criar um classificador.
     Emita uma chamada para o método **Obter informações sobre um classificador** para recuperar o status do classificador. <span class="hide-dashboard">Substitua `{apikey}` e `{url}` pelas credenciais que você copiou nos pré-requisitos.</span> Substitua  ` { `  por suas informações.
 
     ```bash
-    curl -u "apikey: {"{: apikey} \
-    "{1}/classifiers/ {"{: url}
+    curl -u "apikey:{apikey}"{: apikey} \
+    "{url}/v1/classifiers/{classifier_id}"{: url}
     ```
     {: pre}
     {: curl}
 
     ```go
-    principal do pacote
+    package main
 
     import (
-      "encoding/json" "fmt" "github.com/watson-developer-cloud/go-sdk/core" "github.com/watson-developer-cloud/go-sdk/naturallanguageclassifierv1"
+      "encoding/json" 
+      "fmt" 
+      "github.com/watson-developer-cloud/go-sdk/core" 
+      "github.com/watson-developer-cloud/go-sdk/naturallanguageclassifierv1"
     )
 
     func main () {
@@ -313,9 +333,9 @@ upload dos dados de treinamento ao criar um classificador.
     {: codeblock}
 
     ```java
-    Opções de IamOptions = new IamOptions.Builder ()
-      .apiKey ("{"{: apikey})
-      .build ();
+    IamOptions options = new IamOptions.Builder()
+      .apiKey("{apikey}"{: apikey})
+      .build();
 
     NaturalLanguageClassifier naturalLanguageClassifier = new NaturalLanguageClassifier(options); naturalLanguageClassifier.setEndPoint("{url}"{: url});
 
@@ -387,19 +407,24 @@ Agora que o classificador está treinado, será possível consultá-lo.
     {: curl}
 
     ```go
-    principal do pacote
+    package main
 
     import (
-      "encoding/json" "fmt" "github.com/watson-developer-cloud/go-sdk/core" "github.com/watson-developer-cloud/go-sdk/naturallanguageclassifierv1"
+      "encoding/json"
+      "fmt"
+      "github.com/watson-developer-cloud/go-sdk/core"
+      "github.com/watson-developer-cloud/go-sdk/naturallanguageclassifierv1"
     )
 
-    func main () {
+    func main() {
 
-      naturalLanguageClassifier, naturalLanguageClassifierErr: = naturallinguageclassifierv1.
-        NewNaturalLanguageClassifierV1(&naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{ URL: "{url}"{: url}, IAMApiKey: "{apikey}"{: apikey},
+      naturalLanguageClassifier, naturalLanguageClassifierErr := naturallanguageclassifierv1.
+        NewNaturalLanguageClassifierV1(&naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{
+          URL: "{url}"{: url},
+          IAMApiKey: "{apikey}"{: apikey},
         })
-      if naturalLanguageClassifierErr! = nil {
-        pânico (naturalLanguageClassifierErr)
+      if naturalLanguageClassifierErr != nil {
+        panic(naturalLanguageClassifierErr)
       }
 
       response, responseErr := naturalLanguageClassifier.Classify(
@@ -408,70 +433,86 @@ Agora que o classificador está treinado, será possível consultá-lo.
           Text:         core.StringPtr("How hot will it be today?"),
         },
       )
-      if responseErr! = nil {
-        panic(responseErr) }
+      if responseErr != nil {
+        panic(responseErr)
+      }
       result := naturalLanguageClassifier.GetClassifyResult(response)
       b, _ := json.MarshalIndent(result, "", "  ")
-      fmt.Println (string (b)) }
+      fmt.Println(string(b))
+    }
     ```
     {: go}
     {: codeblock}
 
     ```java
-    Opções de IamOptions = new IamOptions.Builder ()
-      .apiKey ("{"{: apikey})
-      .build ();
+    IamOptions options = new IamOptions.Builder()
+      .apiKey("{apikey}"{: apikey})
+      .build();
 
-    NaturalLanguageClassifier naturalLanguageClassifier = new NaturalLanguageClassifier(options); naturalLanguageClassifier.setEndPoint("{url}"{: url});
+    NaturalLanguageClassifier naturalLanguageClassifier = new NaturalLanguageClassifier(options);
+    naturalLanguageClassifier.setEndPoint("{url}"{: url});
 
-    ClassifyOptions ClassifyOptions = new ClassifyOptions.Builder ()
-      .classifierId ("{")
-      .text ("How hot it it be hoje?")
+    ClassifyOptions classifyOptions = new ClassifyOptions.Builder()
+      .classifierId("{classifier_id}")
+      .text("How hot will it be today?")
       .build();
     Classification classification = naturalLanguageClassifier.classify(classifyOptions)
-      .execute (); System.out.println (classificação);
+      .execute();
+    System.out.println(classification);
     ```
     {: java}
     {: codeblock}
 
     ```javascript
-    var NaturalLanguageClassifierV1 = require ('watson-developer-cloud/natural-language-classifier/v1');
+    var NaturalLanguageClassifierV1 = require('watson-developer-cloud/natural-language-classifier/v1');
 
-    var naturalLanguageClassifier = new NaturalLanguageClassifierV1 ({
-      iam_apikey: '{apikey}'{: apikey}, url: '{url}'{: url}
+    var naturalLanguageClassifier = new NaturalLanguageClassifierV1({
+      iam_apikey: '{apikey}'{: apikey},
+      url: '{url}'{: url}
     });
 
     naturalLanguageClassifier.classify({
-      text: 'Quão quente estará hoje?',
+      text: 'How hot will it be today?',
       classifier_id: '{classifier_id}' },
       function(err, response) {
         if (err) {
-          console.log('error:', err); } else {
-          console.log(JSON.stringify(response, null, 2)); }
+          console.log('error:', err);
+        } else {
+          console.log(JSON.stringify(response, null, 2));
+        }
     });
     ```
     {: javascript}
     {: codeblock}
 
     ```python
-    import json from watson_developer_cloud import NaturalLanguageClassifierV1
+    import json
+    from watson_developer_cloud import NaturalLanguageClassifierV1
 
-    natural_language_classifier = NaturalLanguageClassifierV1( iam_apikey='{apikey}'{: apikey}, url='{url}'{: url})
+    natural_language_classifier = NaturalLanguageClassifierV1(
+        iam_apikey='{apikey}'{: apikey},
+        url='{url}'{: url})
 
-    classes = natural_language_classifier.classify('{classifier_id}', 'Quão quente estará hoje?').get_result()
+    classes = natural_language_classifier.classify('{classifier_id}', 'How hot will it be today?').get_result()
     print(json.dumps(classes, indent=2))
     ```
     {: python}
     {: codeblock}
 
     ```ruby
-    require "json" require "ibm_watson/natural_language_classifier_v1" include IBMWatson
+    require "json"
+    require "ibm_watson/natural_language_classifier_v1"
+    include IBMWatson
 
-    natural_language_classifier = NaturalLanguageClassifierV1.new( iam_apikey: "{apikey}"{: apikey}, url: "{url}"{: url}
+    natural_language_classifier = NaturalLanguageClassifierV1.new(
+      iam_apikey: "{apikey}"{: apikey},
+      url: "{url}"{: url}
     )
 
-    status = natural_language_classifier.get_classifier( classifier_id: "{classifier_id}" )
-    puts JSON.pretty_generate (status.result)
+    status = natural_language_classifier.get_classifier(
+      classifier_id: "{classifier_id}"
+    )
+    puts JSON.pretty_generate(status.result)
     ```
     {: ruby}
     {: codeblock}
@@ -536,26 +577,28 @@ curl -X DELETE -u "apikey:{apikey}"{: apikey} \
 package main
 
 import (
-  "github.com/watson-developer-cloud/go-sdk/core" "github.com/watson-developer-cloud/go-sdk/naturallanguageclassifierv1"
+  "github.com/watson-developer-cloud/go-sdk/core"
+  "github.com/watson-developer-cloud/go-sdk/naturallanguageclassifierv1"
 )
 
 func main() {
 
-  naturalLanguageClassifier, naturalLanguageClassifierErr: = naturallinguageclassifierv1.
+  naturalLanguageClassifier, naturalLanguageClassifierErr := naturallanguageclassifierv1.
     NewNaturalLanguageClassifierV1(&naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{
       URL: "{url}"{: url},
       IAMApiKey: "{apikey}"{: apikey},
     })
-  if naturalLanguageClassifierErr! = nil {
-    pânico (naturalLanguageClassifierErr) }
+  if naturalLanguageClassifierErr != nil {
+    panic(naturalLanguageClassifierErr)
+  }
 
   _, responseErr := naturalLanguageClassifier.DeleteClassifier(
     &naturallanguageclassifierv1.DeleteClassifierOptions{
       ClassifierID: core.StringPtr("{classifier_id}"),
     },
   )
-  if responseErr! = nil {
-    Pânico (responseErr)
+  if responseErr != nil {
+    panic(responseErr)
   }
 }
 
@@ -564,24 +607,26 @@ func main() {
 {: codeblock}
 
 ```java
-Opções de IamOptions = new IamOptions.Builder ()
+IamOptions options = new IamOptions.Builder()
   .apiKey("{apikey}"{: apikey})
-  .build ();
+  .build();
 
 NaturalLanguageClassifier naturalLanguageClassifier = new NaturalLanguageClassifier(options);
 naturalLanguageClassifier.setEndPoint("{url}"{: url});
 
-DeleteClassifierOptions deleteOptions = new DeleteClassifierOptions.Builder ()
-  .classifierId ("{")
-  .build (); naturalLanguageClassifier.deleteClassifier (deleteOptions) .execute ();
+DeleteClassifierOptions deleteOptions = new DeleteClassifierOptions.Builder()
+  .classifierId("{classifier_id}")
+  .build();
+naturalLanguageClassifier.deleteClassifier(deleteOptions).execute();
 ```
 {: java}
 {: codeblock}
 
 ```javascript
-var NaturalLanguageClassifierV1 = require('watson-developer-cloud/natural-language-classifier/v1'); var fs = require('fs');
+var NaturalLanguageClassifierV1 = require('watson-developer-cloud/natural-language-classifier/v1');
+var fs = require('fs');
 
-var naturalLanguageClassifier = new NaturalLanguageClassifierV1 ({
+var naturalLanguageClassifier = new NaturalLanguageClassifierV1({
   iam_apikey: '{apikey}'{: apikey},
   url: '{url}'{: url}
 });
@@ -590,27 +635,33 @@ naturalLanguageClassifier.deleteClassifier({
   classifier_id: '{classifier_id}' },
   function(err, response) {
     if (err) {
-      console.log('error:', err); } else {
-      console.log(JSON.stringify(response, null, 2)); }
+      console.log('error:', err);
+    } else {
+      console.log(JSON.stringify(response, null, 2));
+    }
 });
 ```
 {: javascript}
 {: codeblock}
 
 ```python
-import json from watson_developer_cloud import NaturalLanguageClassifierV1
+import json
+from watson_developer_cloud import NaturalLanguageClassifierV1
 
 natural_language_classifier = NaturalLanguageClassifierV1(
     iam_apikey='{apikey}'{: apikey},
     url='{url}'{: url})
 
-status = natural_language_classifier.delete_classificfier ('{2}))
+status = natural_language_classifier.delete_classifier('{classifier_id}').get_result()
+print (json.dumps(status, indent=2))
 ```
 {: python}
 {: codeblock}
 
 ```ruby
-require "json" require "ibm_watson/natural_language_classifier_v1" include IBMWatson
+require "json"
+require "ibm_watson/natural_language_classifier_v1"
+include IBMWatson
 
 natural_language_classifier = NaturalLanguageClassifierV1.new(
   iam_apikey: "{apikey}"{: apikey},
@@ -620,7 +671,7 @@ natural_language_classifier = NaturalLanguageClassifierV1.new(
 status = natural_language_classifier.delete_classifier(
   classifier_id: "{classifier_id}"
 )
-puts JSON.pretty_generate (status.result)
+puts JSON.pretty_generate(status.result)
 ```
 {: ruby}
 {: codeblock}
