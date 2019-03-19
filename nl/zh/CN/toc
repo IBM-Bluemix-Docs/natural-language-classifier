@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="natural-language-classifier" audience="service" href="/docs/services/natural-language-classifier/getting-started.html" path="services/natural-language-classifier"}
+{: .toc subcollection="natural-language-classifier" audience="service" arm="342" href="/docs/services/natural-language-classifier?topic=natural-language-classifier-natural-language-classifier#natural-language-classifier" path="services/natural-language-classifier"}
 Natural Language Classifier
 
     {: .navgroup id="learn"}
@@ -11,30 +11,25 @@ Natural Language Classifier
 
     {: .topicgroup}
     其他资源
-        [博客](https://developer.ibm.com/watson/blog/)
+        [博客](https://medium.com/ibm-watson)
         [网络研讨会](http://www.ibm.com/watson/building-with-watson-webinar.html)
         [视频](https://www.youtube.com/user/IBMWatsonSolutions)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    best-practices.md
     using-your-data.md
+    [构建认知应用程序 (IBM Redbooks)](http://www.redbooks.ibm.com/redbooks/pdfs/sg248391.pdf)
     tool-overview.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [API 参考](http://www.ibm.com/watson/developercloud/natural-language-classifier/api/v1/)
-
-    {: .topicgroup}
-    Watson SDK
-        [Android SDK](https://github.com/watson-developer-cloud/android-sdk)
-        [Apple iOS SDK](https://github.com/watson-developer-cloud/ios-sdk)
-        [Java SDK](https://github.com/watson-developer-cloud/java-sdk)
-        [Node.js SDK](https://github.com/watson-developer-cloud/node-sdk)
-        [Python SDK](https://github.com/watson-developer-cloud/python-sdk)
-        [Unity SDK](https://github.com/watson-developer-cloud/unity-sdk)
+    [API 参考](https://cloud.ibm.com/apidocs/natural-language-classifier)
+    sample-applications.md
+    information-security.md
+    /watson/watson-using-sdks
 
     [Watson GitHub 存储库](https://github.com/watson-developer-cloud/)
-    [入门模板套件](https://www.ibm.com/watson/developercloud/starter-kits.html)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
@@ -42,7 +37,7 @@ Natural Language Classifier
 
     {: .topicgroup}
     开发者社区
-        [Stack Overflow](http://stackoverflow.com/questions/tagged/nl-classifier)
-        [developerWorks Answers](https://developer.ibm.com/answers/topics/natural-language-classifier.html)
-        [WDC Slack 频道](http://wdc-slack-inviter.mybluemix.net/)
+        [StackOverflow](http://stackoverflow.com/questions/tagged/nl-classifier)
+        [IBM Developer Answers](https://developer.ibm.com/answers/topics/natural-language-classifier.html)
+        [WDC Slack 通道](http://wdc-slack-inviter.mybluemix.net/)
     {: .navgroup-end}

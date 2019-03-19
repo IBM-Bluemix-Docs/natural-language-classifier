@@ -14,11 +14,8 @@
    height="309.9375"
    id="svg3147"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="train_sample.svg"
-   inkscape:export-filename="C:\$sajan\BM120\FRE\BM120ABD088\S001\translation\images\train_sample.png"
-   inkscape:export-xdpi="75.635742"
-   inkscape:export-ydpi="75.635742">
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="train_sample.svg">
   <defs
      id="defs3149" />
   <sodipodi:namedview
@@ -28,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.69726562"
-     inkscape:cx="-229.43461"
-     inkscape:cy="-28.487183"
+     inkscape:zoom="1.972165"
+     inkscape:cx="388.29047"
+     inkscape:cy="50.713595"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -38,10 +35,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1440"
-     inkscape:window-height="848"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="51"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -50,8 +47,10 @@
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true"
-       originx="83.96875px"
-       originy="-548.48718px" />
+       originx="83.96875"
+       originy="-548.48718"
+       spacingx="1"
+       spacingy="1" />
   </sodipodi:namedview>
   <metadata
      id="metadata3152">
@@ -72,15 +71,15 @@
      transform="translate(83.96875,-193.9375)"
      style="display:inline">
     <rect
-       style="fill:#000000;stroke:#000000;stroke-width:1.43724346;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#000000;stroke:#000000;stroke-width:1.55302453;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3155"
-       width="373.05191"
-       height="109.16396"
-       x="161.97826"
-       y="335.19199" />
+       width="436.03979"
+       height="109.04818"
+       x="162.03613"
+       y="335.24988" />
     <image
        y="339.14111"
-       x="114.55226"
+       x="100.55226"
        id="image3191"
        xlink:href="data:image/png;base64,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 "
        height="100"
@@ -106,71 +105,63 @@
      inkscape:label="text"
      style="display:inline">
     <text
-       transform="translate(83.96875,-193.9375)"
        xml:space="preserve"
-       style="font-size:22.5px;font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Helvetica Neue;-inkscape-font-specification:Helvetica Neue Ultra-Light;"
-       x="169.59955"
-       y="355.86172"
-       id="text3157"
-       sodipodi:linespacing="125%"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.66666698px;line-height:0%;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="249.5683"
+       y="171.92422"
+       id="text3157"><tspan
          sodipodi:role="line"
          id="tspan3159"
-         x="169.59955"
-         y="355.86172"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Consolas;-inkscape-font-specification:Consolas;font-size:22.5px;">How
-hot is it today?, temperature</tspan><tspan
+         x="249.5683"
+         y="171.92422"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.66666698px;line-height:1.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff">Quelle chaleur fait-il aujourd'hui ?, température</tspan><tspan
          sodipodi:role="line"
-         x="169.59955"
-         y="380.86172"
+         x="249.5683"
+         y="190.25755"
          id="tspan3161"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Consolas;-inkscape-font-specification:Consolas;font-size:22.5px;">Is
-it hot outside?, temperature</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.66666698px;line-height:1.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff">Fait-il chaud dehors ?, température</tspan><tspan
          sodipodi:role="line"
-         x="169.59955"
-         y="405.86172"
+         x="249.5683"
+         y="208.5909"
          id="tspan3163"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Consolas;-inkscape-font-specification:Consolas;font-size:22.5px;">Is
-it windy?, conditions</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.66666698px;line-height:1.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff">Est-ce qu'il y a du vent ?, conditions</tspan><tspan
          sodipodi:role="line"
-         x="169.59955"
-         y="430.86172"
+         x="249.5683"
+         y="226.92422"
          id="tspan3165"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Consolas;-inkscape-font-specification:Consolas;font-size:22.5px;">Will
-it rain today?, conditions</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.66666698px;line-height:1.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff">Va-t-il pleuvoir aujourd'hui ?, conditions</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:22.5px;line-height:125%;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Ultra-Light';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
-       x="100.7339"
-       y="203.24283"
-       id="text3379"
-       sodipodi:linespacing="125%"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;line-height:0%;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Ultra-Light';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="92.733902"
+       y="201.24283"
+       id="text3379"><tspan
          sodipodi:role="line"
          id="tspan3381"
-         x="100.7339"
-         y="203.24283"
-         style="font-size:22.5px">Enregistrements</tspan></text>
+         x="92.733902"
+         y="201.24283"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle">Enregistrements</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:22.5px;font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Helvetica Neue;-inkscape-font-specification:Helvetica Neue Ultra-Light;"
+       style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;line-height:0%;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Ultra-Light';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="352.80673"
        y="80.469704"
-       id="text3383"
-       sodipodi:linespacing="125%"><tspan
+       id="text3383"><tspan
          sodipodi:role="line"
          id="tspan3385"
          x="352.80673"
-         y="80.469704">Texte</tspan></text>
+         y="80.469704"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle">Texte</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:22.5px;font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Helvetica Neue;-inkscape-font-specification:Helvetica Neue Ultra-Light;"
+       style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;line-height:0%;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Ultra-Light';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="549.28851"
        y="79.03553"
-       id="text3387"
-       sodipodi:linespacing="125%"><tspan
+       id="text3387"><tspan
          sodipodi:role="line"
          id="tspan3389"
          x="549.28851"
          y="79.03553"
-         style="font-size:22.5px;">Classe</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle">Classe</tspan></text>
   </g>
 </svg>
