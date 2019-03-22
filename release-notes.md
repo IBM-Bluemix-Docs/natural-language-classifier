@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-03-21"
 
 keywords: new features,updates to Natural Language Classifier,what's new
 
@@ -41,6 +41,17 @@ The following new features and changes to the service are available.
 {: #changelog}
 
 The following new features and changes to the service are available.
+
+### 21 March 2019
+{: #21march2019}
+
+**Change to viewing service credentials**
+
+Users can now see service credential information only that is associated with the role assigned to your {{site.data.keyword.cloud_notm}} account. For example, if you are assigned a `reader` role, any `writer` or higher levels of service credentials are not visible.
+
+This change does not affect API access for users or applications with existing service key credentials. Only the viewing of credentials within {{site.data.keyword.cloud_notm}} is affected.
+
+For more information about service keys and user roles, see [IAM service API keys](/docs/services/watson?topic=watson-api-key-bp#api-key-bp).
 
 ### 25 January 2019
 {: #25jan2019}
