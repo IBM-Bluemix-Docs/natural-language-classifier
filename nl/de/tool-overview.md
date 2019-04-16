@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-16"
 
 keywords: Watson Studio,Natural Language Classifier tool,GUI,user interface
 
@@ -16,11 +16,6 @@ subcollection: natural-language-classifier
 {:important: .important}
 {:note: .note}
 {:deprecated: .deprecated}
-
-<!-- Link definitions -->
-
-[cloud-dashboard-watson]: https://{DomainName}/dashboard/apps?category=ai
-[watson-studio-reg]: https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp
 
 # Klassifikationsmerkmale mit {{site.data.keyword.DSX}} verwalten
 {: #managing-toolkit}

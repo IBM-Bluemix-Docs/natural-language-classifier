@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-16"
 
 keywords: new features,updates to Natural Language Classifier,what's new
 
@@ -19,12 +19,6 @@ subcollection: natural-language-classifier
 {:pre: .pre}
 {:codeblock: .codeblock}
 {:screen: .screen}
-
-<!-- Link definitions -->
-
-[cloud-dashboard-watson]: https://{DomainName}/dashboard/apps?category=watson
-[watson-studio-reg]: https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp
-[watson-studio-product-page]: https://www.ibm.com/cloud/watson-studio
 
 # Note sul rilascio
 {: #release-notes}
