@@ -96,14 +96,14 @@ Ulteriori informazioni:
 
 La strumentazione classica è stata disattivata a partire dal 7 agosto 2018 e sostituita da [{{site.data.keyword.DSX}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")][watson-studio-reg]{: new_window}.
 
-Puoi [migrare](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#migrating) i dati di formazione per i classificatori creati all'esterno di {{site.data.keyword.DSX}} fino al 30 settembre 2018. Dopo la migrazione, puoi facilmente aggiornare i dati di formazione e creare un altro classificatore all'interno di {{site.data.keyword.DSX}}.
+Puoi migrare i dati di formazione per i classificatori creati all'esterno di {{site.data.keyword.DSX}} fino al 30 settembre 2018. Dopo la migrazione, puoi facilmente aggiornare i dati di formazione e creare un altro classificatore all'interno di {{site.data.keyword.DSX}}.
 
 ### 2 agosto 2018
 {: #02august2018}
 
 **Migra i tuoi dati di formazione a {{site.data.keyword.DSX}}**
 
-Puoi ora [migrare](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#migrating) i dati di formazione per i classificatori creati all'esterno di {{site.data.keyword.DSX}}. Dopo la migrazione, puoi facilmente aggiornare i dati di formazione e creare un altro classificatore all'interno di {{site.data.keyword.DSX}}.
+Puoi ora migrare i dati di formazione per i classificatori creati all'esterno di {{site.data.keyword.DSX}}. Dopo la migrazione, puoi facilmente aggiornare i dati di formazione e creare un altro classificatore all'interno di {{site.data.keyword.DSX}}.
 
 Puoi migrare i dati fino al 30 settembre 2018.
 

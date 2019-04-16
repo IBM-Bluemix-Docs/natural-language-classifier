@@ -97,14 +97,14 @@ IAM 인증으로의 마이그레이션은 새 서비스 인스턴스와 기존 �
 
 클래식 툴킷이 2018년 8월 7일부로 종료되고 [{{site.data.keyword.DSX}}![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")][watson-studio-reg]{: new_window}로 대체되었습니다. 
 
-{{site.data.keyword.DSX}} 외부에서 작성된 분류자에 대한 훈련 데이터는 2018년 9월 30일까지 [마이그레이션](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#migrating)할 수 있습니다. 마이그레이션한 후에는 훈련 데이터를 손쉽게 업데이트하고 {{site.data.keyword.DSX}} 내에 다른 분류자를 작성할 수 있습니다. 
+{{site.data.keyword.DSX}} 외부에서 작성된 분류자에 대한 훈련 데이터는 2018년 9월 30일까지 마이그레이션할 수 있습니다. 마이그레이션한 후에는 훈련 데이터를 손쉽게 업데이트하고 {{site.data.keyword.DSX}} 내에 다른 분류자를 작성할 수 있습니다. 
 
 ### 2018년 8월 2일
 {: #02august2018}
 
 **{{site.data.keyword.DSX}}로 훈련 데이터 마이그레이션**
 
-이제 {{site.data.keyword.DSX}} 외부에서 작성된 분류자에 대한 훈련 데이터를 [마이그레이션](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#migrating)할 수 있습니다. 마이그레이션한 후에는 훈련 데이터를 손쉽게 업데이트하고 {{site.data.keyword.DSX}} 내에 다른 분류자를 작성할 수 있습니다. 
+이제 {{site.data.keyword.DSX}} 외부에서 작성된 분류자에 대한 훈련 데이터를 마이그레이션할 수 있습니다. 마이그레이션한 후에는 훈련 데이터를 손쉽게 업데이트하고 {{site.data.keyword.DSX}} 내에 다른 분류자를 작성할 수 있습니다. 
 
 데이터는 2018년 9월 30일까지 마이그레이션할 수 있습니다. 
 

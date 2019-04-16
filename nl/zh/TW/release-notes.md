@@ -96,14 +96,14 @@ subcollection: natural-language-classifier
 
 典型工具箱已從 2018 年 8 月 7 日淘汰，並取代為 [{{site.data.keyword.DSX}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")][watson-studio-reg]{: new_window}。
 
-您可以[移轉](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#migrating) 2018 年 9 月 30 日之前在 {{site.data.keyword.DSX}} 外部建立的分類器的訓練資料。在您移轉之後，可以輕鬆地更新訓練資料，並在 {{site.data.keyword.DSX}} 內建立另一個分類器。
+您可以移轉 2018 年 9 月 30 日之前在 {{site.data.keyword.DSX}} 外部建立的分類器的訓練資料。在您移轉之後，可以輕鬆地更新訓練資料，並在 {{site.data.keyword.DSX}} 內建立另一個分類器。
 
 ### 2018 年 8 月 2 日
 {: #02august2018}
 
 **將訓練資料移轉至 {{site.data.keyword.DSX}}**
 
-您現在可以[移轉](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#migrating)在 {{site.data.keyword.DSX}} 外部建立的分類器的訓練資料。在您移轉之後，可以輕鬆地更新訓練資料，並在 {{site.data.keyword.DSX}} 內建立另一個分類器。
+您現在可以移轉在 {{site.data.keyword.DSX}} 外部建立的分類器的訓練資料。在您移轉之後，可以輕鬆地更新訓練資料，並在 {{site.data.keyword.DSX}} 內建立另一個分類器。
 
 您可以移轉 2018 年 9 月 30 日之前的資料。
 

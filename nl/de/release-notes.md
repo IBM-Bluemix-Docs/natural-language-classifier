@@ -96,14 +96,14 @@ Weitere Informationen:
 
 Das klassische Toolkit wurde am 7. August 2018 außer Betrieb gesetzt und durch [{{site.data.keyword.DSX}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")][watson-studio-reg]{: new_window} ersetzt. 
 
-Sie können die Trainingsdaten für Klassifikationsmerkmale, die außerhalb von {{site.data.keyword.DSX}} erstellt wurden, bis zum 30. September 2018 [migrieren](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#migrating). Nach der Migration können Sie innerhalb von {{site.data.keyword.DSX}} sehr einfach die Trainingsdaten aktualisieren und weitere Klassifikationsmerkmale erstellen. 
+Sie können die Trainingsdaten für Klassifikationsmerkmale, die außerhalb von {{site.data.keyword.DSX}} erstellt wurden, bis zum 30. September 2018 migrieren. Nach der Migration können Sie innerhalb von {{site.data.keyword.DSX}} sehr einfach die Trainingsdaten aktualisieren und weitere Klassifikationsmerkmale erstellen. 
 
 ### 2. August 2018
 {: #02august2018}
 
 **Migrieren Sie Ihre Trainingsdaten auf {{site.data.keyword.DSX}}**
 
-Sie können jetzt die Trainingsdaten für Klassifikationsmerkmale, die außerhalb von {{site.data.keyword.DSX}} erstellt wurden, [migrieren](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#migrating). Nach der Migration können Sie innerhalb von {{site.data.keyword.DSX}} sehr einfach die Trainingsdaten aktualisieren und weitere Klassifikationsmerkmale erstellen. 
+Sie können jetzt die Trainingsdaten für Klassifikationsmerkmale, die außerhalb von {{site.data.keyword.DSX}} erstellt wurden, migrieren. Nach der Migration können Sie innerhalb von {{site.data.keyword.DSX}} sehr einfach die Trainingsdaten aktualisieren und weitere Klassifikationsmerkmale erstellen. 
 
 Sie können die Daten bis zum 30. September 2018 migrieren. 
 

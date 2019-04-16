@@ -96,14 +96,14 @@ Más información:
 
 El kit de herramientas clásico se ha dejado de utilizar el 7 de agosto de 2018 y se ha sustituido por [{{site.data.keyword.DSX}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")][watson-studio-reg]{: new_window}.
 
-Puede [migrar](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#migrating) los datos de entrenamiento correspondientes a los clasificadores creados fuera de {{site.data.keyword.DSX}} hasta el 30 de septiembre de 2018. Después de realizar la migración, puede actualizar fácilmente los datos de entrenamiento y crear otro clasificador en {{site.data.keyword.DSX}}.
+Puede migrar los datos de entrenamiento correspondientes a los clasificadores creados fuera de {{site.data.keyword.DSX}} hasta el 30 de septiembre de 2018. Después de realizar la migración, puede actualizar fácilmente los datos de entrenamiento y crear otro clasificador en {{site.data.keyword.DSX}}.
 
 ### 2 de agosto de 2018
 {: #02august2018}
 
 **Migración de los datos de entrenamiento a {{site.data.keyword.DSX}}**
 
-Ahora puede [migrar](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#migrating) los datos de entrenamiento correspondientes a los clasificadores creados fuera de {{site.data.keyword.DSX}}. Después de realizar la migración, puede actualizar fácilmente los datos de entrenamiento y crear otro clasificador en {{site.data.keyword.DSX}}.
+Ahora puede migrar los datos de entrenamiento correspondientes a los clasificadores creados fuera de {{site.data.keyword.DSX}}. Después de realizar la migración, puede actualizar fácilmente los datos de entrenamiento y crear otro clasificador en {{site.data.keyword.DSX}}.
 
 Puede migrar datos hasta el 30 de septiembre de 2018.
 
