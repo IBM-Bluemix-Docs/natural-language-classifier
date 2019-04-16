@@ -98,14 +98,14 @@ Informations complémentaires :
 
 Le kit d'outils classique a été abandonné le 7 août 2018 et remplacé par [{{site.data.keyword.DSX}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")][watson-studio-reg]{: new_window}.
 
-Vous pouvez [migrer](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#migrating) les données d'apprentissage des discriminants créées en dehors de {{site.data.keyword.DSX}} jusqu'au 30 septembre 2018. Après migration, vous pouvez facilement mettre à jour les données d'apprentissage et créer un autre discriminant dans {{site.data.keyword.DSX}}.
+Vous pouvez migrer les données d'apprentissage des discriminants créées en dehors de {{site.data.keyword.DSX}} jusqu'au 30 septembre 2018. Après migration, vous pouvez facilement mettre à jour les données d'apprentissage et créer un autre discriminant dans {{site.data.keyword.DSX}}.
 
 ### 2 août 2018
 {: #02august2018}
 
 **Migration de vos données d'apprentissage vers {{site.data.keyword.DSX}}**
 
-Vous pouvez désormais [migrer](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#migrating) les données d'apprentissage des discriminants créées en dehors de {{site.data.keyword.DSX}}. Après migration, vous pouvez facilement mettre à jour les données d'apprentissage et créer un autre discriminant dans {{site.data.keyword.DSX}}.
+Vous pouvez désormais migrer les données d'apprentissage des discriminants créées en dehors de {{site.data.keyword.DSX}}. Après migration, vous pouvez facilement mettre à jour les données d'apprentissage et créer un autre discriminant dans {{site.data.keyword.DSX}}.
 
 Vous pouvez migrer les données jusqu'au 30 septembre 2018.
 

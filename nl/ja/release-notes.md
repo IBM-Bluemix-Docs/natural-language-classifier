@@ -96,14 +96,14 @@ IAM 認証への移行による影響は、新規のサービス・インスタ�
 
 クラシック・ツールキットは 2018 年 8 月 7 日に終了し、[{{site.data.keyword.DSX}} ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")][watson-studio-reg]{: new_window} に置き換えられます。
 
-2018 年 9 月 30 日までは、{{site.data.keyword.DSX}} の外部で作成した分類子のトレーニング・データを[移行](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#migrating)できます。移行すれば、{{site.data.keyword.DSX}} で簡単にトレーニング・データを更新して別の分類子を作成できます。
+2018 年 9 月 30 日までは、{{site.data.keyword.DSX}} の外部で作成した分類子のトレーニング・データを移行できます。移行すれば、{{site.data.keyword.DSX}} で簡単にトレーニング・データを更新して別の分類子を作成できます。
 
 ### 2018 年 8 月 2 日
 {: #02august2018}
 
 **トレーニング・データの {{site.data.keyword.DSX}}** への移行
 
-{{site.data.keyword.DSX}} の外部で作成した分類子のトレーニング・データを[移行](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#migrating)できるようになりました。移行すれば、{{site.data.keyword.DSX}} で簡単にトレーニング・データを更新して別の分類子を作成できます。
+{{site.data.keyword.DSX}} の外部で作成した分類子のトレーニング・データを移行できるようになりました。移行すれば、{{site.data.keyword.DSX}} で簡単にトレーニング・データを更新して別の分類子を作成できます。
 
 2018 年 9 月 30 日までにデータを移行してください。
 
