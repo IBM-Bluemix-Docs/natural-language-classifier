@@ -94,7 +94,7 @@ IAM 認証への移行による影響は、新規のサービス・インスタ�
 
 **クラシック・ツールキットの置き換え**
 
-クラシック・ツールキットは 2018 年 8 月 7 日に終了し、[{{site.data.keyword.DSX}} ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")][watson-studio-reg]{: new_window} に置き換えられます。
+クラシック・ツールキットは 2018 年 8 月 7 日に終了し、[{{site.data.keyword.DSX}} ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window} に置き換えられます。
 
 2018 年 9 月 30 日までは、{{site.data.keyword.DSX}} の外部で作成した分類子のトレーニング・データを移行できます。移行すれば、{{site.data.keyword.DSX}} で簡単にトレーニング・データを更新して別の分類子を作成できます。
 
@@ -123,7 +123,7 @@ IAM 認証への移行による影響は、新規のサービス・インスタ�
 
 **新しいツール用にトレーニング・データをダウンロード**
 
-既存の {{site.data.keyword.nlclassifiershort}} クラシック・ツールキットは 2018 年 7 月 31 に終了する予定です。このツールキットの後継機能として計画されているのは、**{{site.data.keyword.DSX}}** という新しい統合環境です。[{{site.data.keyword.DSX}} ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")][watson-studio-reg]{: new_window} では、{{site.data.keyword.visualrecognitionshort}} や他の {{site.data.keyword.cloud_notm}} のサービスとリソースが既にサポートされています。
+既存の {{site.data.keyword.nlclassifiershort}} クラシック・ツールキットは 2018 年 7 月 31 に終了する予定です。このツールキットの後継機能として計画されているのは、**{{site.data.keyword.DSX}}** という新しい統合環境です。[{{site.data.keyword.DSX}} ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window} では、{{site.data.keyword.visualrecognitionshort}} や他の {{site.data.keyword.cloud_notm}} のサービスとリソースが既にサポートされています。
 
 既存の分類子はすべて {{site.data.keyword.DSX}} でも使用できるようになる予定です。しかし、確実に既存の分類子を再作成したい場合は、2018 年 7 月 31 より前にクラシック・ツールキットからトレーニング・データをダウンロードしておいてください。
 

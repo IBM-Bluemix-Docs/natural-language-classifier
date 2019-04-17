@@ -94,7 +94,7 @@ subcollection: natural-language-classifier
 
 **已取代典型工具箱**
 
-典型工具箱已從 2018 年 8 月 7 日淘汰，並取代為 [{{site.data.keyword.DSX}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")][watson-studio-reg]{: new_window}。
+典型工具箱已從 2018 年 8 月 7 日淘汰，並取代為 [{{site.data.keyword.DSX}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window}。
 
 您可以移轉 2018 年 9 月 30 日之前在 {{site.data.keyword.DSX}} 外部建立的分類器的訓練資料。在您移轉之後，可以輕鬆地更新訓練資料，並在 {{site.data.keyword.DSX}} 內建立另一個分類器。
 
@@ -123,7 +123,7 @@ subcollection: natural-language-classifier
 
 **下載新工具的訓練資料**
 
-排定在 2018 年 7 月 31 日淘汰現有的 {{site.data.keyword.nlclassifiershort}} 典型工具箱。規劃取代此工具箱的項目為新的整合環境：**{{site.data.keyword.DSX}}**。[{{site.data.keyword.DSX}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")][watson-studio-reg]{: new_window} 已支援 {{site.data.keyword.visualrecognitionshort}} 及其他 {{site.data.keyword.cloud_notm}} 服務和資源。
+排定在 2018 年 7 月 31 日淘汰現有的 {{site.data.keyword.nlclassifiershort}} 典型工具箱。規劃取代此工具箱的項目為新的整合環境：**{{site.data.keyword.DSX}}**。[{{site.data.keyword.DSX}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window} 已支援 {{site.data.keyword.visualrecognitionshort}} 及其他 {{site.data.keyword.cloud_notm}} 服務和資源。
 
 我們預期將在 {{site.data.keyword.DSX}} 中提供您的所有現有分類器。不過，如果您要確定可以重建現有分類器，則請從 2018 年 7 月 31 日之前的典型工具箱下載訓練資料。
 
