@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-16"
+lastupdated: "2019-04-17"
 
 keywords: new features,updates to Natural Language Classifier,what's new
 
@@ -112,7 +112,7 @@ subcollection: natural-language-classifier
 
 **提供了新的 Beta 工具：{{site.data.keyword.DSX}}**
 
-{{site.data.keyword.DSX}} 是一个新集成环境，其中包含先前经典 {{site.data.keyword.nlclassifiershort}} 工具箱的替换项。要开始使用 {{site.data.keyword.DSX}}，请从 {{site.data.keyword.nlclassifiershort}} 服务实例仪表板单击**启动工具**。有关详细信息，请参阅[使用 {{site.data.keyword.DSX}} 管理分类器](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#studio)。
+{{site.data.keyword.DSX}} 是一个新集成环境，其中包含先前经典 {{site.data.keyword.nlclassifiershort}} 工具箱的替换项。要开始使用 {{site.data.keyword.DSX}}，请从 {{site.data.keyword.nlclassifiershort}} 服务实例仪表板单击**启动工具**。有关详细信息，请参阅[使用 {{site.data.keyword.DSX}} 管理分类器](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-toolkit#managing-toolkit)。
 
 {{site.data.keyword.DSX}} 不仅支持 {{site.data.keyword.nlclassifiershort}}，还支持 {{site.data.keyword.visualrecognitionshort}} 和许多其他 {{site.data.keyword.cloud_notm}} 服务及资源。{{site.data.keyword.DSX}} 在云中提供协作环境。使用 {{site.data.keyword.DSX}}，开发者、主题专家、数据研究员和其他人可构建并训练 {{site.data.keyword.nlclassifiershort}} 及其他 AI 模型。您还可以使用 {{site.data.keyword.DSX}} 测试您的分类器。
 

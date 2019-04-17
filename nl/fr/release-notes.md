@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-16"
+lastupdated: "2019-04-17"
 
 keywords: new features,updates to Natural Language Classifier,what's new
 
@@ -114,7 +114,7 @@ Vous pouvez migrer les données jusqu'au 30 septembre 2018.
 
 **Nouvel outil bêta disponible : {{site.data.keyword.DSX}}**
 
-{{site.data.keyword.DSX}} est le nouvel environnement intégré qui inclut le remplacement de l'ancien kit d'outils {{site.data.keyword.nlclassifiershort}} classique. Pour vous familiariser avec {{site.data.keyword.DSX}}, cliquez sur **Launch tool** à partir d'un tableau de bord d'instance de service {{site.data.keyword.nlclassifiershort}}. Pour plus d'informations, voir [Gestion des discriminants avec {{site.data.keyword.DSX}}](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#studio).
+{{site.data.keyword.DSX}} est le nouvel environnement intégré qui inclut le remplacement de l'ancien kit d'outils {{site.data.keyword.nlclassifiershort}} classique. Pour vous familiariser avec {{site.data.keyword.DSX}}, cliquez sur **Launch tool** à partir d'un tableau de bord d'instance de service {{site.data.keyword.nlclassifiershort}}. Pour plus d'informations, voir [Gestion des discriminants avec {{site.data.keyword.DSX}}](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-toolkit#managing-toolkit).
 
 {{site.data.keyword.DSX}} prend en charge non seulement {{site.data.keyword.nlclassifiershort}} mais également {{site.data.keyword.visualrecognitionshort}} ainsi que de nombreux autres services et ressources {{site.data.keyword.cloud_notm}}. {{site.data.keyword.DSX}} offre un environnement collaboratif dans le cloud. Avec {{site.data.keyword.DSX}}, les développeurs, experts de domaine, spécialistes des données et autres professionnels peuvent générer et expérimenter {{site.data.keyword.nlclassifiershort}} et d'autres modèles d'intelligence artificielle. Vous pouvez également utiliser {{site.data.keyword.DSX}} pour tester vos discriminants.
 

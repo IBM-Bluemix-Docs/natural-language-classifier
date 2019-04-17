@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-16"
+lastupdated: "2019-04-17"
 
 keywords: new features,updates to Natural Language Classifier,what's new
 
@@ -112,7 +112,7 @@ IAM 認証への移行による影響は、新規のサービス・インスタ�
 
 **新しいベータ版ツールの提供開始: {{site.data.keyword.DSX}}**
 
-{{site.data.keyword.DSX}} は、これまでのクラシック {{site.data.keyword.nlclassifiershort}} ツールキットの後継機能が含まれている新しい統合環境です。{{site.data.keyword.DSX}} の使用を開始するには、{{site.data.keyword.nlclassifiershort}} サービス・インスタンスのダッシュボードの**「ツールの起動」**をクリックします。詳細については、[{{site.data.keyword.DSX}}による分類子の管理](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#studio)を参照してください。
+{{site.data.keyword.DSX}} は、これまでのクラシック {{site.data.keyword.nlclassifiershort}} ツールキットの後継機能が含まれている新しい統合環境です。{{site.data.keyword.DSX}} の使用を開始するには、{{site.data.keyword.nlclassifiershort}} サービス・インスタンスのダッシュボードの**「ツールの起動」**をクリックします。詳細については、[{{site.data.keyword.DSX}}による分類子の管理](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-toolkit#managing-toolkit)を参照してください。
 
 {{site.data.keyword.DSX}} では、{{site.data.keyword.nlclassifiershort}} だけでなく、{{site.data.keyword.visualrecognitionshort}} や他の多くの {{site.data.keyword.cloud_notm}} のサービスとリソースもサポートされています。{{site.data.keyword.DSX}} を使用すると、クラウドにコラボレーション環境を作れます。開発者、対象分野の専門家、データ・サイエンティストなどが、 {{site.data.keyword.DSX}} で {{site.data.keyword.nlclassifiershort}} や他の AI モデルを作成してトレーニングできます。{{site.data.keyword.DSX}} を使用して分類子をテストすることも可能です。
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-16"
+lastupdated: "2019-04-17"
 
 keywords: new features,updates to Natural Language Classifier,what's new
 
@@ -112,7 +112,7 @@ Agora é possível migrar os dados de treinamento para classificadores criados f
 
 ** Nova ferramenta beta disponível:  {{site.data.keyword.DSX}} **
 
-O {{site.data.keyword.DSX}} é o novo ambiente integrado que inclui uma substituição para o kit de ferramentas do {{site.data.keyword.nlclassifiershort}} clássico anterior. Para a introdução ao {{site.data.keyword.DSX}}, clique em **Ativar ferramenta** em um painel de instância de serviço do {{site.data.keyword.nlclassifiershort}}. Para obter detalhes, consulte  [ Gerenciando classificadores com o  {{site.data.keyword.DSX}} ](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#studio).
+O {{site.data.keyword.DSX}} é o novo ambiente integrado que inclui uma substituição para o kit de ferramentas do {{site.data.keyword.nlclassifiershort}} clássico anterior. Para a introdução ao {{site.data.keyword.DSX}}, clique em **Ativar ferramenta** em um painel de instância de serviço do {{site.data.keyword.nlclassifiershort}}. Para obter detalhes, consulte  [ Gerenciando classificadores com o  {{site.data.keyword.DSX}} ](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-toolkit#managing-toolkit).
 
 O {{site.data.keyword.DSX}} suporta não apenas o {{site.data.keyword.nlclassifiershort}}, mas também o {{site.data.keyword.visualrecognitionshort}} e muitos outros serviços e recursos do {{site.data.keyword.cloud_notm}}. O {{site.data.keyword.DSX}} fornece um ambiente colaborativo na nuvem. Com o {{site.data.keyword.DSX}}, os desenvolvedores, os especialistas no assunto, os cientistas de dados e outros podem construir e treinar o {{site.data.keyword.nlclassifiershort}} e outros modelos de IA. Também é possível usar o {{site.data.keyword.DSX}} para testar seus classificadores.
 
