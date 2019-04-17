@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-16"
+lastupdated: "2019-04-17"
 
 keywords: new features,updates to Natural Language Classifier,what's new
 
@@ -113,7 +113,7 @@ IAM 인증으로의 마이그레이션은 새 서비스 인스턴스와 기존 �
 
 **새로운 베타 도구 사용 가능: {{site.data.keyword.DSX}}**
 
-{{site.data.keyword.DSX}}는 이전의 클래식 {{site.data.keyword.nlclassifiershort}} 툴킷의 대체 툴깃을 제공하는 새로운 통합 환경입니다. {{site.data.keyword.DSX}}를 시작하려면 {{site.data.keyword.nlclassifiershort}} 서비스 인스턴스 대시보드에서 **도구 실행**을 클릭하십시오. 자세한 내용은 [{{site.data.keyword.DSX}}로 분류자 관리](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-classifiers-with-watson-studio#studio)를 참조하십시오. 
+{{site.data.keyword.DSX}}는 이전의 클래식 {{site.data.keyword.nlclassifiershort}} 툴킷의 대체 툴깃을 제공하는 새로운 통합 환경입니다. {{site.data.keyword.DSX}}를 시작하려면 {{site.data.keyword.nlclassifiershort}} 서비스 인스턴스 대시보드에서 **도구 실행**을 클릭하십시오. 자세한 내용은 [{{site.data.keyword.DSX}}로 분류자 관리](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-toolkit#managing-toolkit)를 참조하십시오. 
 
 {{site.data.keyword.DSX}}는 {{site.data.keyword.nlclassifiershort}}뿐 아니라 {{site.data.keyword.visualrecognitionshort}} 및 다른 여러 {{site.data.keyword.cloud_notm}} 서비스와 리소스도 지원합니다. {{site.data.keyword.DSX}}는 클라우드에서 협업 환경을 제공합니다. {{site.data.keyword.DSX}}를 사용할 경우 개발자, 관련 주제 전문가, 데이터 과학자 등은 {{site.data.keyword.nlclassifiershort}} 및 다른 AI 모델을 빌드하고 훈련시킬 수 있습니다. {{site.data.keyword.DSX}}를 사용하여 분류자를 테스트할 수도 있습니다. 
 
