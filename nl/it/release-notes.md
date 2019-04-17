@@ -94,7 +94,7 @@ Ulteriori informazioni:
 
 **È stata sostituita la strumentazione classica**
 
-La strumentazione classica è stata disattivata a partire dal 7 agosto 2018 e sostituita da [{{site.data.keyword.DSX}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")][watson-studio-reg]{: new_window}.
+La strumentazione classica è stata disattivata a partire dal 7 agosto 2018 e sostituita da [{{site.data.keyword.DSX}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window}.
 
 Puoi migrare i dati di formazione per i classificatori creati all'esterno di {{site.data.keyword.DSX}} fino al 30 settembre 2018. Dopo la migrazione, puoi facilmente aggiornare i dati di formazione e creare un altro classificatore all'interno di {{site.data.keyword.DSX}}.
 
@@ -123,7 +123,7 @@ Puoi utilizzare {{site.data.keyword.DSX}} con tutti i tuoi classificatori e ista
 
 **Scarica i tuoi dati di formazione per il nuovo strumento**
 
-La strumentazione classica {{site.data.keyword.nlclassifiershort}} esistente sarà disattivata il 31 luglio 2018. La sostituzione pianificata per la strumentazione è **{{site.data.keyword.DSX}}**, il nuovo ambiente integrato. [{{site.data.keyword.DSX}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")][watson-studio-reg]{: new_window} supporta già {{site.data.keyword.visualrecognitionshort}} e altri servizi e risorse {{site.data.keyword.cloud_notm}}.
+La strumentazione classica {{site.data.keyword.nlclassifiershort}} esistente sarà disattivata il 31 luglio 2018. La sostituzione pianificata per la strumentazione è **{{site.data.keyword.DSX}}**, il nuovo ambiente integrato. [{{site.data.keyword.DSX}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window} supporta già {{site.data.keyword.visualrecognitionshort}} e altri servizi e risorse {{site.data.keyword.cloud_notm}}.
 
 Ci aspettiamo che tutti i tuoi classificatori esistenti saranno disponibili in {{site.data.keyword.DSX}}. Tuttavia, se vuoi assicurarti di poter ricreare i tuoi classificatori esistenti, scarica i dati di formazione dalla strumentazione classica prima del 31 luglio 2018.
 

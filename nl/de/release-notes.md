@@ -94,7 +94,7 @@ Weitere Informationen:
 
 **Klassisches Toolkit ersetzt**
 
-Das klassische Toolkit wurde am 7. August 2018 außer Betrieb gesetzt und durch [{{site.data.keyword.DSX}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")][watson-studio-reg]{: new_window} ersetzt. 
+Das klassische Toolkit wurde am 7. August 2018 außer Betrieb gesetzt und durch [{{site.data.keyword.DSX}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window} ersetzt. 
 
 Sie können die Trainingsdaten für Klassifikationsmerkmale, die außerhalb von {{site.data.keyword.DSX}} erstellt wurden, bis zum 30. September 2018 migrieren. Nach der Migration können Sie innerhalb von {{site.data.keyword.DSX}} sehr einfach die Trainingsdaten aktualisieren und weitere Klassifikationsmerkmale erstellen. 
 
@@ -123,7 +123,7 @@ Sie können {{site.data.keyword.DSX}} mit allen Ihren vorhandenen {{site.data.ke
 
 **Laden Sie Ihre Trainingsdaten für das neue Tool herunter**
 
-Gemäß Plan wird das vorhandene klassische {{site.data.keyword.nlclassifiershort}}-Toolkit am 31. Juli 2018 außer Betrieb gesetzt. Der geplante Ersatz für das Toolkit ist **{{site.data.keyword.DSX}}**, die neue integrierte Umgebung. [{{site.data.keyword.DSX}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")][watson-studio-reg]{: new_window} unterstützt bereits {{site.data.keyword.visualrecognitionshort}} und andere {{site.data.keyword.cloud_notm}}-Services und -Ressourcen. 
+Gemäß Plan wird das vorhandene klassische {{site.data.keyword.nlclassifiershort}}-Toolkit am 31. Juli 2018 außer Betrieb gesetzt. Der geplante Ersatz für das Toolkit ist **{{site.data.keyword.DSX}}**, die neue integrierte Umgebung. [{{site.data.keyword.DSX}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window} unterstützt bereits {{site.data.keyword.visualrecognitionshort}} und andere {{site.data.keyword.cloud_notm}}-Services und -Ressourcen. 
 
 Wir erwarten, dass alle Ihre vorhandenen Klassifikationsmerkmale in {{site.data.keyword.DSX}} verfügbar sein werden. Wenn Sie jedoch sicherstellen möchten, dass Sie Ihre vorhandenen Klassifikationsmerkmale erneut erstellen können, laden Sie die Trainingsdaten aus dem klassischen Toolkit vor dem 31. Juli 2018 herunter. 
 

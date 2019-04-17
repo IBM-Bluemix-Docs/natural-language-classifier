@@ -96,7 +96,7 @@ Informations complémentaires :
 
 **Remplacement du kit d'outils classique**
 
-Le kit d'outils classique a été abandonné le 7 août 2018 et remplacé par [{{site.data.keyword.DSX}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")][watson-studio-reg]{: new_window}.
+Le kit d'outils classique a été abandonné le 7 août 2018 et remplacé par [{{site.data.keyword.DSX}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window}.
 
 Vous pouvez migrer les données d'apprentissage des discriminants créées en dehors de {{site.data.keyword.DSX}} jusqu'au 30 septembre 2018. Après migration, vous pouvez facilement mettre à jour les données d'apprentissage et créer un autre discriminant dans {{site.data.keyword.DSX}}.
 
@@ -125,7 +125,7 @@ Vous pouvez utiliser {{site.data.keyword.DSX}} avec toutes vos instances et tous
 
 **Téléchargement de vos données d'apprentissage pour le nouvel outil**
 
-L'abandon du kit d'outils {{site.data.keyword.nlclassifiershort}} classique existant est prévu pour le 31 juillet 2018. Le kit d'outils sera remplacé par **{{site.data.keyword.DSX}}**, le nouvel environnement intégré. [{{site.data.keyword.DSX}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")][watson-studio-reg]{: new_window} prend déjà en charge {{site.data.keyword.visualrecognitionshort}} ainsi que d'autres services et ressources {{site.data.keyword.cloud_notm}}.
+L'abandon du kit d'outils {{site.data.keyword.nlclassifiershort}} classique existant est prévu pour le 31 juillet 2018. Le kit d'outils sera remplacé par **{{site.data.keyword.DSX}}**, le nouvel environnement intégré. [{{site.data.keyword.DSX}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window} prend déjà en charge {{site.data.keyword.visualrecognitionshort}} ainsi que d'autres services et ressources {{site.data.keyword.cloud_notm}}.
 
 Nous prévoyons que tous vos discriminants existants soient disponibles dans {{site.data.keyword.DSX}}. Cependant, pour vous assurer de pouvoir recréer vos discriminants existants, téléchargez les données d'apprentissage à partir du kit d'outils classique avant le 31 juillet 2018.
 

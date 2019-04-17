@@ -94,7 +94,7 @@ Mais informações:
 
 ** Kit de ferramentas Classic substituído **
 
-O kit de ferramentas clássico está encerrado desde 7 de agosto de 2018 e foi substituído por [{{site.data.keyword.DSX}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")][watson-studio-reg]{: new_window}.
+O kit de ferramentas clássico está encerrado desde 7 de agosto de 2018 e foi substituído por [{{site.data.keyword.DSX}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window}.
 
 É possível migrar os dados de treinamento para classificadores criados fora do {{site.data.keyword.DSX}} até 30 de setembro de 2018. Após migrar, será possível atualizar facilmente os dados de treinamento e criar outro classificador no {{site.data.keyword.DSX}}.
 
@@ -123,7 +123,7 @@ O {{site.data.keyword.DSX}} suporta não apenas o {{site.data.keyword.nlclassifi
 
 **Faça download de seus dados de treinamento para a nova ferramenta**
 
-O kit de ferramentas clássico do {{site.data.keyword.nlclassifiershort}} existente está planejado para encerrar em 31 de julho de 2018. A substituição planejada para o kit de ferramentas é **{{site.data.keyword.DSX}}**, o novo ambiente integrado. O [{{site.data.keyword.DSX}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")][watson-studio-reg]{: new_window} já suporta o {{site.data.keyword.visualrecognitionshort}} e outros serviços e recursos do {{site.data.keyword.cloud_notm}}.
+O kit de ferramentas clássico do {{site.data.keyword.nlclassifiershort}} existente está planejado para encerrar em 31 de julho de 2018. A substituição planejada para o kit de ferramentas é **{{site.data.keyword.DSX}}**, o novo ambiente integrado. O [{{site.data.keyword.DSX}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window} já suporta o {{site.data.keyword.visualrecognitionshort}} e outros serviços e recursos do {{site.data.keyword.cloud_notm}}.
 
 Esperamos que todos os seus classificadores existentes estejam disponíveis no {{site.data.keyword.DSX}}. No entanto, se você desejar ter certeza de que possa recriar os seus classificadores existentes, faça download dos dados de treinamento do kit de ferramentas clássico antes de 31 de julho de 2018.
 

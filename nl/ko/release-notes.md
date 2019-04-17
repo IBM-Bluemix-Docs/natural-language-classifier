@@ -95,7 +95,7 @@ IAM 인증으로의 마이그레이션은 새 서비스 인스턴스와 기존 �
 
 **클래식 툴킷이 대체됨**
 
-클래식 툴킷이 2018년 8월 7일부로 종료되고 [{{site.data.keyword.DSX}}![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")][watson-studio-reg]{: new_window}로 대체되었습니다. 
+클래식 툴킷이 2018년 8월 7일부로 종료되고 [{{site.data.keyword.DSX}}![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window}로 대체되었습니다. 
 
 {{site.data.keyword.DSX}} 외부에서 작성된 분류자에 대한 훈련 데이터는 2018년 9월 30일까지 마이그레이션할 수 있습니다. 마이그레이션한 후에는 훈련 데이터를 손쉽게 업데이트하고 {{site.data.keyword.DSX}} 내에 다른 분류자를 작성할 수 있습니다. 
 
@@ -124,7 +124,7 @@ IAM 인증으로의 마이그레이션은 새 서비스 인스턴스와 기존 �
 
 **새 도구에 대한 훈련 데이터 다운로드**
 
-기존의 {{site.data.keyword.nlclassifiershort}} 클래식 툴킷은 2018년 7월 31일에 종료될 예정입니다. 해당 툴킷은 새로운 통합 환경인 **{{site.data.keyword.DSX}}**로 대체되도록 계획되어 있습니다. [{{site.data.keyword.DSX}}![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")][watson-studio-reg]{: new_window}는 이미 {{site.data.keyword.visualrecognitionshort}} 및 다른 {{site.data.keyword.cloud_notm}} 서비스와 리소스를 지원합니다. 
+기존의 {{site.data.keyword.nlclassifiershort}} 클래식 툴킷은 2018년 7월 31일에 종료될 예정입니다. 해당 툴킷은 새로운 통합 환경인 **{{site.data.keyword.DSX}}**로 대체되도록 계획되어 있습니다. [{{site.data.keyword.DSX}}![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window}는 이미 {{site.data.keyword.visualrecognitionshort}} 및 다른 {{site.data.keyword.cloud_notm}} 서비스와 리소스를 지원합니다. 
 
 기존의 모든 분류자가 {{site.data.keyword.DSX}}에서 사용 가능할 것으로 예상됩니다. 그러나 기존 분류자를 다시 작성할 수 있는지 확인하려는 경우에는 2018년 7월 31일 이전에 클래식 툴킷에서 훈련 데이터를 다운로드하십시오. 
 

@@ -94,7 +94,7 @@ subcollection: natural-language-classifier
 
 **替换了经典工具箱**
 
-经典工具箱于 2018 年 8 月 7 日关闭，并由 [{{site.data.keyword.DSX}} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")][watson-studio-reg]{: new_window} 替换。
+经典工具箱于 2018 年 8 月 7 日关闭，并由 [{{site.data.keyword.DSX}} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window} 替换。
 
 在 2018 年 9 月 30 日之前，您可以迁移在 {{site.data.keyword.DSX}} 外部创建的分类器的训练数据。迁移后，您可以轻松更新训练数据并在 {{site.data.keyword.DSX}} 内创建其他分类器。
 
@@ -123,7 +123,7 @@ subcollection: natural-language-classifier
 
 **下载新工具的训练数据**
 
-现有 {{site.data.keyword.nlclassifiershort}} 经典工具箱安排为 2018 年 7 月 31 日关闭。工具箱的计划替换项为 **{{site.data.keyword.DSX}}**，即新的集成环境。[{{site.data.keyword.DSX}} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")][watson-studio-reg]{: new_window} 已支持 {{site.data.keyword.visualrecognitionshort}} 和其他 {{site.data.keyword.cloud_notm}} 服务及资源。
+现有 {{site.data.keyword.nlclassifiershort}} 经典工具箱安排为 2018 年 7 月 31 日关闭。工具箱的计划替换项为 **{{site.data.keyword.DSX}}**，即新的集成环境。[{{site.data.keyword.DSX}} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window} 已支持 {{site.data.keyword.visualrecognitionshort}} 和其他 {{site.data.keyword.cloud_notm}} 服务及资源。
 
 预期您的所有现有分类器将在 {{site.data.keyword.DSX}} 中可用。但是，如果想要确保可重新创建现有分类器，请于 2018 年 7 月 31 日之前从经典工具箱下载训练数据。
 
