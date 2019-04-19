@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-16"
+lastupdated: "2019-04-19"
 
 keywords: Watson Studio,Natural Language Classifier tool,GUI,user interface
 
@@ -31,7 +31,7 @@ You can train, manage, and test your classifiers by using {{site.data.keyword.DS
 The following video walks you how to create and train a classifier with {{site.data.keyword.DSX}}.
 {: #tool-overview-video}
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="IBM Watson Studio: Create and train a Natural Language Classifier Model" type="text/html" width="560" height="315" src="https://www.youtube.com/embed/_gHeeX4lFwo" webkitallowfullscreen mozallowfullscreen allowfullscreen gesture="media" allow="encrypted-media"></iframe>
+<iframe class="embed-responsive-item" id="tool-youtubeplayer" title="IBM Watson Studio: Create and train a Natural Language Classifier Model" type="text/html" width="560" height="315" src="https://www.youtube.com/embed/_gHeeX4lFwo" webkitallowfullscreen mozallowfullscreen allowfullscreen gesture="media" allow="encrypted-media"></iframe>
 
 ## Getting access to {{site.data.keyword.DSX}}
 {: #access-studio}

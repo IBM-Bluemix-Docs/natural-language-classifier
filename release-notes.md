@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-17"
+lastupdated: "2019-04-19"
 
 keywords: new features,updates to Natural Language Classifier,what's new
 
@@ -158,7 +158,7 @@ For those who use the [API ![External link icon](../../icons/launch-glyph.svg "E
 
 **Additional languages:** The service now supports Korean in addition to Arabic, English, French, German, Japanese, Italian, Portuguese, and Spanish. The language of the training data must match the language of the text that you intend to classify.
 
-For details about languages, see [Using your own data](/docs/services/natural-language-classifier?topic=natural-language-classifier-using-your-data#languages). For details about the API call, see the `Create classifier` method in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier){:new_window}.
+For details about languages, see [Using your own data](/docs/services/natural-language-classifier?topic=natural-language-classifier-best-practices-overview#language-support). For details about the API call, see the `Create classifier` method in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier){:new_window}.
 
 ### 06 April 2016
 {: #06april2016}
