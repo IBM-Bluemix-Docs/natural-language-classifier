@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-19"
 
 keywords: training data,examples,Natural Language Classifier,getting started,sample code
 
@@ -106,7 +106,7 @@ If you prefer to work in a graphical interface, use {{site.data.keyword.DSX}}. [
 The following video walks you through this tutorial.
 {: #video}
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Video walkthrough of Getting started tutorial" type="text/html" width="560" height="315" src="https://www.youtube.com/embed/SUj826ybCdU?rel=0" webkitallowfullscreen mozallowfullscreen allowfullscreen gesture="media" allow="encrypted-media"></iframe>
+<iframe class="embed-responsive-item" id="tutorial-youtubeplayer" title="Video walkthrough of Getting started tutorial" type="text/html" width="560" height="315" src="https://www.youtube.com/embed/SUj826ybCdU?rel=0" webkitallowfullscreen mozallowfullscreen allowfullscreen gesture="media" allow="encrypted-media"></iframe>
 
 ## Step 1: Create and train a classifier
 {: #create-train}
