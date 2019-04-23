@@ -21,6 +21,7 @@ Natural Language Classifier
     using-your-data.md
     [Building Cognitive Applications (IBM Redbooks)](http://www.redbooks.ibm.com/redbooks/pdfs/sg248391.pdf)
     tool-overview.md
+    /watson/watson-migrate
     ha-dr.md
     {: .navgroup-end}
 
