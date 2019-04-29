@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-19"
+lastupdated: "2019-04-29"
 
 keywords: new features,updates to Natural Language Classifier,what's new
 
@@ -87,7 +87,8 @@ The migration to IAM authentication affects new and existing service instances d
 - With *existing* service instances that you created before the indicated dates, you continue to authenticate by providing the username and password for the service instance. You can use these services until October 2019, when you must migrate to IAM.
 
 More information:
-- To learn which authentication process to use with your service instance, view the service credentials by clicking the instance on the {{site.data.keyword.cloud_notm}} [Dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/dashboard/apps?watson){: new_window}.
+
+- To learn which authentication process to use with your service instance, view the service credentials by clicking the instance on the {{site.data.keyword.cloud_notm}} [Dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/resources?groups=resource-instance){: new_window}.
 - For more information and examples about the SDK, see [Authentication ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier?language=java#authentication){: new_window} in the API reference.
 - For more information about using IAM tokens with Watson services, see [Authenticating with IAM tokens](/docs/services/watson?topic=watson-iam#iam).
 - For more information about using IAM API keys with Watson services, see [IAM service API keys](/docs/services/watson?topic=watson-api-key-bp#api-key-bp).

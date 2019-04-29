@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-03-22"
+lastupdated: "2019-04-29"
 
 keywords: HA,DR,high availability,disaster recovery, restoring classifiers
 
@@ -58,7 +58,7 @@ For classifiers, you need to store the training data and metadata.
 
 You can download the training data from {{site.data.keyword.DSX_full}}:
 
-1.  Click a {{site.data.keyword.nlclassifiershort}} service instance from the [Dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/dashboard){: new_window}.
+1.  Click a {{site.data.keyword.nlclassifiershort}} service instance from the [Dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/resources?groups=resource-instance){: new_window}.
 1.  Click **Launch tool** on the Manage page.
 1.  For each classifier, click ![Open and close options icon](images/options.png "Open and close image icons") and select **Download training data**.
 
