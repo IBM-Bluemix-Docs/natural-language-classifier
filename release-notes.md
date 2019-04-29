@@ -88,7 +88,7 @@ The migration to IAM authentication affects new and existing service instances d
 
 More information:
 
-- To learn which authentication process to use with your service instance, view the service credentials by clicking the instance on the {{site.data.keyword.cloud_notm}} [Dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/resources?groups=resource-instance){: new_window}.
+- To learn which authentication process to use with your service instance, view the service credentials by clicking the instance in the {{site.data.keyword.cloud_notm}} [resource list ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/resources?groups=resource-instance){: new_window}.
 - For more information and examples about the SDK, see [Authentication ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier?language=java#authentication){: new_window} in the API reference.
 - For more information about using IAM tokens with Watson services, see [Authenticating with IAM tokens](/docs/services/watson?topic=watson-iam#iam).
 - For more information about using IAM API keys with Watson services, see [IAM service API keys](/docs/services/watson?topic=watson-api-key-bp#api-key-bp).
@@ -124,7 +124,7 @@ You can migrate data until September 30, 2018.
 
 **New beta tool available: {{site.data.keyword.DSX}}**
 
-{{site.data.keyword.DSX}} is the new integrated environment that includes a replacement for the earlier classic {{site.data.keyword.nlclassifiershort}} toolkit. To get started with {{site.data.keyword.DSX}}, click **Launch tool** from a {{site.data.keyword.nlclassifiershort}} service instance dashboard. For details, see [Managing classifiers with {{site.data.keyword.DSX}}](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-toolkit#managing-toolkit).
+{{site.data.keyword.DSX}} is the new integrated environment that includes a replacement for the earlier classic {{site.data.keyword.nlclassifiershort}} toolkit. To get started with {{site.data.keyword.DSX}}, click a {{site.data.keyword.nlclassifiershort}} service instance in your resource list, and then click **Launch tool**. For details, see [Managing classifiers with {{site.data.keyword.DSX}}](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-toolkit#managing-toolkit).
 
 {{site.data.keyword.DSX}} supports not only {{site.data.keyword.nlclassifiershort}} but also {{site.data.keyword.visualrecognitionshort}} and many other {{site.data.keyword.cloud_notm}} services and resources. {{site.data.keyword.DSX}} provides a collaborative environment in the cloud. With {{site.data.keyword.DSX}}, developers, subject matter experts, data scientists, and others can build and train {{site.data.keyword.nlclassifiershort}} and other AI models. You can also use {{site.data.keyword.DSX}} to test your classifiers.
 
