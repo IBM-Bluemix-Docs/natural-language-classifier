@@ -2,16 +2,16 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-06-04"
 
-keywords: language support,supported languages,best practices,guidelines
+keywords: language support,supported languages,best practices,guidelines,
 
 subcollection: natural-language-classifier
 
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:tip: .tip}
 {:important: .important}
 {:note: .note}
@@ -25,17 +25,17 @@ By following some guidelines and adopting some design patterns, you can provide 
 ## Number of classifiers
 {: #classifier-limits}
 
-Each instance of the {{site.data.keyword.nlclassifiershort}} service can have up to 8 classifiers, each with a unique classifier ID. To support more than 8 classifiers, create another instance of {{site.data.keyword.nlclassifiershort}}. You can create a service instance from the {{site.data.keyword.watson}} console [Browse Services ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/developer/watson/services){: new_window} page.
+Each instance of the {{site.data.keyword.nlclassifiershort}} service can have up to 8 classifiers, each with a unique classifier ID. To support more than 8 classifiers, create another instance of {{site.data.keyword.nlclassifiershort}}. You can create a service instance from the {{site.data.keyword.watson}} console [Browse Services](https://{DomainName}/developer/watson/services){: external} page.
 
 ## Classify Multiple Phrases
 {: #best-practices-multiple}
 
-You use the **Classify a phrase** method to classify a single text string. With the **Classify multiple phrases** method, you can send up to 30 text phrases in a single request. For details, see the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier#classify-multiple-phrases){:new_window}.
+You use the **Classify a phrase** method to classify a single text string. With the **Classify multiple phrases** method, you can send up to 30 text phrases in a single request. For details, see the [API reference](https://{DomainName}/apidocs/natural-language-classifier#classify-multiple-phrases){: external}.
 
 ## Languages
 {: #language-support}
 
-Although the default language is English, you can specify the language of the training data when you create the classifier. The language of the training data must match the language of the text that you intend to classify. For details, see the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier#create-classifier){:new_window}.
+Although the default language is English, you can specify the language of the training data when you create the classifier. The language of the training data must match the language of the text that you intend to classify. For details, see the [API reference](https://{DomainName}/apidocs/natural-language-classifier#create-classifier){: external}.
 
 The classifier supports English (en), Arabic (ar), French (fr), German (de), Italian (it), Japanese (ja), Korean (ko), Portuguese (Brazilian) (pt), and Spanish (es).
 
@@ -73,4 +73,4 @@ This representative and accurate nature of the data is important because it driv
 ## Additional resources
 {: #best-practices-next-steps}
 
-See more [Best practices and design patterns ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/assets-watson/pdf/Watson-NLC-Links-Best-Practices-Design-Patterns.pdf){: new_window} for {{site.data.keyword.nlclassifiershort}}.
+See more [Best practices and design patterns](https://www.ibm.com/watson/assets-watson/pdf/Watson-NLC-Links-Best-Practices-Design-Patterns.pdf){: external} for {{site.data.keyword.nlclassifiershort}}.

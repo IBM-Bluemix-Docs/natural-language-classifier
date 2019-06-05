@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-06-04"
 
 keywords: GDPR,General Data Protection Regulation,deleting customer data,privacy
 
@@ -11,7 +11,7 @@ subcollection: natural-language-classifier
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:tip: .tip}
 {:pre: .pre}
 {:codeblock: .codeblock}
@@ -37,7 +37,7 @@ The products, services, and other capabilities described herein are not suitable
 
 IBM is committed to providing our clients and partners with innovative data privacy, security and governance solutions to assist them on their journey to GDPR compliance.
 
-Learn more about IBM's own GDPR readiness journey and our GDPR capabilities and offerings to support your compliance journey [here ![External link icon](../../icons/launch-glyph.svg "External link icon")](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/gdpr){: new_window}.
+Learn more about IBM's own GDPR readiness journey and our GDPR capabilities and offerings to support your compliance journey [here](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/gdpr){: external}.
 
 ## Labeling and deleting data in {{site.data.keyword.nlclassifiershort}}
 {: #gdpr-in-service}

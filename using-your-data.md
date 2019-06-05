@@ -2,16 +2,15 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-06-04"
 
 keywords: data preparation,training data,size limitations,csv,file format,classes,texts
 
 subcollection: natural-language-classifier
 
 ---
-
-{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
+{:external: target="_blank" .external}
 
 # Data preparation
 {: #using-your-data}
