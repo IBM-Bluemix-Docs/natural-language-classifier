@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-19"
+lastupdated: "2019-06-04"
 
 keywords: training data,examples,Natural Language Classifier,getting started,sample code
 
@@ -12,7 +12,7 @@ subcollection: natural-language-classifier
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:tip: .tip}
 {:important: .important}
 {:note: .note}
@@ -38,14 +38,14 @@ subcollection: natural-language-classifier
 {{site.data.keyword.nlclassifierfull}} can help your application understand the language of short texts and make predictions about how to handle them. A classifier learns from your example data and then can return information for texts that it is not trained on. You can create and train this classifier in less than 15 minutes.
 {:shortdesc}
 
-If you prefer to work in a graphical interface, use {{site.data.keyword.DSX}}. [Launch tool ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window} and follow [Building a classifier ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://dataplatform.cloud.ibm.com/docs/content/analyze-data/nlc-create.html?audience=wdp&context=analytics){: new_window} in the docs.
+If you prefer to work in a graphical interface, use {{site.data.keyword.DSX}}. [Launch tool](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: external} and follow [Building a classifier](https://dataplatform.cloud.ibm.com/docs/content/analyze-data/nlc-create.html?audience=wdp&context=analytics){: external} in the docs.
 {: tip}
 
 ## Before you begin
 {: #prerequisites}
 
 - {: hide-dashboard} Create an instance of the service:
-    1.  Go to the [{{site.data.keyword.nlclassifiershort}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/catalog/services/natural-language-classifier){: new_window} page in the catalog.
+    1.  Go to the [{{site.data.keyword.nlclassifiershort}}](https://{DomainName}/catalog/services/natural-language-classifier){: external} page in the catalog.
     1.  Sign up for a free {{site.data.keyword.Bluemix_notm}} account or log in.
     1.  Click **Create**.
 - {: hide-dashboard} Copy the credentials to authenticate to your service instance:
@@ -59,8 +59,8 @@ If you prefer to work in a graphical interface, use {{site.data.keyword.DSX}}. [
         ```
         {: pre}
 
-    - If necessary, install a version with SSL enabled from [curl.haxx.se ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://curl.haxx.se/){: new_window}. Add the location of the file to your PATH environment variables if you want to run `curl` from any command line location.
-- {:go} Install the [Go SDK ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/watson-developer-cloud/go-sdk){: new_window}.
+    - If necessary, install a version with SSL enabled from [curl.haxx.se](https://curl.haxx.se/){: external}. Add the location of the file to your PATH environment variables if you want to run `curl` from any command line location.
+- {:go} Install the [Go SDK](https://github.com/watson-developer-cloud/go-sdk){: external}.
 
     ```go
     go get -u github.com/watson-developer-cloud/go-sdk/...
@@ -68,7 +68,7 @@ If you prefer to work in a graphical interface, use {{site.data.keyword.DSX}}. [
     {: go}
     {: pre}
 
-- {: java} Install the [Java SDK ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/watson-developer-cloud/java-sdk){: new_window}
+- {: java} Install the [Java SDK](https://github.com/watson-developer-cloud/java-sdk){: external}
     - {: java} Maven
 
         ```java
@@ -87,17 +87,17 @@ If you prefer to work in a graphical interface, use {{site.data.keyword.DSX}}. [
         ```
         {:pre}
 
-- {: javascript} Install the [Node SDK ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/watson-developer-cloud/node-sdk){: new_window}
+- {: javascript} Install the [Node SDK](https://github.com/watson-developer-cloud/node-sdk){: external}
 
     ```bash
     npm install --save watson-developer-cloud
     ```
-- {: python} Install the [Python SDK ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/watson-developer-cloud/python-sdk){: new_window}
+- {: python} Install the [Python SDK](https://github.com/watson-developer-cloud/python-sdk){: external}
 
     ```bash
     pip install --upgrade watson-developer-cloud
     ```
-- {: ruby} Install the [Ruby SDK ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/watson-developer-cloud/ruby-sdk){: new_window}
+- {: ruby} Install the [Ruby SDK](https://github.com/watson-developer-cloud/ruby-sdk){: external}
 
     ```bash
     gem install ibm_watson
@@ -114,7 +114,7 @@ The following video walks you through this tutorial.
 The classifier learns from examples before it can return information for texts that it hasn't seen before. The example data is referred to as "training data." You upload the training data when you create a classifier.
 
 1.  Download the two sample files:
-    - The <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/natural-language-classifier/weather_data_train.csv" download="weather_data_train.csv">weather_data_train.csv</a> is the same as was used with the [demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://natural-language-classifier-demo.ng.bluemix.net/){:new_window}. The file is in a CSV format in two columns. The first column is the text input. The second column is the class for that text: temperature or condition. View the file to see the entries.
+    - The <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/natural-language-classifier/weather_data_train.csv" download="weather_data_train.csv">weather_data_train.csv</a> is the same as was used with the [demo](https://ibm.biz/Bdzqug){: external}. The file is in a CSV format in two columns. The first column is the text input. The second column is the class for that text: temperature or condition. View the file to see the entries.
     - The <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/natural-language-classifier/metadata.json" download="metadata.json">metadata.json</a> file specifies the language of the data (`en`) and includes a name to identify the classifier.
 1.  Issue the following command to call the **Create classifier** method, which uploads the training data and creates an English language classifier with the name, "TutorialClassifier":
     - {: hide-dashboard} Replace `{apikey}` and `{url}` with the credentials that you copied in the prerequisites.
@@ -571,7 +571,7 @@ Now that the classifier is trained, you can query it.
 
 You're done! You created, trained, and queried a classifier in the {{site.data.keyword.nlclassifiershort}} service.
 
-This tutorial classifies a single phrase. {{site.data.keyword.nlclassifiershort}} also supports classifying multiple phrases in a single call. For details, see the **Classify multiple phrases** in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier#classify-multiple-phrases){: new_window}.
+This tutorial classifies a single phrase. {{site.data.keyword.nlclassifiershort}} also supports classifying multiple phrases in a single call. For details, see the **Classify multiple phrases** in the [API reference](https://{DomainName}/apidocs/natural-language-classifier#classify-multiple-phrases){: external}.
 {: tip}
 
 ## Delete the tutorial classifier
@@ -701,10 +701,10 @@ You have a basic understanding of how to use {{site.data.keyword.nlclassifiersho
 
 - This tutorial uses an API key to authenticate. For production uses, review the IAM service API keys [best practices](/docs/services/watson?topic=watson-api-key-bp#api-bp).
 - Learn how to [prepare your data](/docs/services/natural-language-classifier?topic=natural-language-classifier-using-your-data#using-your-data) to train a classifier.
-- {: curl} Read about the API in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier){:new_window}
-- {: go} Read about the API in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier?language=go){: new_window}.
-- {: java} Read about the API in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier?language=java){: new_window}.
-- {: javascript} Read about the API in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier?language=node){: new_window}.
-- {: python} Read about the API in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier?language=python){: new_window}.
-- {: ruby} Read about the API in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier?language=ruby){: new_window}.
+- {: curl} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier){: external}
+- {: go} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?language=go){: external}.
+- {: java} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?language=java){: external}.
+- {: javascript} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?language=node){: external}.
+- {: python} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?language=python){: external}.
+- {: ruby} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?language=ruby){: external}.
 - Explore the [sample apps](/docs/services/natural-language-classifier?topic=natural-language-classifier-sample-applications#sample-applications) for example uses.

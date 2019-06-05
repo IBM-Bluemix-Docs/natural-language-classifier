@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-04-29"
+lastupdated: "2019-06-04"
 
 keywords: HA,DR,high availability,disaster recovery, restoring classifiers
 
@@ -11,7 +11,7 @@ subcollection: natural-language-classifier
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:tip: .tip}
 {:important: .important}
 {:note: .note}
@@ -27,7 +27,7 @@ subcollection: natural-language-classifier
 The {{site.data.keyword.nlclassifierfull}} service is highly available within multiple IBM Cloud locations (for example, Dallas and Washington, DC). However, recovering from potential disasters that affect an entire location requires planning and preparation.
 {: shortdesc}
 
-You are responsible for understanding your configuration, customization, and usage of the service. You are also responsible for being ready to re-create an instance of the service in a new location and to restore your data in any location. See [How do I ensure zero downtime? ![External link icon](../../icons/launch-glyph.svg "External link icon")](/docs/overview?topic=overview-zero-downtime#zero-downtime){: new_window} for more information.
+You are responsible for understanding your configuration, customization, and usage of the service. You are also responsible for being ready to re-create an instance of the service in a new location and to restore your data in any location. See [How do I ensure zero downtime?](/docs/overview?topic=overview-zero-downtime#zero-downtime){: external} for more information.
 
 ## High availability
 {: #ha-dr-availability}
@@ -58,7 +58,7 @@ For classifiers, you need to store the training data and metadata.
 
 You can download the training data from {{site.data.keyword.DSX_full}}:
 
-1.  Click a {{site.data.keyword.nlclassifiershort}} service instance in your [resource list ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/resources?groups=resource-instance){: new_window}.
+1.  Click a {{site.data.keyword.nlclassifiershort}} service instance in your [resource list](https://{DomainName}/resources?groups=resource-instance){: external}.
 1.  Click **Launch tool** on the Manage page.
 1.  For each classifier, click ![Open and close options icon](images/options.png "Open and close image icons") and select **Download training data**.
 

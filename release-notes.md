@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-29"
+lastupdated: "2019-06-04"
 
 keywords: new features,updates to Natural Language Classifier,what's new
 
@@ -11,7 +11,7 @@ subcollection: natural-language-classifier
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:tip: .tip}
 {:important: .important}
 {:note: .note}
@@ -29,7 +29,7 @@ The following new features and changes to the service are available.
 ## Beta features
 {: #beta}
 
-{{site.data.keyword.IBM_notm}} releases services, features, and language support for your evaluation that are classified as beta. These features might be unstable, might change frequently, and might be discontinued with short notice. Beta features also might not provide the same level of performance or compatibility that generally available features provide and are not intended for use in a production environment. Beta features are supported only on [IBM Developer Answers ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/topics/natural-language-classifier.html){: new_window}.
+{{site.data.keyword.IBM_notm}} releases services, features, and language support for your evaluation that are classified as beta. These features might be unstable, might change frequently, and might be discontinued with short notice. Beta features also might not provide the same level of performance or compatibility that generally available features provide and are not intended for use in a production environment. Beta features are supported only on [IBM Developer Answers](https://developer.ibm.com/answers/topics/natural-language-classifier.html){: external}.
 
 ## Changes
 {: #changelog}
@@ -88,8 +88,8 @@ The migration to IAM authentication affects new and existing service instances d
 
 More information:
 
-- To learn which authentication process to use with your service instance, view the service credentials by clicking the instance in the {{site.data.keyword.cloud_notm}} [resource list ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/resources?groups=resource-instance){: new_window}.
-- For more information and examples about the SDK, see [Authentication ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier?language=java#authentication){: new_window} in the API reference.
+- To learn which authentication process to use with your service instance, view the service credentials by clicking the instance in the {{site.data.keyword.cloud_notm}} [resource list](https://{DomainName}/resources?groups=resource-instance){: external}.
+- For more information and examples about the SDK, see [Authentication](https://{DomainName}/apidocs/natural-language-classifier?language=java#authentication){: external} in the API reference.
 - For more information about using IAM tokens with Watson services, see [Authenticating with IAM tokens](/docs/services/watson?topic=watson-iam#iam).
 - For more information about using IAM API keys with Watson services, see [IAM service API keys](/docs/services/watson?topic=watson-api-key-bp#api-key-bp).
 - For more information about migrating Cloud Foundry instances, see [Migrating Cloud Foundry service instances to a resource group](/docs/resources?topic=resources-migrate#migrate).
@@ -106,7 +106,7 @@ More information:
 
 **Classic toolkit replaced**
 
-The classic toolkit is shut down as of August 7, 2018 and is replaced by  [{{site.data.keyword.DSX}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window}.
+The classic toolkit is shut down as of August 7, 2018 and is replaced by  [{{site.data.keyword.DSX}}](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: external}.
 
 You can migrate the training data for classifiers created outside of {{site.data.keyword.DSX}} until September 30, 2018. After you migrate, you can easily update the training data and create another classifier within {{site.data.keyword.DSX}}.
 
@@ -135,11 +135,11 @@ You can use {{site.data.keyword.DSX}} with all your existing {{site.data.keyword
 
 **Download your training data for the new tool**
 
-The existing {{site.data.keyword.nlclassifiershort}} classic toolkit is scheduled to shut down July 31, 2018. The planned replacement for the toolkit is **{{site.data.keyword.DSX}}**, the new integrated environment. [{{site.data.keyword.DSX}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: new_window} already supports {{site.data.keyword.visualrecognitionshort}} and other {{site.data.keyword.cloud_notm}} services and resources.
+The existing {{site.data.keyword.nlclassifiershort}} classic toolkit is scheduled to shut down July 31, 2018. The planned replacement for the toolkit is **{{site.data.keyword.DSX}}**, the new integrated environment. [{{site.data.keyword.DSX}}](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: external} already supports {{site.data.keyword.visualrecognitionshort}} and other {{site.data.keyword.cloud_notm}} services and resources.
 
 We expect that all of your existing classifiers will be available in {{site.data.keyword.DSX}}. However, if you want to make sure that you can re-create your existing classifiers, download the training data from the classic toolkit before July 31, 2018.
 
-For those who use the [API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier){: new_window} directly, there is no change with the tool migration.
+For those who use the [API](https://{DomainName}/apidocs/natural-language-classifier){: external} directly, there is no change with the tool migration.
 
 ### 16 March 2018
 {: #16march2018}
@@ -148,7 +148,7 @@ For those who use the [API ![External link icon](../../icons/launch-glyph.svg "E
 
     A new **Classify multiple phrases** method is available that supports sending up to 30 text phrases in one request. The `POST /v1/classifiers/{classifier_id}/classify_collection` method supports classifying phrases in the same languages as for the original method, except for Japanese, which launches as a beta feature.
 
-    For details about the API call, see the **Classify multiple phrases** method in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier#classify-multiple-phrases){:new_window}.
+    For details about the API call, see the **Classify multiple phrases** method in the [API reference](https://{DomainName}/apidocs/natural-language-classifier#classify-multiple-phrases){: external}.
 
 - **Train with larger data sets**
 
@@ -159,7 +159,7 @@ For those who use the [API ![External link icon](../../icons/launch-glyph.svg "E
 
 **Additional languages:** The service now supports Korean in addition to Arabic, English, French, German, Japanese, Italian, Portuguese, and Spanish. The language of the training data must match the language of the text that you intend to classify.
 
-For details about languages, see [Using your own data](/docs/services/natural-language-classifier?topic=natural-language-classifier-best-practices-overview#language-support). For details about the API call, see the `Create classifier` method in the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/natural-language-classifier){:new_window}.
+For details about languages, see [Using your own data](/docs/services/natural-language-classifier?topic=natural-language-classifier-best-practices-overview#language-support). For details about the API call, see the `Create classifier` method in the [API reference](https://{DomainName}/apidocs/natural-language-classifier){: external}.
 
 ### 06 April 2016
 {: #06april2016}

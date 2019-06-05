@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-06-04"
 
 keywords: Natural Language Classifier service,Use cases,supported languages,language support
 
@@ -10,7 +10,7 @@ subcollection: natural-language-classifier
 
 ---
 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 
 # About
@@ -51,5 +51,5 @@ With {{site.data.keyword.nlclassifiershort}}, the data is yours to parse and cat
 {: #next-steps}
 
 - [Get started](/docs/services/natural-language-classifier?topic=natural-language-classifier-natural-language-classifier#natural-language-classifier) with the service.
-- Try out the [demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://natural-language-classifier-demo.ng.bluemix.net/){:new_window}.
+- Try out the [demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/Bdzqug){: external}.
 - Explore the [Sample apps](/docs/services/natural-language-classifier?topic=natural-language-classifier-sample-applications#sample-applications) for example uses.
