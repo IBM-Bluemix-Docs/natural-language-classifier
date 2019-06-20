@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="natural-language-classifier" audience="service" category="ai" arm="342" href="/docs/services/natural-language-classifier?topic=natural-language-classifier-natural-language-classifier#natural-language-classifier" path="services/natural-language-classifier"}
+{: .toc subcollection="natural-language-classifier" category="ai" audience="service" arm="342" href="/docs/services/natural-language-classifier?topic=natural-language-classifier-natural-language-classifier#natural-language-classifier" path="services/natural-language-classifier"}
 Natural Language Classifier
 
     {: .navgroup id="learn"}
