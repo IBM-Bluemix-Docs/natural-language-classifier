@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-04"
+lastupdated: "2019-06-24"
 
 keywords: data preparation,training data,size limitations,csv,file format,classes,texts
 
@@ -11,6 +11,7 @@ subcollection: natural-language-classifier
 ---
 {:shortdesc: .shortdesc}
 {:external: target="_blank" .external}
+{:tip: .tip}
 
 # Data preparation
 {: #using-your-data}
@@ -51,6 +52,9 @@ Make sure that your CSV training data adheres to the following format requiremen
 - Always enclose text or class values with double quotation marks in the training data when it includes the following characters:
     - Commas: `"Example text, with comma"`.
     - Double quotation marks. In addition, quotation marks must be escaped with double quotation marks: `"Example text with ""quotation"""`.
+
+Leading and trailing white space is trimmed from classes in the training data and responses. For example, `"Example class"` is treated the same as `" Example class "`.
+{: tip}
 
 ## Size limitations
 {: #training-limits}
