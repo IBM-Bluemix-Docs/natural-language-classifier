@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-04"
+lastupdated: "2019-07-11"
 
 keywords: training data,examples,Natural Language Classifier,getting started,sample code
 
@@ -27,7 +27,7 @@ subcollection: natural-language-classifier
 {:pre: .pre}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:download: .download}
+{:hide-in-docs: .hide-in-docs}
 {:hide-dashboard: .hide-dashboard}
 {:apikey: data-credential-placeholder='apikey'}
 {:url: data-credential-placeholder='url'}
@@ -38,7 +38,7 @@ subcollection: natural-language-classifier
 {{site.data.keyword.nlclassifierfull}} can help your application understand the language of short texts and make predictions about how to handle them. A classifier learns from your example data and then can return information for texts that it is not trained on. You can create and train this classifier in less than 15 minutes.
 {:shortdesc}
 
-If you prefer to work in a graphical interface, use {{site.data.keyword.DSX}}. [Launch tool](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: external} and follow [Building a classifier](https://dataplatform.cloud.ibm.com/docs/content/analyze-data/nlc-create.html?audience=wdp&context=analytics){: external} in the docs.
+If you prefer to work in a graphical interface, use {{site.data.keyword.DSX}}. <span class="hide-dashboard">[Launch {{site.data.keyword.DSX}}](https://dataplatform.cloud.ibm.com/registration/stepone?context=wdp){: external}</span><span class="hide-in-docs"> On the Manage page, click **Launch {{site.data.keyword.DSX}}**</span> and follow [Building a classifier](https://dataplatform.cloud.ibm.com/docs/content/analyze-data/nlc-create.html?audience=wdp&context=analytics){: external} in the docs.
 {: tip}
 
 ## Before you begin
