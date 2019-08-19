@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-04"
+lastupdated: "2019-08-19"
 
-keywords: Watson Studio,Natural Language Classifier tool,GUI,user interface
+keywords: Watson Studio,GUI,user interface,tool,graphical interface
 
 subcollection: natural-language-classifier
 
@@ -39,7 +39,7 @@ The following video walks you how to create and train a classifier with {{site.d
 You can get to {{site.data.keyword.DSX_full}} from the service page for your instance.
 
 1.  Click a {{site.data.keyword.nlclassifiershort}} service instance from the [Dashboard][cloud-dashboard-watson]{: external}.
-1.  Click **Launch tool** on the Manage page.
+1.  Click **Launch {{site.data.keyword.DSX}}** on the Manage page.
 
 If you don't have a service instance for {{site.data.keyword.nlclassifiershort}}, go to  [{{site.data.keyword.DSX}}][watson-studio-reg]{: external} and follow the steps in the docs.
 {: tip}
