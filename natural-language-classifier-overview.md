@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-05"
+lastupdated: "2019-08-19"
 
-keywords: Natural Language Classifier service,Use cases,supported languages,language support
+keywords: Use cases,overview
 
 subcollection: natural-language-classifier
 

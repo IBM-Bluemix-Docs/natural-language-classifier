@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-04"
+lastupdated: "2019-07-10"
 
-keywords: new features,updates to Natural Language Classifier,what's new
+keywords: new features,updates,what's new,change log, changelog
 
 subcollection: natural-language-classifier
 

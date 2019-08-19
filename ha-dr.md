@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-04"
+lastupdated: "2019-08-19"
 
 keywords: HA,DR,high availability,disaster recovery, restoring classifiers
 
@@ -59,7 +59,7 @@ For classifiers, you need to store the training data and metadata.
 You can download the training data from {{site.data.keyword.DSX_full}}:
 
 1.  Click a {{site.data.keyword.nlclassifiershort}} service instance in your [resource list](https://{DomainName}/resources?groups=resource-instance){: external}.
-1.  Click **Launch tool** on the Manage page.
+1.  Click **Launch {{site.data.keyword.DSX}}** on the Manage page.
 1.  For each classifier, click ![Open and close options icon](images/options.png "Open and close image icons") and select **Download training data**.
 
 The metadata identifies the language of the data, and the classifier name. Save the training data and metadata in a safe location.
@@ -67,7 +67,7 @@ The metadata identifies the language of the data, and the classifier name. Save 
 #### Restoring classifiers
 {: #ha-dr-restore}
 
-To recover from a disaster, you can use the backup information to re-create your classifier. For more information, see [Create and train a classifier](/docs/services/natural-language-classifier?topic=natural-language-classifier-natural-language-classifier#natural-language-classifier) in the Getting started tutorial.
+To recover from a disaster, you can use the backup information to re-create your classifier. For more information, see [Create and train a classifier](/docs/services/natural-language-classifier?topic=natural-language-classifier-natural-language-classifier#natural-language-classifier) in Getting started with {{site.data.keyword.nlclassifiershort}}.
 
 ### Client applications
 {: #ha-dr-update-apps}

@@ -2,10 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-11"
+lastupdated: "2019-08-19"
 
-keywords: training data,examples,Natural Language Classifier,getting started,sample code
-
+keywords: examples,natural language classifier,classifier,classes,texts,nlc,NaturalLanguageClassifier
 
 subcollection: natural-language-classifier
 
@@ -32,7 +31,7 @@ subcollection: natural-language-classifier
 {:apikey: data-credential-placeholder='apikey'}
 {:url: data-credential-placeholder='url'}
 
-# Getting started tutorial
+# Getting started with {{site.data.keyword.nlclassifiershort}}
 {: #natural-language-classifier}
 
 {{site.data.keyword.nlclassifierfull}} can help your application understand the language of short texts and make predictions about how to handle them. A classifier learns from your example data and then can return information for texts that it is not trained on. You can create and train this classifier in less than 15 minutes.
