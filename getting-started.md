@@ -289,10 +289,10 @@ The classifier learns from examples before it can return information for texts t
 
     const createClassifierParams = {
       trainingMetadata: JSON.stringify({
-      name: 'TutorialClassifier',
-      language: 'en',
-    }),
-    trainingData: fs.createReadStream('./weather_data_train.csv'),
+        name: 'TutorialClassifier',
+        language: 'en',
+      }),
+      trainingData: fs.createReadStream('./weather_data_train.csv'),
     };
 
     naturalLanguageClassifier.createClassifier(createClassifierParams)
