@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-10-17"
+lastupdated: "2019-10-21"
 
 keywords: examples,natural language classifier,classifier,classes,texts,nlc,NaturalLanguageClassifier
 
@@ -105,7 +105,7 @@ If you prefer to work in a graphical interface, use {{site.data.keyword.DSX}}. <
     - {: java} Gradle
 
         ```sh
-        compile 'com.ibm.watson.developer_cloud:java-sdk:8.+'
+        compile 'com.ibm.watson:ibm-watson:8.+'
         ```
         {:pre}
 - {: javascript} Install the [Node SDK](https://github.com/watson-developer-cloud/node-sdk){: external}
@@ -952,7 +952,7 @@ import com.ibm.cloud.sdk.core.service.security.IamOptions;
 import com.ibm.watson.natural_language_classifier.v1.NaturalLanguageClassifier;
 import com.ibm.watson.natural_language_classifier.v1.model.DeleteClassifierOptions;
 
-public class iamDeleteClassifier {
+public class DeleteClassifier {
 
   public static void main(String[] args) {
 
@@ -1006,7 +1006,7 @@ natural_language_classifier = NaturalLanguageClassifierV1(
     authenticator=authenticator
 )
 
-natural_language_classifier.set_service_url('{url}'{: url}))
+natural_language_classifier.set_service_url('{url}'{: url})
 
 natural_language_classifier.delete_classifier('{classifier_id}')
 ```
