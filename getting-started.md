@@ -288,15 +288,16 @@ The classifier learns from examples before it can return information for texts t
     });
 
     const createClassifierParams = {
-        trainingMetadata: JSON.stringify({
-        name: 'TutorialClassifier',
-        language: 'en',
-      }),
-      trainingData: fs.createReadStream('./weather_data_train.csv'),
+      trainingMetadata: JSON.stringify({
+      name: 'TutorialClassifier',
+      language: 'en',
+    }),
+    trainingData: fs.createReadStream('./weather_data_train.csv'),
     };
 
     naturalLanguageClassifier.createClassifier(createClassifierParams)
-      .then(classifier => {
+      .then(response => {
+        const classifier = response.result;
         console.log(JSON.stringify(classifier, null, 2));
       })
       .catch(err => {
@@ -525,7 +526,8 @@ The classifier learns from examples before it can return information for texts t
     };
 
     naturalLanguageClassifier.getClassifier(getClassifierParams)
-      .then(classifier => {
+      .then(response => {
+        const classifier = response.result;
         console.log(JSON.stringify(classifier, null, 2));
       })
       .catch(err => {
@@ -725,7 +727,8 @@ Now that the classifier is trained, you can query it.
     };
 
     naturalLanguageClassifier.classify(classifyParams)
-      .then(classification => {
+      .then(response => {
+        const classification = response.result;
         console.log(JSON.stringify(classification, null, 2));
       })
       .catch(err => {
