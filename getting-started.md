@@ -424,14 +424,14 @@ The classifier learns from examples before it can return information for texts t
 
     ```cs
     IamAuthenticator authenticator = new IamAuthenticator(
-    apikey: "{apikey}"{: apikey}
-    );
+        apikey: "{apikey}"{: apikey}
+        );
 
     NaturalLanguageClassifierService naturalLanguageClassifier = new NaturalLanguageClassifierService(authenticator);
     naturalLanguageClassifier.SetServiceUrl("{url}"{: url});
 
     var result = service.Classify(
-        classifierId: "{classifier_id",
+        classifierId: "{classifier_id}",
         text: "How hot will it be today?"
         );
 
@@ -628,9 +628,9 @@ Now that the classifier is trained, you can query it.
     naturalLanguageClassifier.SetServiceUrl("{url}"{: url});
 
     var result = service.Classify(
-    classifierId: "{classifier_id}",
-    text: "How hot will it be today?"
-    );
+        classifierId: "{classifier_id}",
+        text: "How hot will it be today?"
+        );
 
     Console.WriteLine(result.Response);
     ```
