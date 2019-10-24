@@ -29,6 +29,7 @@ Natural Language Classifier
     [API reference](https://cloud.ibm.com/apidocs/natural-language-classifier)
     sample-applications.md
     information-security.md
+    at-events.md
     /watson/watson-using-sdks
 
     [Watson GitHub repos](https://github.com/watson-developer-cloud/)
