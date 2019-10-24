@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-08-19"
+lastupdated: "2019-10-21"
 
 keywords: examples,natural language classifier,classifier,classes,texts,nlc,NaturalLanguageClassifier
 
@@ -16,6 +16,9 @@ subcollection: natural-language-classifier
 {:important: .important}
 {:note: .note}
 {:deprecated: .deprecated}
+{:pre: .pre}
+{:codeblock: .codeblock}
+{:screen: .screen}
 {:curl: .ph data-hd-programlang='curl'}
 {:go: .ph data-hd-programlang='go'}
 {:javascript: .ph data-hd-programlang='javascript'}
@@ -23,13 +26,12 @@ subcollection: natural-language-classifier
 {:python: .ph data-hd-programlang='python'}
 {:ruby: .ph data-hd-programlang='ruby'}
 {:swift: .ph data-hd-programlang='swift'}
-{:pre: .pre}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:hide-in-docs: .hide-in-docs}
-{:hide-dashboard: .hide-dashboard}
+{:dotnet-standard: .ph data-hd-programlang='dotnet-standard'}
+{:unity: .ph data-hd-programlang='unity'}
 {:apikey: data-credential-placeholder='apikey'}
 {:url: data-credential-placeholder='url'}
+{:hide-dashboard: .hide-dashboard}
+{:hide-in-docs: .hide-in-docs}
 
 # Getting started with {{site.data.keyword.nlclassifiershort}}
 {: #natural-language-classifier}
@@ -53,16 +55,37 @@ If you prefer to work in a graphical interface, use {{site.data.keyword.DSX}}. <
 - {: curl} Make sure that you have the `curl` command.
     - Test whether `curl` is installed. Run the following command on the command line. If the output lists the `curl` version with SSL support, you are set for the tutorial.
 
-        ```bash
+        ```sh
         curl -V
         ```
         {: pre}
 
-    - If necessary, install a version with SSL enabled from [curl.haxx.se](https://curl.haxx.se/){: external}. Add the location of the file to your PATH environment variables if you want to run `curl` from any command line location.
+    - If necessary, install a version with SSL enabled from [curl.haxx.se](https://curl.haxx.se/){: external}. Add the location of the file to your PATH environment variables if you want to run `curl` from any command-line location.
+- {: dotnet-standard} Install the [.NET SDK](https://github.com/watson-developer-cloud/dotnet-standard-sdk){: external}.
+    - {: dotnet-standard} Package Manager
+
+        ```sh
+        Install-Package IBM.Watson.NaturalLanguageClassifier.v1 -Version 4.0
+        ```
+        {: codeblock}
+
+    - {: dotnet-standard} .NET CLI
+
+        ```sh
+        dotnet add package IBM.Watson.NaturalLanguageClassifier.v1 -version 4.0
+        ```
+        {: pre}
+
+    - {: dotnet-standard} PackageReference
+
+        ```xml
+        <PackageReference Include="IBM.Watson.NaturalLanguageClassifier.v1" Version="4.0.0" />
+        ```
+        {: codeblock}
 - {:go} Install the [Go SDK](https://github.com/watson-developer-cloud/go-sdk){: external}.
 
     ```go
-    go get -u github.com/watson-developer-cloud/go-sdk/...
+    go get -u github.com/watson-developer-cloud/go-sdk@v1
     ```
     {: go}
     {: pre}
@@ -70,37 +93,45 @@ If you prefer to work in a graphical interface, use {{site.data.keyword.DSX}}. <
 - {: java} Install the [Java SDK](https://github.com/watson-developer-cloud/java-sdk){: external}
     - {: java} Maven
 
-        ```java
+        ```xml
         <dependency>
-          <groupId>com.ibm.watson.developer_cloud</groupId>
-          <artifactId>java-sdk</artifactId>
-          <version>{version}</version>
+          <groupId>com.ibm.watson</groupId>
+          <artifactId>ibm-watson</artifactId>
+          <version>[8,9)</version>
         </dependency>
         ```
         {: codeblock}
 
     - {: java} Gradle
 
-        ```bash
-        compile 'com.ibm.watson.developer_cloud:java-sdk:{version}'
+        ```sh
+        compile 'com.ibm.watson:ibm-watson:8.+'
         ```
         {:pre}
-
 - {: javascript} Install the [Node SDK](https://github.com/watson-developer-cloud/node-sdk){: external}
 
-    ```bash
-    npm install --save watson-developer-cloud
+    ```sh
+        npm install ibm-watson@^5
     ```
+    {:pre}
 - {: python} Install the [Python SDK](https://github.com/watson-developer-cloud/python-sdk){: external}
 
-    ```bash
-    pip install --upgrade watson-developer-cloud
+    ```sh
+    pip install --upgrade "ibm-watson>=4.0.1"
     ```
+    {:pre}
 - {: ruby} Install the [Ruby SDK](https://github.com/watson-developer-cloud/ruby-sdk){: external}
 
-    ```bash
+    ```sh
     gem install ibm_watson
     ```
+    {:pre}
+- {: unity} Download the [Unity SDK](https://github.com/watson-developer-cloud/unity-sdk){: external} and the [Unity SDK Core](https://github.com/IBM/unity-sdk-core){: external}.
+
+    The IBM Watson Unity SDK has the following requirements.
+
+    - The SDK requires Unity version 2018.2 or later to support TLS 1.2. Set the project settings for both the **Scripting Runtime Version** and the **Api Compatibility Level** to `.NET 4.x Equivalent`.
+    - The SDK does not support the WebGL projects. Change your build settings to any platform except `WebGL`.
 
 The following video walks you through this tutorial.
 {: #video}
@@ -115,11 +146,11 @@ The classifier learns from examples before it can return information for texts t
 1.  Download the two sample files:
     - The <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/natural-language-classifier/weather_data_train.csv" download="weather_data_train.csv">weather_data_train.csv</a> is the same as was used with the [demo](https://ibm.biz/Bdzqug){: external}. The file is in a CSV format in two columns. The first column is the text input. The second column is the class for that text: temperature or condition. View the file to see the entries.
     - The <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/natural-language-classifier/metadata.json" download="metadata.json">metadata.json</a> file specifies the language of the data (`en`) and includes a name to identify the classifier.
-1.  Issue the following command to call the **Create classifier** method, which uploads the training data and creates an English language classifier with the name, "TutorialClassifier":
+1.  Issue the following call to the **Create classifier** method, which uploads the training data and creates an English language classifier with the name, "TutorialClassifier":
     - {: hide-dashboard} Replace `{apikey}` and `{url}` with the credentials that you copied in the prerequisites.
-    - Modify the location of `training_data` and `training_metadata` to point to where you saved the two sample files.
+    - Modify the location of `training_data`{: curl} `trainingData`{: dotnet-standard} `TrainingData`{: go} `trainingData`{: java} `trainingData`{: javascript} `training_data`{: python} `training_data`{: ruby} `trainingData`{: unity} and `training_metadata`{:curl} `trainingMetadata`{: dotnet-standard} `TrainingMetadata`{: go} `trainingMetadata`{: java} `trainingMetadata`{: javascript} `training_metadata`{: python} `training_metadata`{: ruby} `trainingMetadata`{: unity} to point to where you saved the two sample files.
 
-    ```bash
+    ```sh
     curl -i -u "apikey:{apikey}"{: apikey} \
     -F training_data=@weather_data_train.csv \
     -F training_metadata="{\"language\":\"en\",\"name\":\"TutorialClassifier\"}" \
@@ -128,9 +159,36 @@ The classifier learns from examples before it can return information for texts t
     {: pre}
     {: curl}
 
-    Windows users: Replace the backslash (`\`) at the end of each line with a caret (`^`). Make sure there are no trailing spaces.
+    Windows users: Replace the backslash (`\`) at the end of each line with a caret (`^`). Make sure that there are no trailing spaces.
     {: tip}
     {: curl}
+
+    ```cs
+    IamAuthenticator authenticator = new IamAuthenticator(
+        apikey: "{apikey}"{: apikey}
+        );
+
+    NaturalLanguageClassifierService naturalLanguageClassifier = new NaturalLanguageClassifierService(authenticator);
+    naturalLanguageClassifier.SetServiceUrl("{url}"{: url});
+
+    DetailedResponse<Classifier> result = null;
+    using (FileStream trainingDataFile = File.OpenRead("./weather_data_train"), metadataFile = File.OpenRead("./metadata.json"))
+    {
+        using (MemoryStream trainingData = new MemoryStream(), metadata = new MemoryStream())
+        {
+            trainingDataFile.CopyTo(trainingData);
+            metadataFile.CopyTo(metadata);
+            result = service.CreateClassifier(
+                trainingMetadata: metadata,
+                trainingData: trainingData
+                );
+        }
+    }
+
+    Console.WriteLine(result.Response);
+    ```
+    {: dotnet-standard}
+    {: codeblock}
 
     ```go
     package main
@@ -139,40 +197,46 @@ The classifier learns from examples before it can return information for texts t
       "encoding/json"
       "fmt"
       "os"
+      "github.com/IBM/go-sdk-core/core"
       "github.com/watson-developer-cloud/go-sdk/naturallanguageclassifierv1"
     )
 
     func main() {
+      authenticator := &core.IamAuthenticator{
+        ApiKey: "{apikey}"{: apikey},
+      }
 
-      naturalLanguageClassifier, naturalLanguageClassifierErr := naturallanguageclassifierv1.
-        NewNaturalLanguageClassifierV1(&naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{
-          URL: "{url}"{: url},
-          IAMApiKey: "{apikey}"{: apikey},
-        })
+      options := &naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{
+        Authenticator: authenticator,
+      }
+
+      naturalLanguageClassifier, naturalLanguageClassifierErr := naturallanguageclassifierv1.NewNaturalLanguageClassifierV1(options)
+
       if naturalLanguageClassifierErr != nil {
         panic(naturalLanguageClassifierErr)
       }
+
+      naturalLanguageClassifier.SetServiceURL("{url}"{: url})
 
       metadata, metadataErr := os.Open("./metadata.json")
       if metadataErr != nil {
         panic(metadataErr)
       }
       defer metadata.Close()
-      trainingData, trainingDataErr := os.Open("./weather_data_train.csv")
+      trainingData, trainingDataErr := os.Open("./train.csv")
       if trainingDataErr != nil {
         panic(trainingDataErr)
       }
       defer trainingData.Close()
-      response, responseErr := naturalLanguageClassifier.CreateClassifier(
+      result, response, responseErr := naturalLanguageClassifier.CreateClassifier(
         &naturallanguageclassifierv1.CreateClassifierOptions{
           TrainingData: trainingData,
-          Metadata:     metadata,
+          TrainingMetadata: metadata,
         },
       )
       if responseErr != nil {
         panic(responseErr)
       }
-      result := naturalLanguageClassifier.GetCreateClassifierResult(response)
       b, _ := json.MarshalIndent(result, "", "  ")
       fmt.Println(string(b))
     }
@@ -181,66 +245,85 @@ The classifier learns from examples before it can return information for texts t
     {: codeblock}
 
     ```java
-    IamOptions options = new IamOptions.Builder()
-      .apiKey("{apikey}"{: apikey})
-      .build();
+    import java.io.File;
+    import java.io.FileNotFoundException;
 
-    NaturalLanguageClassifier naturalLanguageClassifier = new NaturalLanguageClassifier(options);
-    naturalLanguageClassifier.setEndPoint("{url}"{: url});
+    import com.ibm.cloud.sdk.core.service.security.IamOptions;
+    import com.ibm.watson.natural_language_classifier.v1.NaturalLanguageClassifier;
+    import com.ibm.watson.natural_language_classifier.v1.model.Classifier;
+    import com.ibm.watson.natural_language_classifier.v1.model.CreateClassifierOptions;
 
-    CreateClassifierOptions createOptions = new CreateClassifierOptions.Builder()
-      .metadata("./metadata.json")
-      .trainingData(new File("./weather_data_train.csv"))
-      .trainingDataFilename("weather_data_train.csv")
-      .build();
-    Classifier classifier = naturalLanguageClassifier.createClassifier(createOptions)
-    .execute();
-    System.out.println(classifier);
+    public class CreateClassifier {
+
+      public static void main(String[] args) throws FileNotFoundException {
+
+        IamAuthenticator authenticator = new IamAuthenticator("{apikey}"{: apikey});
+        NaturalLanguageClassifier naturalLanguageClassifier = new NaturalLanguageClassifier(authenticator);
+        naturalLanguageClassifier.setServiceUrl("{url}"{: url});
+
+        CreateClassifierOptions createOptions = new CreateClassifierOptions.Builder()
+          .trainingMetadata("./metadata.json")
+          .trainingData(new File("./weather_data_train.csv"))
+          .build();
+        Classifier classifier = naturalLanguageClassifier.createClassifier(createOptions)
+          .execute().getResult();
+          System.out.println(classifier);
+      }
+
+    }
     ```
     {: java}
     {: codeblock}
 
     ```javascript
-    var NaturalLanguageClassifierV1 = require('watson-developer-cloud/natural-language-classifier/v1');
-    var fs = require('fs');
+    const fs = require('fs');
+    const NaturalLanguageClassifierV1 = require('ibm-watson/natural-language-classifier/v1');
+    const { IamAuthenticator } = require('ibm-watson/auth');
 
-    var naturalLanguageClassifier = new NaturalLanguageClassifierV1({
-      iam_apikey: '{apikey}'{: apikey},
-      url: '{url}'{: url}
+    const naturalLanguageClassifier = new NaturalLanguageClassifierV1({
+      authenticator: new IamAuthenticator({
+        apikey: '{apikey}'{: apikey},
+      }),
+      url: '{url}'{: url},
     });
 
-    var params = {
-      metadata_filename: 'metadata.json',
-      metadata: fs.createReadStream('./metadata.json'),
-      training_data: fs.createReadStream('./weather_data_train.csv')
+    const createClassifierParams = {
+      trainingMetadata: JSON.stringify({
+        name: 'TutorialClassifier',
+        language: 'en',
+      }),
+      trainingData: fs.createReadStream('./weather_data_train.csv'),
     };
 
-    naturalLanguageClassifier.createClassifier(params,
-      function(err, response) {
-        if (err) {
-          console.log('error:', err);
-        } else {
-          console.log(JSON.stringify(response, null, 2));
-        }
-    });
+    naturalLanguageClassifier.createClassifier(createClassifierParams)
+      .then(response => {
+        const classifier = response.result;
+        console.log(JSON.stringify(classifier, null, 2));
+      })
+      .catch(err => {
+        console.log('error:', err);
+      });
     ```
     {: javascript}
     {: codeblock}
 
     ```python
     import json
-    from watson_developer_cloud import NaturalLanguageClassifierV1
+    from ibm_watson import NaturalLanguageClassifierV1
+    from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
+    authenticator = IAMAuthenticator('{apikey}'{: apikey})
     natural_language_classifier = NaturalLanguageClassifierV1(
-        iam_apikey='{apikey}'{: apikey},
-        url='{url}'{: url})
+        authenticator=authenticator
+    )
+
+    natural_language_classifier.set_service_url('{url}'{: url})
 
     with open('./weather_data_train.csv', 'rb') as training_data:
-        with open('./metadata.json', 'rb') as metadata:
-          classifier = natural_language_classifier.create_classifier(
-            training_data=training_data,
-            metadata=metadata
-          ).get_result()
+        classifier = natural_language_classifier.create_classifier(
+        training_data=training_data,
+        training_metadata='{"name": "TutorialClassifier","language": "en"}'
+      ).get_result()
     print(json.dumps(classifier, indent=2))
     ```
     {: python}
@@ -248,25 +331,70 @@ The classifier learns from examples before it can return information for texts t
 
     ```ruby
     require "json"
+    require "ibm_watson/authenticators"
     require "ibm_watson/natural_language_classifier_v1"
     include IBMWatson
 
-    natural_language_classifier = NaturalLanguageClassifierV1.new(
-      iam_apikey: "{apikey}"{: apikey},
-      url: "{url}"{: url}
+    authenticator = Authenticators::IamAuthenticator.new(
+      apikey: "{apikey}"{: apikey}
     )
+    natural_language_classifier = NaturalLanguageClassifierV1.new(
+      authenticator: authenticator
+    )
+    natural_language_classifier.service_url = "{url}"{: url}
 
-    File.open("./training_data") do |training_data|
-      File.open("./metadata") do |metadata|
-        classifier = natural_language_classifier.create_classifier(
+    File.open("./weather_data_train.csv") do |training_data|
+      classifier = natural_language_classifier.create_classifier(
           training_data: training_data,
-          metadata: metadata
+          training_metadata: {name: "TutorialClassifier", language: "en"}
         )
-        puts JSON.pretty_generate(classifier.result)
-      end
+      puts JSON.pretty_generate(classifier.result)
     end
     ```
     {: ruby}
+    {: codeblock}
+
+    ```cs
+    var authenticator = new IamAuthenticator(
+        apikey: "{apikey}"{: apikey}
+    );
+
+    while (!authenticator.CanAuthenticate())
+        yield return null;
+
+    var naturalLanguageClassifier = new NaturalLanguageClassifierService(authenticator);
+    naturalLanguageClassifier.SetServiceUrl("{url}"{: url});
+
+    ClassifiedImages createClassifierResponse = null;
+    using (FileStream trainingDataFile = File.OpenRead("./weather_data_train.csv"))
+    {
+        using (FileStream metadataFile = File.OpenRead("./metadata.json"))
+        {
+            using (MemoryStream trainingData = new MemoryStream())
+            {
+                using (MemoryStream metadata = new MemoryStream())
+                {
+                    trainingDataFile.CopyTo(trainingData);
+                    metadataFile.CopyTo(metadata);
+                    service.CreateClassifier(
+                        callback: (DetailedResponse<Classifier> response, IBMError error) =>
+                        {
+                            Log.Debug("NaturalLanguageClassifierServiceV1", "CreateClassifier result: {0}", response.Response);
+                            createClassifierResponse = response.Result;
+                            createdClassifierId = createClassifierResponse.ClassifierId;
+                        },
+                        trainingMetadata: metadata,
+                        trainingData: trainingData
+                    );
+
+                    while (createClassifierResponse == null)
+                        yield return null;
+                }
+            }
+        }
+    }
+    ```
+    {: unity}
     {: codeblock}
 
     The response includes a new classifier ID and status, as in the following example.
@@ -288,12 +416,30 @@ The classifier learns from examples before it can return information for texts t
 
     Issue a call to the **Get information about a classifier** method to retrieve the status of the classifier. <span class="hide-dashboard">Replace `{apikey}` and `{url}` with the credentials that you copied in the prerequisites.</span> Replace `{classifier_id}` with your information.
 
-    ```bash
+    ```sh
     curl -u "apikey:{apikey}"{: apikey} \
     "{url}/v1/classifiers/{classifier_id}"{: url}
     ```
     {: pre}
     {: curl}
+
+    ```cs
+    IamAuthenticator authenticator = new IamAuthenticator(
+        apikey: "{apikey}"{: apikey}
+        );
+
+    NaturalLanguageClassifierService naturalLanguageClassifier = new NaturalLanguageClassifierService(authenticator);
+    naturalLanguageClassifier.SetServiceUrl("{url}"{: url});
+
+    var result = service.Classify(
+        classifierId: "{classifier_id}",
+        text: "How hot will it be today?"
+        );
+
+    Console.WriteLine(result.Response);
+    ```
+    {: dotnet-standard}
+    {: codeblock}
 
     ```go
     package main
@@ -301,22 +447,28 @@ The classifier learns from examples before it can return information for texts t
     import (
       "encoding/json"
       "fmt"
-      "github.com/watson-developer-cloud/go-sdk/core"
+      "github.com/IBM/go-sdk-core/core"
       "github.com/watson-developer-cloud/go-sdk/naturallanguageclassifierv1"
     )
 
     func main() {
+      authenticator := &core.IamAuthenticator{
+        ApiKey: "{apikey}"{: apikey},
+      }
 
-      naturalLanguageClassifier, naturalLanguageClassifierErr := naturallanguageclassifierv1.
-        NewNaturalLanguageClassifierV1(&naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{
-          URL: "{url}",
-          IAMApiKey: "{apikey}",
-        })
+      options := &naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{
+        Authenticator: authenticator,
+      }
+
+      naturalLanguageClassifier, naturalLanguageClassifierErr := naturallanguageclassifierv1.NewNaturalLanguageClassifierV1(options)
+
       if naturalLanguageClassifierErr != nil {
         panic(naturalLanguageClassifierErr)
       }
 
-      response, responseErr := naturalLanguageClassifier.GetClassifier(
+      naturalLanguageClassifier.SetServiceURL("{url}"{: url})
+
+      result, response, responseErr := naturalLanguageClassifier.GetClassifier(
         &naturallanguageclassifierv1.GetClassifierOptions{
           ClassifierID: core.StringPtr("{classifier_id}"),
         },
@@ -324,7 +476,6 @@ The classifier learns from examples before it can return information for texts t
       if responseErr != nil {
         panic(responseErr)
       }
-      result := naturalLanguageClassifier.GetGetClassifierResult(response)
       b, _ := json.MarshalIndent(result, "", "  ")
       fmt.Println(string(b))
     }
@@ -333,54 +484,72 @@ The classifier learns from examples before it can return information for texts t
     {: codeblock}
 
     ```java
-    IamOptions options = new IamOptions.Builder()
-      .apiKey("{apikey}"{: apikey})
-      .build();
+    import com.ibm.cloud.sdk.core.service.security.IamOptions;
+    import com.ibm.watson.natural_language_classifier.v1.NaturalLanguageClassifier;
+    import com.ibm.watson.natural_language_classifier.v1.model.Classifier;
+    import com.ibm.watson.natural_language_classifier.v1.model.GetClassifierOptions;
 
-    NaturalLanguageClassifier naturalLanguageClassifier = new NaturalLanguageClassifier(options);
-    naturalLanguageClassifier.setEndPoint("{url}"{: url});
+    public class GetClassifier {
 
-    GetClassifierOptions getOptions = new GetClassifierOptions.Builder()
-      .classifierId("{classifier_id}")
-      .build();
-    Classifier classifier = naturalLanguageClassifier.getClassifier(getOptions);
-      .execute();
-    System.out.println(classifier);
+      public static void main(String[] args) {
+
+        IamAuthenticator authenticator = new IamAuthenticator("{apikey}"{: apikey});
+        NaturalLanguageClassifier naturalLanguageClassifier = new NaturalLanguageClassifier(authenticator);
+        naturalLanguageClassifier.setServiceUrl("{url}"{: url});
+
+        GetClassifierOptions getOptions = new GetClassifierOptions.Builder()
+          .classifierId("{classifier_id")
+          .build();
+        Classifier classifier = naturalLanguageClassifier.getClassifier(getOptions);
+          .execute().getResult();
+        System.out.println(classifier);
+      }
+
+    }
     ```
     {: java}
     {: codeblock}
 
     ```javascript
-    var NaturalLanguageClassifierV1 = require('watson-developer-cloud/natural-language-classifier/v1');
-    var fs = require('fs');
+    const NaturalLanguageClassifierV1 = require('ibm-watson/natural-language-classifier/v1');
+    const { IamAuthenticator } = require('ibm-watson/auth');
 
-    var naturalLanguageClassifier = new NaturalLanguageClassifierV1({
-      iam_apikey: '{apikey}'{: apikey},
-      url: '{url}'{: url}
+    const naturalLanguageClassifier = new NaturalLanguageClassifierV1({
+      authenticator: new IamAuthenticator({
+        apikey: '{apikey}'{: apikey},
+      }),
+      url: '{url}'{: url},
     });
 
-    naturalLanguageClassifier.getClassifier({
-      classifier_id: '{classifier_id}' },
-      function(err, response) {
-        if (err) {
-          console.log('error:', err);
-        } else {
-          console.log(JSON.stringify(response, null, 2));
-        }
-    });
+    const getClassifierParams = {
+      classifierId: '{classifier_id}',
+    };
+
+    naturalLanguageClassifier.getClassifier(getClassifierParams)
+      .then(response => {
+        const classifier = response.result;
+        console.log(JSON.stringify(classifier, null, 2));
+      })
+      .catch(err => {
+        console.log('error:', err);
+      });
     ```
     {: javascript}
     {: codeblock}
 
     ```python
     import json
-    from watson_developer_cloud import NaturalLanguageClassifierV1
+    from ibm_watson import NaturalLanguageClassifierV1
+    from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
+    authenticator = IAMAuthenticator('{apikey}'{: apikey})
     natural_language_classifier = NaturalLanguageClassifierV1(
-        iam_apikey='{apikey}'{: apikey},
-        url='{url}'{: url})
+        authenticator=authenticator
+    )
 
-    status = natural_language_classifier.get_classifier('{classifier_id}').get_result()
+    natural_language_classifier.set_service_url('{url}'{: url})
+
+    status = natural_language_classifier.get_classifier('classifier_id').get_result()
     print (json.dumps(status, indent=2))
     ```
     {: python}
@@ -388,13 +557,17 @@ The classifier learns from examples before it can return information for texts t
 
     ```ruby
     require "json"
+    require "ibm_watson/authenticators"
     require "ibm_watson/natural_language_classifier_v1"
     include IBMWatson
 
-    natural_language_classifier = NaturalLanguageClassifierV1.new(
-      iam_apikey: "{apikey}"{: apikey},
-      url: "{url}"{: url}
+    authenticator = Authenticators::IamAuthenticator.new(
+      apikey: "{apikey}"{: apikey}
     )
+    natural_language_classifier = NaturalLanguageClassifierV1.new(
+      authenticator: authenticator
+    )
+    natural_language_classifier.service_url = "{url}"{: url}
 
     status = natural_language_classifier.get_classifier(
       classifier_id: "{classifier_id}"
@@ -402,6 +575,33 @@ The classifier learns from examples before it can return information for texts t
     puts JSON.pretty_generate(status.result)
     ```
     {: ruby}
+    {: codeblock}
+
+    ```cs
+    var authenticator = new IamAuthenticator(
+        apikey: "{apikey}"{: apikey}
+    );
+
+    while (!authenticator.CanAuthenticate())
+        yield return null;
+
+    var naturalLanguageClassifier = new NaturalLanguageClassifierService(authenticator);
+    naturalLanguageClassifier.SetServiceUrl("{url}"{: url});
+
+    Classifier getClassifierResponse = null;
+    service.GetClassifier(
+        callback: (DetailedResponse<Classifier> response, IBMError error) =>
+        {
+            Log.Debug("NaturalLanguageClassifierServiceV1", "GetClassifier result: {0}", response.Response);
+            getClassifierResponse = response.Result;
+        },
+        classifierId: "{classifier_id}"
+    );
+
+    while (getClassifierResponse == null)
+        yield return null;
+    ```
+    {: unity}
     {: codeblock}
 
 ## Step 2: Classify text
@@ -413,7 +613,7 @@ Now that the classifier is trained, you can query it.
     - {: hide-dashboard} Replace `{apikey}` and `{url}` with the credentials that you copied in the prerequisites.
     - Replace `{classifier_id}` with your information.
 
-    ```bash
+    ```sh
     curl -G -u "apikey:{apikey}"{: apikey} \
     "{url}/v1/classifiers/{classifier_id}/classify"{: url} \
     --data-urlencode "text=How hot will it be today?"
@@ -421,37 +621,60 @@ Now that the classifier is trained, you can query it.
     {: pre}
     {: curl}
 
+    ```cs
+    IamAuthenticator authenticator = new IamAuthenticator(
+        apikey: "{apikey}"{: apikey}
+        );
+
+    NaturalLanguageClassifierService naturalLanguageClassifier = new NaturalLanguageClassifierService(authenticator);
+    naturalLanguageClassifier.SetServiceUrl("{url}"{: url});
+
+    var result = service.Classify(
+        classifierId: "{classifier_id}",
+        text: "How hot will it be today?"
+        );
+
+    Console.WriteLine(result.Response);
+    ```
+    {: dotnet-standard}
+    {: codeblock}
+
     ```go
     package main
 
     import (
       "encoding/json"
       "fmt"
-      "github.com/watson-developer-cloud/go-sdk/core"
+      "github.com/IBM/go-sdk-core/core"
       "github.com/watson-developer-cloud/go-sdk/naturallanguageclassifierv1"
     )
 
     func main() {
+      authenticator := &core.IamAuthenticator{
+        ApiKey: "{apikey}"{: apikey},
+      }
 
-      naturalLanguageClassifier, naturalLanguageClassifierErr := naturallanguageclassifierv1.
-        NewNaturalLanguageClassifierV1(&naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{
-          URL: "{url}"{: url},
-          IAMApiKey: "{apikey}"{: apikey},
-        })
+      options := &naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{
+        Authenticator: authenticator,
+      }
+
+      naturalLanguageClassifier, naturalLanguageClassifierErr := naturallanguageclassifierv1.NewNaturalLanguageClassifierV1(options)
+
       if naturalLanguageClassifierErr != nil {
         panic(naturalLanguageClassifierErr)
       }
 
-      response, responseErr := naturalLanguageClassifier.Classify(
+      naturalLanguageClassifier.SetServiceURL("{url}"{: url})
+
+      result, response, responseErr := naturalLanguageClassifier.Classify(
         &naturallanguageclassifierv1.ClassifyOptions{
           ClassifierID: core.StringPtr("{classifier_id}"),
-          Text:         core.StringPtr("How hot will it be today?"),
+          Text: core.StringPtr("How hot will it be today?"),
         },
       )
       if responseErr != nil {
         panic(responseErr)
       }
-      result := naturalLanguageClassifier.GetClassifyResult(response)
       b, _ := json.MarshalIndent(result, "", "  ")
       fmt.Println(string(b))
     }
@@ -460,55 +683,76 @@ Now that the classifier is trained, you can query it.
     {: codeblock}
 
     ```java
-    IamOptions options = new IamOptions.Builder()
-      .apiKey("{apikey}"{: apikey})
-      .build();
+    import com.ibm.cloud.sdk.core.service.security.IamOptions;
+    import com.ibm.watson.natural_language_classifier.v1.NaturalLanguageClassifier;
+    import com.ibm.watson.natural_language_classifier.v1.model.Classification;
+    import com.ibm.watson.natural_language_classifier.v1.model.ClassifyOptions;
 
-    NaturalLanguageClassifier naturalLanguageClassifier = new NaturalLanguageClassifier(options);
-    naturalLanguageClassifier.setEndPoint("{url}"{: url});
+    public class Classify {
 
-    ClassifyOptions classifyOptions = new ClassifyOptions.Builder()
-      .classifierId("{classifier_id}")
-      .text("How hot will it be today?")
-      .build();
-    Classification classification = naturalLanguageClassifier.classify(classifyOptions)
-      .execute();
-    System.out.println(classification);
+      public static void main(String[] args) {
+
+        IamAuthenticator authenticator = new IamAuthenticator("{apikey}"{: apikey});
+        NaturalLanguageClassifier naturalLanguageClassifier = new NaturalLanguageClassifier(authenticator);
+        naturalLanguageClassifier.setServiceUrl("{url}"{: url});
+
+        ClassifyOptions classifyOptions = new ClassifyOptions.Builder()
+          .classifierId("{classifier_id}")
+          .text("How hot will it be today?")
+          .build();
+        Classification classification = naturalLanguageClassifier.classify(classifyOptions)
+          .execute().getResult();
+        System.out.println(classification);
+      }
+
+    }
     ```
     {: java}
     {: codeblock}
 
     ```javascript
-    var NaturalLanguageClassifierV1 = require('watson-developer-cloud/natural-language-classifier/v1');
+    const NaturalLanguageClassifierV1 = require('ibm-watson/natural-language-classifier/v1');
+    const { IamAuthenticator } = require('ibm-watson/auth');
 
-    var naturalLanguageClassifier = new NaturalLanguageClassifierV1({
-      iam_apikey: '{apikey}'{: apikey},
-      url: '{url}'{: url}
+    const naturalLanguageClassifier = new NaturalLanguageClassifierV1({
+      authenticator: new IamAuthenticator({
+        apikey: '{apikey}'{: apikey},
+      }),
+      url: '{url}'{: url},
     });
 
-    naturalLanguageClassifier.classify({
+    const classifyParams = {
       text: 'How hot will it be today?',
-      classifier_id: '{classifier_id}' },
-      function(err, response) {
-        if (err) {
-          console.log('error:', err);
-        } else {
-          console.log(JSON.stringify(response, null, 2));
-        }
-    });
+      classifierId: '{classifier_id}',
+    };
+
+    naturalLanguageClassifier.classify(classifyParams)
+      .then(response => {
+        const classification = response.result;
+        console.log(JSON.stringify(classification, null, 2));
+      })
+      .catch(err => {
+        console.log('error:', err);
+      });
     ```
     {: javascript}
     {: codeblock}
 
     ```python
     import json
-    from watson_developer_cloud import NaturalLanguageClassifierV1
+    from ibm_watson import NaturalLanguageClassifierV1
+    from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
+    authenticator = IAMAuthenticator('{apikey}'{: apikey})
     natural_language_classifier = NaturalLanguageClassifierV1(
-        iam_apikey='{apikey}'{: apikey},
-        url='{url}'{: url})
+        authenticator=authenticator
+    )
 
-    classes = natural_language_classifier.classify('{classifier_id}', 'How hot will it be today?').get_result()
+    natural_language_classifier.set_service_url('{url}'{: url})
+
+    classes = natural_language_classifier.classify(
+        '{classifier_id}',
+        'How hot will it be today?').get_result()
     print(json.dumps(classes, indent=2))
     ```
     {: python}
@@ -516,20 +760,53 @@ Now that the classifier is trained, you can query it.
 
     ```ruby
     require "json"
+    require "ibm_watson/authenticators"
     require "ibm_watson/natural_language_classifier_v1"
     include IBMWatson
 
+    authenticator = Authenticators::IamAuthenticator.new(
+      apikey: "{apikey}"{: apikey}
+    )
     natural_language_classifier = NaturalLanguageClassifierV1.new(
-      iam_apikey: "{apikey}"{: apikey},
-      url: "{url}"{: url}
+      authenticator: authenticator
     )
+    natural_language_classifier.service_url = "{url}"{: url}
 
-    status = natural_language_classifier.get_classifier(
-      classifier_id: "{classifier_id}"
+    classes = natural_language_classifier.classify(
+      classifier_id: "{classifier_id}",
+      text: "How hot will it be today?"
     )
-    puts JSON.pretty_generate(status.result)
+    puts JSON.pretty_generate(classes.result)
     ```
     {: ruby}
+    {: codeblock}
+
+    ```cs
+    var authenticator = new IamAuthenticator(
+        apikey: "{apikey}"{: apikey}
+    );
+
+    while (!authenticator.CanAuthenticate())
+        yield return null;
+
+    var naturalLanguageClassifier = new NaturalLanguageClassifierService(authenticator);
+    naturalLanguageClassifier.SetServiceUrl("{url}"{: url});
+
+    Classification classifyResponse = null;
+    service.Classify(
+        callback: (DetailedResponse<Classification> response, IBMError error) =>
+        {
+            Log.Debug("NaturalLanguageClassifierServiceV1", "Classify result: {0}", response.Response);
+            classifyResponse = response.Result;
+        },
+        classifierId: "{classifier_id}",
+        text: "How hot will it be today?"
+    );
+
+    while (classifyResponse == null)
+        yield return null;
+    ```
+    {: unity}
     {: codeblock}
 
     The API returns a response that includes the name of the class for which the classifier has the highest confidence. Other class-confidence pairs are listed in descending order of confidence:
@@ -570,7 +847,36 @@ Now that the classifier is trained, you can query it.
 
 You're done! You created, trained, and queried a classifier in the {{site.data.keyword.nlclassifiershort}} service.
 
-This tutorial classifies a single phrase. {{site.data.keyword.nlclassifiershort}} also supports classifying multiple phrases in a single call. For details, see the **Classify multiple phrases** in the [API reference](https://{DomainName}/apidocs/natural-language-classifier#classify-multiple-phrases){: external}.
+This tutorial classifies a single phrase. {{site.data.keyword.nlclassifiershort}} also supports classifying multiple phrases in a single call. For more information, see the **Classify multiple phrases** method in the [API reference](https://{DomainName}/apidocs/natural-language-classifier#classify-multiple-phrases){: external}.
+{: curl}
+{: tip}
+
+This tutorial classifies a single phrase. {{site.data.keyword.nlclassifiershort}} also supports classifying multiple phrases in a single call. For more information, see the **Classify multiple phrases** method in the [API reference](https://{DomainName}/apidocs/natural-language-classifier#classify-multiple-phrases){: external}.
+{: dotnet-standard}
+{: tip}
+
+This tutorial classifies a single phrase. {{site.data.keyword.nlclassifiershort}} also supports classifying multiple phrases in a single call. For more information, see the **Classify multiple phrases** method in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=go#classify-multiple-phrases){: external}.
+{: go}
+{: tip}
+
+This tutorial classifies a single phrase. {{site.data.keyword.nlclassifiershort}} also supports classifying multiple phrases in a single call. For more information, see the **Classify multiple phrases** method in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=java#classify-multiple-phrases){: external}.
+{: java}
+{: tip}
+
+This tutorial classifies a single phrase. {{site.data.keyword.nlclassifiershort}} also supports classifying multiple phrases in a single call. For more information, see the **Classify multiple phrases** method in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=node#classify-multiple-phrases){: external}.
+{: javascript}
+{: tip}
+
+This tutorial classifies a single phrase. {{site.data.keyword.nlclassifiershort}} also supports classifying multiple phrases in a single call. For more information, see the **Classify multiple phrases** method in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=python#classify-multiple-phrases){: external}.
+{: python}
+{: tip}
+
+This tutorial classifies a single phrase. {{site.data.keyword.nlclassifiershort}} also supports classifying multiple phrases in a single call. For more information, see the **Classify multiple phrases** method in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=ruby#classify-multiple-phrases){: external}.
+{: ruby}
+{: tip}
+
+This tutorial classifies a single phrase. {{site.data.keyword.nlclassifiershort}} also supports classifying multiple phrases in a single call. For more information, see the **Classify multiple phrases** method in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=unity#classify-multiple-phrases){: external}.
+{: unity}
 {: tip}
 
 ## Delete the tutorial classifier
@@ -581,31 +887,55 @@ So that you can create classifiers for your own use and with your own training d
 - {: hide-dashboard} Replace `{apikey}` and `{url}` with the credentials that you copied in the prerequisites.
 - Replace `{classifier_id}` with your information.
 
-```bash
+```sh
 curl -X DELETE -u "apikey:{apikey}"{: apikey} \
 "{url}/v1/classifiers/{classifier_id}"{: url}
 ```
 {: pre}
 {: curl}
 
+```cs
+IamAuthenticator authenticator = new IamAuthenticator(
+    apikey: "{apikey}"{: apikey}
+    );
+
+NaturalLanguageClassifierService naturalLanguageClassifier = new NaturalLanguageClassifierService(authenticator);
+naturalLanguageClassifier.SetServiceUrl("{url}"{: url});
+
+var result = service.DeleteClassifier(
+    classifierId: "{classifier_id}"
+    );
+
+Console.WriteLine(result.Response);
+```
+{: dotnet-standard}
+{: codeblock}
+
 ```go
 package main
 
 import (
-  "github.com/watson-developer-cloud/go-sdk/core"
+  "github.com/IBM/go-sdk-core/core"
   "github.com/watson-developer-cloud/go-sdk/naturallanguageclassifierv1"
 )
 
-func main() {
 
-  naturalLanguageClassifier, naturalLanguageClassifierErr := naturallanguageclassifierv1.
-    NewNaturalLanguageClassifierV1(&naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{
-      URL: "{url}"{: url},
-      IAMApiKey: "{apikey}"{: apikey},
-    })
+func main() {
+  authenticator := &core.IamAuthenticator{
+    ApiKey: "{apikey}"{: apikey},
+  }
+
+  options := &naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{
+    Authenticator: authenticator,
+  }
+
+  naturalLanguageClassifier, naturalLanguageClassifierErr := naturallanguageclassifierv1.NewNaturalLanguageClassifierV1(options)
+
   if naturalLanguageClassifierErr != nil {
     panic(naturalLanguageClassifierErr)
   }
+
+  naturalLanguageClassifier.SetServiceURL("{url}")
 
   _, responseErr := naturalLanguageClassifier.DeleteClassifier(
     &naturallanguageclassifierv1.DeleteClassifierOptions{
@@ -616,79 +946,121 @@ func main() {
     panic(responseErr)
   }
 }
-
 ```
 {: go}
 {: codeblock}
 
 ```java
-IamOptions options = new IamOptions.Builder()
-  .apiKey("{apikey}"{: apikey})
-  .build();
+import com.ibm.cloud.sdk.core.service.security.IamOptions;
+import com.ibm.watson.natural_language_classifier.v1.NaturalLanguageClassifier;
+import com.ibm.watson.natural_language_classifier.v1.model.DeleteClassifierOptions;
 
-NaturalLanguageClassifier naturalLanguageClassifier = new NaturalLanguageClassifier(options);
-naturalLanguageClassifier.setEndPoint("{url}"{: url});
+public class DeleteClassifier {
 
-DeleteClassifierOptions deleteOptions = new DeleteClassifierOptions.Builder()
-  .classifierId("{classifier_id}")
-  .build();
-naturalLanguageClassifier.deleteClassifier(deleteOptions).execute();
+  public static void main(String[] args) {
+
+    IamAuthenticator authenticator = new IamAuthenticator("{apikey}"{: apikey});
+    NaturalLanguageClassifier naturalLanguageClassifier = new NaturalLanguageClassifier(authenticator);
+    naturalLanguageClassifier.setServiceUrl("{url}"{: url});
+
+    DeleteClassifierOptions deleteOptions = new DeleteClassifierOptions.Builder()
+      .classifierId("{classifier_id}")
+      .build();
+    naturalLanguageClassifier.deleteClassifier(deleteOptions).execute();
+  }
+
+}
 ```
 {: java}
 {: codeblock}
 
 ```javascript
-var NaturalLanguageClassifierV1 = require('watson-developer-cloud/natural-language-classifier/v1');
-var fs = require('fs');
+const NaturalLanguageClassifierV1 = require('ibm-watson/natural-language-classifier/v1');
+const { IamAuthenticator } = require('ibm-watson/auth');
 
-var naturalLanguageClassifier = new NaturalLanguageClassifierV1({
-  iam_apikey: '{apikey}'{: apikey},
+const naturalLanguageClassifier = new NaturalLanguageClassifierV1({
+  authenticator: new IamAuthenticator({
+    apikey: '{apikey}'{: apikey},
+  }),
   url: '{url}'{: url}
 });
 
-naturalLanguageClassifier.deleteClassifier({
-  classifier_id: '{classifier_id}' },
-  function(err, response) {
-    if (err) {
-      console.log('error:', err);
-    } else {
-      console.log(JSON.stringify(response, null, 2));
-    }
-});
+const deleteClassifierParams = {
+  classifierId: '{classifier_id}',
+};
+
+naturalLanguageClassifier.deleteClassifier(deleteClassifierParams)
+  .then(result => {
+    console.log(JSON.stringify(result, null, 2));
+  })
+  .catch(err => {
+    console.log('error:', err);
+  });
 ```
 {: javascript}
 {: codeblock}
 
 ```python
-import json
-from watson_developer_cloud import NaturalLanguageClassifierV1
+from ibm_watson import NaturalLanguageClassifierV1
+from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
+authenticator = IAMAuthenticator('{apikey}'{: apikey})
 natural_language_classifier = NaturalLanguageClassifierV1(
-    iam_apikey='{apikey}'{: apikey},
-    url='{url}'{: url})
+    authenticator=authenticator
+)
 
-status = natural_language_classifier.delete_classifier('{classifier_id}').get_result()
-print (json.dumps(status, indent=2))
+natural_language_classifier.set_service_url('{url}'{: url})
+
+natural_language_classifier.delete_classifier('{classifier_id}')
 ```
 {: python}
 {: codeblock}
 
 ```ruby
-require "json"
+require "ibm_watson/authenticators"
 require "ibm_watson/natural_language_classifier_v1"
 include IBMWatson
 
-natural_language_classifier = NaturalLanguageClassifierV1.new(
-  iam_apikey: "{apikey}"{: apikey},
-  url: "{url}"{: url}
+authenticator = Authenticators::IamAuthenticator.new(
+  apikey: "{apikey}"{: apikey}
 )
+natural_language_classifier = NaturalLanguageClassifierV1.new(
+  authenticator: authenticator
+)
+natural_language_classifier.service_url = "{url}"{: url}
 
-status = natural_language_classifier.delete_classifier(
+natural_language_classifier.delete_classifier(
   classifier_id: "{classifier_id}"
 )
-puts JSON.pretty_generate(status.result)
 ```
 {: ruby}
+{: codeblock}
+
+```cs
+var authenticator = new IamAuthenticator(
+    apikey: "{apikey}"{: apikey}
+);
+
+while (!authenticator.CanAuthenticate())
+    yield return null;
+
+var naturalLanguageClassifier = new NaturalLanguageClassifierService(authenticator);
+naturalLanguageClassifier.SetServiceUrl("{url}"{: url});
+
+object deleteClassifierResponse = null;
+service.DeleteClassifier(
+    callback: (DetailedResponse<object> response, IBMError error) =>
+    {
+        Log.Debug("NaturalLanguageClassifierServiceV1", "DeleteClassifier result: {0}", response.Response);
+        deleteClassifierResponse = response.Result;
+    },
+    classifierId: "{classifier_id}"
+);
+
+while (deleteClassifierResponse == null)
+    yield return null;
+```
+{: unity}
 {: codeblock}
 
 The response is an empty JSON object.
@@ -701,9 +1073,11 @@ You have a basic understanding of how to use {{site.data.keyword.nlclassifiersho
 - This tutorial uses an API key to authenticate. For production uses, review the IAM service API keys [best practices](/docs/services/watson?topic=watson-api-key-bp#api-bp).
 - Learn how to [prepare your data](/docs/services/natural-language-classifier?topic=natural-language-classifier-using-your-data#using-your-data) to train a classifier.
 - {: curl} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier){: external}
-- {: go} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?language=go){: external}.
-- {: java} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?language=java){: external}.
-- {: javascript} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?language=node){: external}.
-- {: python} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?language=python){: external}.
-- {: ruby} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?language=ruby){: external}.
+- {: dotnet-standard} Read about the API in the [API reference](https://{DomainName}//apidocs/natural-language-classifier?code=dotnet-standard){: external}.
+- {: go} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=go){: external}.
+- {: java} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=java){: external}.
+- {: javascript} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=node){: external}.
+- {: python} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=python){: external}.
+- {: ruby} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=ruby){: external}.
+- {: unity} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=unity){: external}.
 - Explore the [sample apps](/docs/services/natural-language-classifier?topic=natural-language-classifier-sample-applications#sample-applications) for example uses.
