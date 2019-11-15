@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-10"
+lastupdated: "2019-11-15"
 
 keywords: new features,updates,what's new,change log, changelog
 
@@ -35,6 +35,15 @@ The following new features and changes to the service are available.
 {: #changelog}
 
 The following new features and changes to the service are available.
+
+### 13 November 2019
+{: #13november2019}
+
+**New South Korea location**
+
+You can now create {{site.data.keyword.nlclassifiershort}} instances in the Seoul location.
+
+{{site.data.keyword.DSX}} does not support the Seoul location, so service instances that you create outside of {{site.data.keyword.DSX}} are not available in that tool.
 
 ### 21 March 2019
 {: #21march2019}
