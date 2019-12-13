@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-11-15"
+lastupdated: "2019-11-11"
 
 keywords: new features,updates,what's new,change log, changelog
 
@@ -35,6 +35,24 @@ The following new features and changes to the service are available.
 {: #changelog}
 
 The following new features and changes to the service are available.
+
+### 12 December 2019
+{: #12december2019}
+
+**Full support for IBM Cloud IAM**
+
+{{site.data.keyword.nlclassifiershort}} now supports the full implementation of {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM). API keys for Watson services are no longer limited to a single service instance. You can create access policies and API keys that apply to more than one service, and you can grant access between services.
+
+- To support this change, the API service endpoints use a different domain and include the service instance ID. The pattern is `api.{location}.{offering}.watson.cloud.ibm.com/instances/{instance_id}`.
+
+    Example URL for an instance hosted in the Dallas location: `api.us-south.natural-language-classifier.watson.cloud.ibm.com/instances/6bbda3b3-d572-45e1-8c54-22d6ed9e52c2`
+
+    The previous public endpoint domain was `watsonplatform.net`.
+
+    For more information about the URLs, see the [API reference](https://{DomainName}/apidocs/natural-language-classifier#service-endpoint){: external}.
+
+    These URLs do not introduce a breaking change. The new URLs work both for your existing service instances and for new instances. The original URLs continue to work on your existing service instances for at least one year (until December 2020).
+- For more information about IAM, see [Authenticating to Watson services](/docs/services/watson?topic=watson-iam).
 
 ### 13 November 2019
 {: #13november2019}
