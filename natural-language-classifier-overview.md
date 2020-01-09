@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-08-19"
+  years: 2015, 2020
+lastupdated: "2020-01-09"
 
 keywords: Use cases,overview
 
@@ -10,6 +10,8 @@ subcollection: natural-language-classifier
 
 ---
 
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 
@@ -44,6 +46,8 @@ With {{site.data.keyword.nlclassifiershort}}, the data is yours to parse and cat
 
 ## Supported languages
 {: #supported-languages}
+{: help}
+{: support}
 
 {{site.data.keyword.nlclassifiershort}} supports English, Arabic, French, German, Italian, Japanese, Korean, Portuguese (Brazilian), and Spanish.
 

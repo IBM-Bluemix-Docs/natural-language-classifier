@@ -1,14 +1,16 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-06-24"
+  years: 2015, 2020
+lastupdated: "2020-01-09"
 
 keywords: data preparation,training data,size limitations,csv,file format,classes,texts
 
 subcollection: natural-language-classifier
 
 ---
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 {:shortdesc: .shortdesc}
 {:external: target="_blank" .external}
 {:tip: .tip}
@@ -58,6 +60,8 @@ Leading and trailing white space is trimmed from classes in the training data an
 
 ## Size limitations
 {: #training-limits}
+{: help}
+{: support}
 
 There are both minimum and maximum limits to the training data:
 

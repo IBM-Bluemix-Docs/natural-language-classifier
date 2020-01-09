@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-08-19"
+  years: 2015, 2020
+lastupdated: "2020-01-09"
 
 keywords: language support,supported languages,best practices,guidelines,supported languages,language support
 
@@ -10,6 +10,8 @@ subcollection: natural-language-classifier
 
 ---
 
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 {:shortdesc: .shortdesc}
 {:external: target="_blank" .external}
 {:tip: .tip}
@@ -44,6 +46,8 @@ Classifying Japanese texts with the **Classify multiple phrases** method is a be
 
 ## Guidelines for good training
 {: #training-guidelines}
+{: help}
+{: support}
 
 The following guidelines are not enforced by the API. However, the classifier tends to perform better when the training data adheres to them:
 
