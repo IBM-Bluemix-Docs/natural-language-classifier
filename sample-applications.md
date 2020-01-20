@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-06-04"
+  years: 2015, 2020
+lastupdated: "2020-01-20"
 
 keywords: Example apps,examples,use cases,Sample apps,demos
 
@@ -47,15 +47,16 @@ Classify job postings. This app categorizes jobs by the description, such as req
 - [Video walkthrough](https://www.youtube.com/watch?v=KyaC-8vfyPg){: external}
 - [Fork the code](https://github.com/yalondg/nlc-job-descriptions){: external}
 
-## E-commerce product categorization
+<!-- ## E-commerce product categorization
 {: #sample-apps-ecommerce}
 
 Organize products in your e-commerce store. This Python app categorizes products from a text description or from a link to a product. The training data comes from two public e-commerce data sets found on Kaggle.com (Flipkart and JCPenny).
 
 - [Read more](https://medium.com/ibm-watson/e-commerce-product-categorization-with-watson-cf2130d7c94a?source=rss----22a2beb5a88a---4){: external}
-- [View the demo](https://erichensley-nlc-demo.mybluemix.net/){: external}
+[View the demo](https://erichensley-nlc-demo.mybluemix.net/){: external}
 - [Video walkthrough](https://youtu.be/JPMZxgpc_Uo){: external}
 - [Fork the code](https://github.com/erichensleyibm/NLC_product_classifier-demo){: external}
+ -->
 
 ## Automated customer support for email
 {: #sample-apps-email-support}
@@ -89,9 +90,9 @@ Create a Python app to predict spam. The training data is a public set of 5,574 
 
 Build a Python app based on the Flask microframework. The app uses the Watson Python SDK and the ICD-10 API.
 
-- [Read more](https://developer.ibm.com/code/patterns/classify-icd-10-data-with-watson/){: external}
+- [Read more](https://developer.ibm.com/patterns/classify-icd-10-data-with-watson/){: external}
 - [Video walkthrough](https://youtu.be/N0eKEZxdwsQ){: external}
-- [Fork the code](https://github.com/stevemart/nlc-icd10-demo){: external}
+- [Fork the code](https://github.com/IBM/nlc-icd10-classifier){: external}
 
 ## Programming language classification
 {: #sample-apps-programming}
@@ -114,7 +115,7 @@ Ask questions and gain insights from them. This Node.js app takes a factoid ques
 
 Looking for a fun DIY project that combines code, Arduino, and hardware? This app uses {{site.data.keyword.nlclassifiershort}} and {{site.data.keyword.speechtotextshort}} to create a Harry Potter sorting hat.
 
-- [Read how](https://dreamtolearn.com/ryan/data_analytics_viz/97){: external}
+- [Video walkthrough](https://www.youtube.com/watch?v=6mV4qbgKYtk){: external}
 - [Fork the code](https://github.com/rustyoldrake/Harry_Potter_Sorting_Hat_Simple){: external}
 
 ## Weather demo
