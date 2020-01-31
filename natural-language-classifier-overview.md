@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-09"
+lastupdated: "2020-01-30"
 
 keywords: Use cases,overview
 
@@ -54,6 +54,6 @@ With {{site.data.keyword.nlclassifiershort}}, the data is yours to parse and cat
 ## Next steps
 {: #next-steps}
 
-- [Get started](/docs/services/natural-language-classifier?topic=natural-language-classifier-natural-language-classifier#natural-language-classifier) with the service.
+- [Get started](/docs/natural-language-classifier?topic=natural-language-classifier-natural-language-classifier#natural-language-classifier) with the service.
 - Try out the [demo](http://ibm.biz/Bdzqug){: external}.
-- Explore the [Sample apps](/docs/services/natural-language-classifier?topic=natural-language-classifier-sample-applications#sample-applications) for example uses.
+- Explore the [Sample apps](/docs/natural-language-classifier?topic=natural-language-classifier-sample-applications#sample-applications) for example uses.

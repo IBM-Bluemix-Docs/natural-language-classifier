@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-11-27"
+  years: 2015, 2020
+lastupdated: "2020-01-30"
 
 keywords: examples,natural language classifier,classifier,classes,texts,nlc,NaturalLanguageClassifier
 
@@ -48,7 +48,7 @@ To work in a graphical interface, use <span class="hide-dashboard">[{{site.data.
 {: #prerequisites}
 
 - {: hide-dashboard} Create an instance of the service:
-    1.  Go to the [{{site.data.keyword.nlclassifiershort}}](https://{DomainName}/catalog/services/natural-language-classifier){: external} page in the catalog.
+    1.  Go to the [{{site.data.keyword.nlclassifiershort}}](https://{DomainName}/catalog/natural-language-classifier){: external} page in the catalog.
     1.  Sign up for a free {{site.data.keyword.Bluemix_notm}} account or log in.
     1.  Click **Create**.
 - {: hide-dashboard} Copy the credentials to authenticate to your service instance:
@@ -67,21 +67,21 @@ To work in a graphical interface, use <span class="hide-dashboard">[{{site.data.
     - {: dotnet-standard} Package Manager
 
         ```sh
-        Install-Package IBM.Watson.NaturalLanguageClassifier.v1 -Version 4.0
+        Install-Package IBM.Watson.NaturalLanguageClassifier.v1 -Version 4.2.1
         ```
         {: codeblock}
 
     - {: dotnet-standard} .NET CLI
 
         ```sh
-        dotnet add package IBM.Watson.NaturalLanguageClassifier.v1 -version 4.0
+        dotnet add package IBM.Watson.NaturalLanguageClassifier.v1 -version 4.2.1
         ```
         {: pre}
 
     - {: dotnet-standard} PackageReference
 
         ```xml
-        <PackageReference Include="IBM.Watson.NaturalLanguageClassifier.v1" Version="4.0.0" />
+        <PackageReference Include="IBM.Watson.NaturalLanguageClassifier.v1" Version="4.2.1" />
         ```
         {: codeblock}
 - {:go} Install the [Go SDK](https://github.com/watson-developer-cloud/go-sdk){: external}.
@@ -406,9 +406,9 @@ The classifier learns from examples before it can return information for texts t
       "name": "TutorialClassifier",
       "language": "en",
       "status": "Training",
-      "url": "https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers/0e6935x475-nlc-2948",
+      "url" : "https://api.us-south.natural-language-classifier.watson.cloud.ibm.com/instances/df09aa83-9660-4137-9b5c-6169be1373a6/v1/classifiers/0e6935x475-nlc-2948",
       "classifier_id": "0e6935x475-nlc-2948",
-      "created": "2018-12-10T17:42:31.823Z",
+      "created": "2020-01-20T16:32:17.403Z",
       "status_description": "The classifier instance is in its training phase, not yet ready to accept classify requests"
     }
     ```
@@ -816,17 +816,17 @@ Now that the classifier is trained, you can query it.
     ```json
     {
       "classifier_id": "0e6935x475-nlc-2948",
-      "url": "https://gateway.watsonplatform.net/natural-language-classifier/api/v1",
+      "url" : "https://api.us-south.natural-language-classifier.watson.cloud.ibm.com/instances/df09aa83-9660-4137-9b5c-6169be1373a6/v1/classifiers/0e6935x475-nlc-2948",
       "text": "How hot will it be today?",
       "top_class": "temperature",
       "classes": [
         {
           "class_name": "temperature",
-          "confidence": 0.9930577105371443
+          "confidence": 0.9929008461208898
         },
         {
           "class_name": "conditions",
-          "confidence": 0.00694228946285564
+          "confidence": 0.0070991538791101575
         }
       ]
     }
@@ -834,7 +834,7 @@ Now that the classifier is trained, you can query it.
 
     The confidence value represents a percentage, and higher values represent higher confidences. The response includes up to 10 classes.
 
-    If you have fewer than 10 classes in your training data, the sum of all confidence values is 100%. In this sample training data, only two classes are defined, so only two can be returned.
+    If you have fewer than 10 classes in your training data, the sum of all confidence values is 100%. In this sample training data only two classes are defined, so only two can be returned.
 1.  Review the top class for the questions to see how the classifier is predicting them.
 
     Here are some other sample questions to classify:
@@ -1065,15 +1065,13 @@ while (deleteClassifierResponse == null)
 {: unity}
 {: codeblock}
 
-The response is an empty JSON object.
-
 ## Next steps
 {: #getting-started-next-steps}
 
 You have a basic understanding of how to use {{site.data.keyword.nlclassifiershort}}. Now dive deeper:
 
-- This tutorial uses an API key to authenticate. For production uses, review the IAM service API keys [best practices](/docs/services/watson?topic=watson-api-key-bp#api-bp).
-- Learn how to [prepare your data](/docs/services/natural-language-classifier?topic=natural-language-classifier-using-your-data#using-your-data) to train a classifier.
+- This tutorial uses an API key to authenticate. For production uses, review the IAM service API keys [best practices](/docs/watson?topic=watson-iam#gs-iam-api-bp).
+- Learn how to [prepare your data](/docs/natural-language-classifier?topic=natural-language-classifier-using-your-data#using-your-data) to train a classifier.
 - {: curl} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier){: external}
 - {: dotnet-standard} Read about the API in the [API reference](https://{DomainName}//apidocs/natural-language-classifier?code=dotnet-standard){: external}.
 - {: go} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=go){: external}.
@@ -1082,4 +1080,4 @@ You have a basic understanding of how to use {{site.data.keyword.nlclassifiersho
 - {: python} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=python){: external}.
 - {: ruby} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=ruby){: external}.
 - {: unity} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=unity){: external}.
-- Explore the [sample apps](/docs/services/natural-language-classifier?topic=natural-language-classifier-sample-applications#sample-applications) for example uses.
+- Explore the [sample apps](/docs/natural-language-classifier?topic=natural-language-classifier-sample-applications#sample-applications) for example uses.

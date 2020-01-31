@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-09"
+lastupdated: "2020-01-30"
 
 keywords: language support,supported languages,best practices,guidelines,supported languages,language support
 
@@ -27,7 +27,7 @@ By following some guidelines and adopting some design patterns, you can provide 
 ## Number of classifiers
 {: #classifier-limits}
 
-Each instance of the {{site.data.keyword.nlclassifiershort}} service can have up to 8 classifiers, each with a unique classifier ID. To support more than 8 classifiers, create another instance of {{site.data.keyword.nlclassifiershort}}. You can create a service instance from the {{site.data.keyword.watson}} console [Browse Services](https://{DomainName}/developer/watson/services){: external} page.
+Each instance of the {{site.data.keyword.nlclassifiershort}} service can have up to 8 classifiers, each with a unique classifier ID. To support more than 8 classifiers, create another instance of {{site.data.keyword.nlclassifiershort}}. You can create a service instance from the {{site.data.keyword.watson}} console [Browse Services](https://{DomainName}/developer/watson){: external} page.
 
 ## Classify Multiple Phrases
 {: #best-practices-multiple}
