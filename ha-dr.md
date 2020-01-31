@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-08-19"
+  years: 2015, 2020
+lastupdated: "2020-01-30"
 
 keywords: HA,DR,high availability,disaster recovery, restoring classifiers
 
@@ -67,7 +67,7 @@ The metadata identifies the language of the data, and the classifier name. Save 
 #### Restoring classifiers
 {: #ha-dr-restore}
 
-To recover from a disaster, you can use the backup information to re-create your classifier. For more information, see [Create and train a classifier](/docs/services/natural-language-classifier?topic=natural-language-classifier-natural-language-classifier#natural-language-classifier) in Getting started with {{site.data.keyword.nlclassifiershort}}.
+To recover from a disaster, you can use the backup information to re-create your classifier. For more information, see [Create and train a classifier](/docs/natural-language-classifier?topic=natural-language-classifier-natural-language-classifier#natural-language-classifier) in Getting started with {{site.data.keyword.nlclassifiershort}}.
 
 ### Client applications
 {: #ha-dr-update-apps}

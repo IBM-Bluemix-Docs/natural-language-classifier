@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-20"
+lastupdated: "2020-01-30"
 
 keywords: examples,natural language classifier,classifier,classes,texts,nlc,NaturalLanguageClassifier
 
@@ -48,7 +48,7 @@ To work in a graphical interface, use <span class="hide-dashboard">[{{site.data.
 {: #prerequisites}
 
 - {: hide-dashboard} Create an instance of the service:
-    1.  Go to the [{{site.data.keyword.nlclassifiershort}}](https://{DomainName}/catalog/services/natural-language-classifier){: external} page in the catalog.
+    1.  Go to the [{{site.data.keyword.nlclassifiershort}}](https://{DomainName}/catalog/natural-language-classifier){: external} page in the catalog.
     1.  Sign up for a free {{site.data.keyword.Bluemix_notm}} account or log in.
     1.  Click **Create**.
 - {: hide-dashboard} Copy the credentials to authenticate to your service instance:
@@ -1071,7 +1071,7 @@ while (deleteClassifierResponse == null)
 You have a basic understanding of how to use {{site.data.keyword.nlclassifiershort}}. Now dive deeper:
 
 - This tutorial uses an API key to authenticate. For production uses, review the IAM service API keys [best practices](/docs/watson?topic=watson-iam#gs-iam-api-bp).
-- Learn how to [prepare your data](/docs/services/natural-language-classifier?topic=natural-language-classifier-using-your-data#using-your-data) to train a classifier.
+- Learn how to [prepare your data](/docs/natural-language-classifier?topic=natural-language-classifier-using-your-data#using-your-data) to train a classifier.
 - {: curl} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier){: external}
 - {: dotnet-standard} Read about the API in the [API reference](https://{DomainName}//apidocs/natural-language-classifier?code=dotnet-standard){: external}.
 - {: go} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=go){: external}.
@@ -1080,4 +1080,4 @@ You have a basic understanding of how to use {{site.data.keyword.nlclassifiersho
 - {: python} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=python){: external}.
 - {: ruby} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=ruby){: external}.
 - {: unity} Read about the API in the [API reference](https://{DomainName}/apidocs/natural-language-classifier?code=unity){: external}.
-- Explore the [sample apps](/docs/services/natural-language-classifier?topic=natural-language-classifier-sample-applications#sample-applications) for example uses.
+- Explore the [sample apps](/docs/natural-language-classifier?topic=natural-language-classifier-sample-applications#sample-applications) for example uses.

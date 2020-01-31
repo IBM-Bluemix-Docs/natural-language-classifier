@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-11-11"
+  years: 2015, 2020
+lastupdated: "2020-01-30"
 
 keywords: new features,updates,what's new,change log, changelog
 
@@ -52,7 +52,7 @@ The following new features and changes to the service are available.
     For more information about the URLs, see the [API reference](https://{DomainName}/apidocs/natural-language-classifier#service-endpoint){: external}.
 
     These URLs do not introduce a breaking change. The new URLs work both for your existing service instances and for new instances. The original URLs continue to work on your existing service instances for at least one year (until December 2020).
-- For more information about IAM, see [Authenticating to Watson services](/docs/services/watson?topic=watson-iam).
+- For more information about IAM, see [Authenticating to Watson services](/docs/watson?topic=watson-iam).
 
 ### 13 November 2019
 {: #13november2019}
@@ -72,7 +72,7 @@ Users can now see service credential information only that is associated with th
 
 This change does not affect API access for users or applications with existing service key credentials. Only the viewing of credentials within {{site.data.keyword.cloud_notm}} is affected.
 
-For more information about service keys and user roles, see [IAM service API keys](/docs/services/watson?topic=watson-api-key-bp#api-key-bp).
+For more information about service keys and user roles, see [IAM service API keys](/docs/watson?topic=watson-api-key-bp#api-key-bp).
 
 ### 25 January 2019
 {: #25jan2019}
@@ -81,14 +81,14 @@ For more information about service keys and user roles, see [IAM service API key
 
 {{site.data.keyword.nlclassifiershort}} service instances hosted in Frankfurt can now be trained on larger data sets. You can include up to 20,000 records in your training data.
 
-The larger data size is now supported in all {{site.data.keyword.nlclassifiershort}} locations. For more details about training data, see [Data preparation](/docs/services/natural-language-classifier?topic=natural-language-classifier-using-your-data#using-your-data).
+The larger data size is now supported in all {{site.data.keyword.nlclassifiershort}} locations. For more details about training data, see [Data preparation](/docs/natural-language-classifier?topic=natural-language-classifier-using-your-data#using-your-data).
 
 ### 13 November 2018
 {: #18November2018}
 
 **Maximum number of classes**
 
-Training data can now support a maximum of 3,000 classes, although fewer classes might result in better performance. For details, see [Data preparation](/docs/services/natural-language-classifier?topic=natural-language-classifier-using-your-data#training-limits) and [Best practices for classifiers](/docs/services/natural-language-classifier?topic=natural-language-classifier-best-practices-overview#training-guidelines).
+Training data can now support a maximum of 3,000 classes, although fewer classes might result in better performance. For details, see [Data preparation](/docs/natural-language-classifier?topic=natural-language-classifier-using-your-data#training-limits) and [Best practices for classifiers](/docs/natural-language-classifier?topic=natural-language-classifier-best-practices-overview#training-guidelines).
 
 ### 9 November 2018
 {: #9November2018}
@@ -117,8 +117,8 @@ More information:
 
 - To learn which authentication process to use with your service instance, view the service credentials by clicking the instance in the {{site.data.keyword.cloud_notm}} [resource list](https://{DomainName}/resources?groups=resource-instance){: external}.
 - For more information and examples about the SDK, see [Authentication](https://{DomainName}/apidocs/natural-language-classifier?language=java#authentication){: external} in the API reference.
-- For more information about using IAM tokens with Watson services, see [Authenticating with IAM tokens](/docs/services/watson?topic=watson-iam#iam).
-- For more information about using IAM API keys with Watson services, see [IAM service API keys](/docs/services/watson?topic=watson-api-key-bp#api-key-bp).
+- For more information about using IAM tokens with Watson services, see [Authenticating with IAM tokens](/docs/watson?topic=watson-iam#iam).
+- For more information about using IAM API keys with Watson services, see [IAM service API keys](/docs/watson?topic=watson-api-key-bp#api-key-bp).
 - For more information about migrating Cloud Foundry instances, see [Migrating Cloud Foundry service instances to a resource group](/docs/resources?topic=resources-migrate#migrate).
 
 ### 19 September 2018
@@ -151,7 +151,7 @@ You can migrate data until September 30, 2018.
 
 **New beta tool available: {{site.data.keyword.DSX}}**
 
-{{site.data.keyword.DSX}} is the new integrated environment that includes a replacement for the earlier classic {{site.data.keyword.nlclassifiershort}} toolkit. To get started with {{site.data.keyword.DSX}}, click a {{site.data.keyword.nlclassifiershort}} service instance in your resource list, and then click **Launch tool**. For details, see [Managing classifiers with {{site.data.keyword.DSX}}](/docs/services/natural-language-classifier?topic=natural-language-classifier-managing-toolkit#managing-toolkit).
+{{site.data.keyword.DSX}} is the new integrated environment that includes a replacement for the earlier classic {{site.data.keyword.nlclassifiershort}} toolkit. To get started with {{site.data.keyword.DSX}}, click a {{site.data.keyword.nlclassifiershort}} service instance in your resource list, and then click **Launch tool**. For details, see [Managing classifiers with {{site.data.keyword.DSX}}](/docs/natural-language-classifier?topic=natural-language-classifier-managing-toolkit#managing-toolkit).
 
 {{site.data.keyword.DSX}} supports not only {{site.data.keyword.nlclassifiershort}} but also {{site.data.keyword.visualrecognitionshort}} and many other {{site.data.keyword.cloud_notm}} services and resources. {{site.data.keyword.DSX}} provides a collaborative environment in the cloud. With {{site.data.keyword.DSX}}, developers, subject matter experts, data scientists, and others can build and train {{site.data.keyword.nlclassifiershort}} and other AI models. You can also use {{site.data.keyword.DSX}} to test your classifiers.
 
@@ -186,7 +186,7 @@ For those who use the [API](https://{DomainName}/apidocs/natural-language-classi
 
 **Additional languages:** The service now supports Korean in addition to Arabic, English, French, German, Japanese, Italian, Portuguese, and Spanish. The language of the training data must match the language of the text that you intend to classify.
 
-For details about languages, see [Using your own data](/docs/services/natural-language-classifier?topic=natural-language-classifier-best-practices-overview#language-support). For details about the API call, see the `Create classifier` method in the [API reference](https://{DomainName}/apidocs/natural-language-classifier){: external}.
+For details about languages, see [Using your own data](/docs/natural-language-classifier?topic=natural-language-classifier-best-practices-overview#language-support). For details about the API call, see the `Create classifier` method in the [API reference](https://{DomainName}/apidocs/natural-language-classifier){: external}.
 
 ### 06 April 2016
 {: #06april2016}

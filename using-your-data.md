@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-09"
+lastupdated: "2020-01-30"
 
 keywords: data preparation,training data,size limitations,csv,file format,classes,texts
 
@@ -18,7 +18,7 @@ subcollection: natural-language-classifier
 # Data preparation
 {: #using-your-data}
 
-After you create, train, and query an {{site.data.keyword.nlclassifierfull}} with the data in the [Getting started](/docs/services/natural-language-classifier?topic=natural-language-classifier-natural-language-classifier#natural-language-classifier) example, you will want to create a classifier that works with your own data. You assemble and provide this training data.
+After you create, train, and query an {{site.data.keyword.nlclassifierfull}} with the data in the [Getting started](/docs/natural-language-classifier?topic=natural-language-classifier-natural-language-classifier#natural-language-classifier) example, you will want to create a classifier that works with your own data. You assemble and provide this training data.
 {:shortdesc}
 
 ## Structure of training data
