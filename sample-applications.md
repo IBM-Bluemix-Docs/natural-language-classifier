@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-20"
+lastupdated: "2020-03-16"
 
 keywords: Example apps,examples,use cases,Sample apps,demos
 
@@ -46,17 +46,6 @@ Classify job postings. This app categorizes jobs by the description, such as req
 - [View the demo](http://nlc-job-descriptions.mybluemix.net/){: external}
 - [Video walkthrough](https://www.youtube.com/watch?v=KyaC-8vfyPg){: external}
 - [Fork the code](https://github.com/yalondg/nlc-job-descriptions){: external}
-
-<!-- ## E-commerce product categorization
-{: #sample-apps-ecommerce}
-
-Organize products in your e-commerce store. This Python app categorizes products from a text description or from a link to a product. The training data comes from two public e-commerce data sets found on Kaggle.com (Flipkart and JCPenny).
-
-- [Read more](https://medium.com/ibm-watson/e-commerce-product-categorization-with-watson-cf2130d7c94a?source=rss----22a2beb5a88a---4){: external}
-[View the demo](https://erichensley-nlc-demo.mybluemix.net/){: external}
-- [Video walkthrough](https://youtu.be/JPMZxgpc_Uo){: external}
-- [Fork the code](https://github.com/erichensleyibm/NLC_product_classifier-demo){: external}
- -->
 
 ## Automated customer support for email
 {: #sample-apps-email-support}
