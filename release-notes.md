@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-30"
+lastupdated: "2020-03-30"
 
-keywords: new features,updates,what's new,change log, changelog
+keywords: new features,updates,what's new,change log, changelog,natural language classifier release notes
 
 subcollection: natural-language-classifier
 
@@ -29,7 +29,7 @@ The following new features and changes to the service are available.
 ## Beta features
 {: #beta}
 
-{{site.data.keyword.IBM_notm}} releases services, features, and language support for your evaluation that are classified as beta. These features might be unstable, might change frequently, and might be discontinued with short notice. Beta features also might not provide the same level of performance or compatibility that generally available features provide and are not intended for use in a production environment. Beta features are supported only on [IBM Developer Answers](https://developer.ibm.com/answers/topics/natural-language-classifier.html){: external}.
+{{site.data.keyword.IBM_notm}} releases services, features, and language support for your evaluation that are classified as beta. These features might be unstable, might change frequently, and might be discontinued with short notice. Beta features also might not provide the same level of performance or compatibility that generally available features provide and are not intended for use in a production environment.
 
 ## Changes
 {: #changelog}
