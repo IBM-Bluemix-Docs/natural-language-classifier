@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-30"
+lastupdated: "2020-04-22"
 
 keywords: language support,supported languages,best practices,guidelines,supported languages,language support
 
@@ -73,8 +73,3 @@ So, the trained classifier is only as good as the training data. Each text value
 For example, when the texts in your training data are questions, use questions that are representative and typical of the questions that your users ask. You might collect these texts from actual user data, or you might have people who are experts in your field create the texts.
 
 This representative and accurate nature of the data is important because it drives all the processes of and results from the classifier. In addition, the more records that you include in the training data, the more opportunity the classifier has to find a match.
-
-## Additional resources
-{: #best-practices-next-steps}
-
-See more [Best practices and design patterns](https://www.ibm.com/watson/assets-watson/pdf/Watson-NLC-Links-Best-Practices-Design-Patterns.pdf){: external} for {{site.data.keyword.nlclassifiershort}}.
