@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-30"
+lastupdated: "2020-08-03"
 
 keywords: data preparation,training data,size limitations,csv,file format,classes,texts
 
@@ -32,7 +32,7 @@ In the CSV format, a row in the file represents an example record. Each record h
 
 This example is a small sample. Proper training data includes many more records.
 
-Download the <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/natural-language-classifier/weather_data_train.csv" download="weather_data_train.csv">weather_data_train.csv</a> file to see a sample training data file.
+Download the <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/natural-language-classifier/weather_data_train.csv" download="weather_data_train.csv">weather_data_train.csv <img src="../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a> file to see a sample training data file.
 
 ### Additional metadata
 {: #additional-metadata}

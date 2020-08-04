@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-30"
+lastupdated: "2020-08-03"
 
 keywords: examples,natural language classifier,classifier,classes,texts,nlc,NaturalLanguageClassifier
 
@@ -146,8 +146,8 @@ The following video walks you through this tutorial.
 The classifier learns from examples before it can return information for texts that it hasn't seen before. The example data is referred to as "training data." You upload the training data when you create a classifier.
 
 1.  Download the two sample files:
-    - The <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/natural-language-classifier/weather_data_train.csv" download="weather_data_train.csv">weather_data_train.csv</a> is the same as was used with the [demo](https://ibm.biz/Bdzqug){: external}. The file is in a CSV format in two columns. The first column is the text input. The second column is the class for that text: temperature or condition. View the file to see the entries.
-    - The <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/natural-language-classifier/metadata.json" download="metadata.json">metadata.json</a> file specifies the language of the data (`en`) and includes a name to identify the classifier.
+    - The <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/natural-language-classifier/weather_data_train.csv" download="weather_data_train.csv">weather_data_train.csv <img src="../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a> is the same as was used with the [demo](https://ibm.biz/Bdzqug){: external}. The file is in a CSV format in two columns. The first column is the text input. The second column is the class for that text: temperature or condition. View the file to see the entries.
+    - The <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/natural-language-classifier/metadata.json" download="metadata.json">metadata.json <img src="../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a> file specifies the language of the data (`en`) and includes a name to identify the classifier.
 1.  Issue the following call to the **Create classifier** method, which uploads the training data and creates an English language classifier with the name, "TutorialClassifier":
     - {: hide-dashboard} Replace `{apikey}` and `{url}` with the credentials that you copied in the prerequisites.
     - Modify the location of `training_data`{: curl} `trainingData`{: dotnet-standard} `TrainingData`{: go} `trainingData`{: java} `trainingData`{: javascript} `training_data`{: python} `training_data`{: ruby} `trainingData`{: unity} and `training_metadata`{:curl} `trainingMetadata`{: dotnet-standard} `TrainingMetadata`{: go} `trainingMetadata`{: java} `trainingMetadata`{: javascript} `training_metadata`{: python} `training_metadata`{: ruby} `trainingMetadata`{: unity} to point to where you saved the two sample files.
