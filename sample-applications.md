@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-03-16"
+lastupdated: "2020-08-28"
 
 keywords: Example apps,examples,use cases,Sample apps,demos
 
@@ -60,7 +60,6 @@ This code pattern walks you through creating an automated and cognitive method o
 Create and deploy a web app to predict phishing attempts in email. Try one of the samples or enter your own text to see how it's classified. Modify this application to create other categories and simplify your workflow.
 
 - [Read more](https://developer.ibm.com/patterns/predict-phishing-attempts-in-email-with-nlc/){: external}
-- [View the demo](https://nlc-email-spam.mybluemix.net/){: external}
 - [Video walkthrough](https://www.youtube.com/watch?v=vnnUYAi9Zy4){: external}
 - [Fork the code](https://github.com/IBM/nlc-email-phishing){: external}
 
@@ -88,16 +87,7 @@ Build a Python app based on the Flask microframework. The app uses the Watson Py
 
 Use a Jupyter notebook inside {{site.data.keyword.DSX_full}} along with {{site.data.keyword.nlclassifiershort}} to predict the programming language of code in a GitHub project.
 
-- [Read more](https://developer.ibm.com/patterns/programming-language-classification-with-watson-and-github/){: external}
 - [Fork the code](https://github.com/IBM/programming-language-classifier){: external}
-
-## Factoid assistant
-{: #sample-apps-factoid}
-
-Ask questions and gain insights from them. This Node.js app takes a factoid question, connects with DBpedia, uses {{site.data.keyword.nlushort}} to detect entities and concepts, and classifies the question with {{site.data.keyword.nlclassifiershort}}. Use your own database to customize the app for your users' questions.
-
-- [View the demo](http://nlc-factoid-assistant.mybluemix.net/){: external}
-- [Fork the code](https://github.com/biosopher/nlc-factoid-assistant){: external}
 
 ## Harry Potter sorting hat
 {: #sample-apps-sorting-hat}
