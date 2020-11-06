@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-08-28"
+lastupdated: "2020-11-06"
 
 keywords: new features,updates,what's new,change log, changelog,natural language classifier release notes
 
@@ -118,7 +118,6 @@ More information:
 - To learn which authentication process to use with your service instance, view the service credentials by clicking the instance in the {{site.data.keyword.cloud_notm}} [resource list](https://{DomainName}/resources?groups=resource-instance){: external}.
 - For more information and examples about the SDK, see [Authentication](https://{DomainName}/apidocs/natural-language-classifier?language=java#authentication){: external} in the API reference.
 - For more information about using IAM tokens or keys with Watson services, see [Authenticating with IAM tokens](/docs/watson?topic=watson-iam#iam).
-- For more information about migrating Cloud Foundry instances, see [Migrating Cloud Foundry service instances to a resource group](/docs/account?topic=account-migrate#migrate).
 
 ### 19 September 2018
 {: #19september2018}
