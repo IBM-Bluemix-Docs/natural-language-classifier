@@ -2,11 +2,15 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-08-28"
+lastupdated: "2020-12-15"
 
 keywords: examples,natural language classifier,classifier,classes,texts,nlc,NaturalLanguageClassifier
 
 subcollection: natural-language-classifier
+
+content-type: tutorial
+account-plan: paid
+completion-time: 10m
 
 ---
 
@@ -33,9 +37,12 @@ subcollection: natural-language-classifier
 {:hide-dashboard: .hide-dashboard}
 {:hide-in-docs: .hide-in-docs}
 {:tooling-url: data-tooling-url-placeholder='tooling-url'}
+{:step: data-tutorial-type='step'}
 
 # Getting started with {{site.data.keyword.nlclassifiershort}}
 {: #natural-language-classifier}
+{: toc-content-type="tutorial"}
+{: toc-completion-time="10m"}
 
 {{site.data.keyword.nlclassifierfull}} can help your application understand the language of short texts and make predictions about how to handle them. A classifier learns from your example data and then can return information for texts that it is not trained on. You can create and train this classifier in less than 15 minutes.
 {:shortdesc}
@@ -67,39 +74,39 @@ To work in a graphical interface, use <span class="hide-dashboard">[{{site.data.
     - {: dotnet-standard} Package Manager
 
         ```sh
-        Install-Package IBM.Watson.NaturalLanguageClassifier.v1 -Version 4.2.1
+        Install-Package IBM.Watson.NaturalLanguageClassifier.v1 -Version 5.0
         ```
         {: codeblock}
 
     - {: dotnet-standard} .NET CLI
 
         ```sh
-        dotnet add package IBM.Watson.NaturalLanguageClassifier.v1 -version 4.2.1
+        dotnet add package IBM.Watson.NaturalLanguageClassifier.v1 -version 5.0
         ```
         {: pre}
 
     - {: dotnet-standard} PackageReference
 
         ```xml
-        <PackageReference Include="IBM.Watson.NaturalLanguageClassifier.v1" Version="4.2.1" />
+        <PackageReference Include="IBM.Watson.NaturalLanguageClassifier.v1" Version="5.0.0" />
         ```
         {: codeblock}
 - {:go} Install the [Go SDK](https://github.com/watson-developer-cloud/go-sdk){: external}.
 
-    ```go
-    go get -u github.com/watson-developer-cloud/go-sdk@v1
+    ```sh
+    go get -u github.com/watson-developer-cloud/go-sdk@v2
     ```
     {: go}
     {: pre}
 
-- {: java} Install the [Java SDK](https://github.com/watson-developer-cloud/java-sdk){: external}
+- {: java} Install the [Java SDK](https://github.com/watson-developer-cloud/java-sdk){: external}.
     - {: java} Maven
 
         ```xml
         <dependency>
           <groupId>com.ibm.watson</groupId>
           <artifactId>ibm-watson</artifactId>
-          <version>[8,9)</version>
+          <version>[9,10)</version>
         </dependency>
         ```
         {: codeblock}
@@ -107,22 +114,22 @@ To work in a graphical interface, use <span class="hide-dashboard">[{{site.data.
     - {: java} Gradle
 
         ```sh
-        compile 'com.ibm.watson:ibm-watson:8.+'
+        compile 'com.ibm.watson:ibm-watson:9.+'
         ```
         {:pre}
-- {: javascript} Install the [Node SDK](https://github.com/watson-developer-cloud/node-sdk){: external}
+- {: javascript} Install the [Node SDK](https://github.com/watson-developer-cloud/node-sdk){: external}.
 
     ```sh
-        npm install ibm-watson@^5
+    npm install ibm-watson@^6
     ```
     {:pre}
-- {: python} Install the [Python SDK](https://github.com/watson-developer-cloud/python-sdk){: external}
+- {: python} Install the [Python SDK](https://github.com/watson-developer-cloud/python-sdk){: external}.
 
     ```sh
-    pip install --upgrade "ibm-watson>=4.0.1"
+    pip install --upgrade "ibm-watson>=5.0.0"
     ```
     {:pre}
-- {: ruby} Install the [Ruby SDK](https://github.com/watson-developer-cloud/ruby-sdk){: external}
+- {: ruby} Install the [Ruby SDK](https://github.com/watson-developer-cloud/ruby-sdk){: external}.
 
     ```sh
     gem install ibm_watson
@@ -140,15 +147,16 @@ The following video walks you through this tutorial.
 
 <iframe class="embed-responsive-item" id="tutorial-youtubeplayer" title="Video walkthrough of Getting started tutorial" type="text/html" width="560" height="315" src="https://www.youtube.com/embed/SUj826ybCdU?rel=0" webkitallowfullscreen mozallowfullscreen allowfullscreen gesture="media" allow="encrypted-media"></iframe>
 
-## Step 1: Create and train a classifier
+## Create and train a classifier
 {: #create-train}
+{: step}
 
 The classifier learns from examples before it can return information for texts that it hasn't seen before. The example data is referred to as "training data." You upload the training data when you create a classifier.
 
 1.  Download the two sample files:
     - The <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/natural-language-classifier/weather_data_train.csv" download="weather_data_train.csv">weather_data_train.csv <img src="../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a> is the same as was used with the [demo](https://ibm.biz/Bdzqug){: external}. The file is in a CSV format in two columns. The first column is the text input. The second column is the class for that text: temperature or condition. View the file to see the entries.
     - The <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/natural-language-classifier/metadata.json" download="metadata.json">metadata.json <img src="../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a> file specifies the language of the data (`en`) and includes a name to identify the classifier.
-1.  Issue the following call to the **Create classifier** method, which uploads the training data and creates an English language classifier with the name, "TutorialClassifier":
+1.  Create a classifier by running the following command to call to the **Create classifier** method. You are uploading the training data and creating an English language classifier with the name "TutorialClassifier":
     - {: hide-dashboard} Replace `{apikey}` and `{url}` with the credentials that you copied in the prerequisites.
     - Modify the location of `training_data`{: curl} `trainingData`{: dotnet-standard} `TrainingData`{: go} `trainingData`{: java} `trainingData`{: javascript} `training_data`{: python} `training_data`{: ruby} `trainingData`{: unity} and `training_metadata`{:curl} `trainingMetadata`{: dotnet-standard} `TrainingMetadata`{: go} `trainingMetadata`{: java} `trainingMetadata`{: javascript} `training_metadata`{: python} `training_metadata`{: ruby} `trainingMetadata`{: unity} to point to where you saved the two sample files.
 
@@ -286,7 +294,7 @@ The classifier learns from examples before it can return information for texts t
       authenticator: new IamAuthenticator({
         apikey: '{apikey}'{: apikey},
       }),
-      url: '{url}'{: url},
+      serviceUrl: '{url}'{: url},
     });
 
     const createClassifierParams = {
@@ -399,7 +407,7 @@ The classifier learns from examples before it can return information for texts t
     {: unity}
     {: codeblock}
 
-    The response includes a new classifier ID and status, as in the following example.
+    The response includes a new classifier ID and status, as in the following example. Copy your `classifier_id` from the response for the next commands.
 
     ```json
     {
@@ -408,15 +416,16 @@ The classifier learns from examples before it can return information for texts t
       "status": "Training",
       "url" : "https://api.us-south.natural-language-classifier.watson.cloud.ibm.com/instances/df09aa83-9660-4137-9b5c-6169be1373a6/v1/classifiers/0e6935x475-nlc-2948",
       "classifier_id": "0e6935x475-nlc-2948",
-      "created": "2020-01-20T16:32:17.403Z",
+      "created": "2021-01-20T16:32:17.403Z",
       "status_description": "The classifier instance is in its training phase, not yet ready to accept classify requests"
     }
     ```
 
     Training begins immediately and must finish before you can query the classifier.
-1.  Check the training status periodically until you see a status of `Available`. With this sample data, training takes about 6 minutes:
+1.  Issue the following call to check the training status. Check until you see a status of `Available`. With this sample data, training takes about 6 minutes.
 
-    Issue a call to the **Get information about a classifier** method to retrieve the status of the classifier. <span class="hide-dashboard">Replace `{apikey}` and `{url}` with the credentials that you copied in the prerequisites.</span> Replace `{classifier_id}` with your information.
+    - {: hide-dashboard} As before, replace `{apikey}` and `{url}` with the credentials that you copied in the prerequisites.
+    - Replace `{classifier_id}` with the information in the response from the earlier command.
 
     ```sh
     curl -u "apikey:{apikey}"{: apikey} \
@@ -520,7 +529,7 @@ The classifier learns from examples before it can return information for texts t
       authenticator: new IamAuthenticator({
         apikey: '{apikey}'{: apikey},
       }),
-      url: '{url}'{: url},
+      serviceUrl: '{url}'{: url},
     });
 
     const getClassifierParams = {
@@ -606,8 +615,9 @@ The classifier learns from examples before it can return information for texts t
     {: unity}
     {: codeblock}
 
-## Step 2: Classify text
+## Classify text
 {: #getting-started-classify}
+{: step}
 
 Now that the classifier is trained, you can query it.
 
@@ -720,7 +730,7 @@ Now that the classifier is trained, you can query it.
       authenticator: new IamAuthenticator({
         apikey: '{apikey}'{: apikey},
       }),
-      url: '{url}'{: url},
+      serviceUrl: '{url}'{: url},
     });
 
     const classifyParams = {
@@ -984,7 +994,7 @@ const naturalLanguageClassifier = new NaturalLanguageClassifierV1({
   authenticator: new IamAuthenticator({
     apikey: '{apikey}'{: apikey},
   }),
-  url: '{url}'{: url}
+  serviceUrl: '{url}'{: url},
 });
 
 const deleteClassifierParams = {

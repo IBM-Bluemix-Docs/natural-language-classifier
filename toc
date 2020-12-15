@@ -25,7 +25,7 @@ Natural Language Classifier
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [API reference](https://cloud.ibm.com/apidocs/natural-language-classifier)
+    [API & SDK reference](https://cloud.ibm.com/apidocs/natural-language-classifier)
     sample-applications.md
     information-security.md
     at-events.md
