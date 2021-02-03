@@ -11,6 +11,7 @@ Natural Language Classifier
 
     {: .topicgroup}
     Additional resources
+        [Natural language processing](https://developer.ibm.com/technologies/natural-language-processing/)
         [Blog](https://medium.com/ibm-watson)
         [Webinars](https://www.ibm.com/watson/webinars/)
         [Videos](https://www.youtube.com/user/IBMWatsonSolutions)
