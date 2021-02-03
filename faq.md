@@ -36,7 +36,7 @@ FAQs for {{site.data.keyword.nlclassifierfull}} might include questions about tr
 {: #faq-retrain}
 {: faq}
 
-To train a classifier again, delete the original model and create another with a new model ID. You cannot “retrain” in a way that keeps the same model ID.  If you manage your classifiers with {{site.data.keyword.DSX}}, you can “retrain” a model by using the {{site.data.keyword.nlclassifiershort}} model builder, which has the effect of deleting the original model and creating a new model with a new model ID. See [Retraining a Natural Language Classifier model](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/nlc-retrain.html).
+To train a classifier again, delete the original model and create another with a new model ID. You cannot “retrain” in a way that keeps the same model ID.  If you manage your classifiers with {{site.data.keyword.DSX}}, you can “retrain” a model by using the {{site.data.keyword.nlclassifiershort}} model builder, which has the effect of deleting the original model and creating a new model with a new model ID. See [Retraining a {{site.data.keyword.nlclassifiershort}} model](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/nlc-retrain.html){: external}.
 
 ## How do I delete training data?
 {: #faq-delete}
