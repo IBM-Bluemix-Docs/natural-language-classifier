@@ -1,0 +1,39 @@
+{
+  "faq-retrain": [
+    "Can I retrain a classifier in NLC",
+    "how to train a classifier again in NLC",
+    "train a classifier in NLC again",
+    "can I retrain a classifier",
+    "steps to retrain a classifier",
+    "nlc retraining a classifier",
+    "retrain a classifier using the same model ID",
+    "how to use Natural Language Classifier model builder",
+    "use of Natural Language Classifier model builder",
+    "Natural Language Classifier model builder in Watson Studio",
+    "retraining a classifier in NLC"
+  ],
+  "faq-delete": [
+    "How to delete training data from NLC",
+    "delete classifier method in NLC",
+    "deleting training data in NLC",
+    "how to remove training data in NLC",
+    "command to delete a classifier in NLC",
+    "can I delete the training data in NLC",
+    "removing training data from natural language classifier",
+    "want to remove NLC training data",
+    "remove the training data from NLC",
+    "deleting training data from natural language classifier"
+  ],
+  "faq-limit": [
+    "Error: Entitlement error message",
+    "getting Entitlement error in NLC",
+    "Entitlement error message in NLC",
+    "NLC giving an entitlement error",
+    "how many classifiers does NLC support",
+    "classifier support for NLC",
+    "how many classifiers at one in NLC",
+    "nlc classifier limitation",
+    "Entitlement error message in natural language classifier",
+    "limit to number of NLC classifiers"
+  ]
+}
