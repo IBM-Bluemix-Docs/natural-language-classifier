@@ -42,7 +42,7 @@ To train a classifier again, delete the original model and create another with a
 {: #faq-delete}
 {: faq}
 
-Training data is stored with the classifier.  To delete training data, delete the classifier that has the data by using the [Delete classifier method](/apidocs/natural-language-classifier#deleteclassifier).
+Training data is stored with the classifier.  To delete training data, delete the classifier that has the data by using the **Delete classifier** method in the [API reference](https://{DomainName}/apidocs/natural-language-classifier#deleteclassifier){: external}.
 
 
 ## How do I recover from an Entitlement error when adding a classifier?
