@@ -49,4 +49,4 @@ Training data is stored with the classifier.  To delete training data, delete th
 {: #faq-limit}
 {: faq}
 
-If you see “Error: Entitlement error”, then your {{site.data.keyword.nlclassifiershort}} service has reached the limit of 8 classifiers for that instance. To support more than 8 classifiers, create another instance of {{site.data.keyword.nlclassifiershort}}. Refer to [Number of classifiers](https://cloud.ibm.com/docs/natural-language-classifier?topic=natural-language-classifier-best-practices-overview#classifier-limits).
+If you see “Error: Entitlement error”, then your {{site.data.keyword.nlclassifiershort}} service has reached the limit of 8 classifiers for that instance. To support more than 8 classifiers, create another instance of {{site.data.keyword.nlclassifiershort}}. Refer to [Number of classifiers](/docs/natural-language-classifier?topic=natural-language-classifier-best-practices-overview#classifier-limits).
