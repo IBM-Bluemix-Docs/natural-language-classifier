@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2020
-lastupdated: "2020-01-30"
+  years: 2015, 2021
+lastupdated: "2021-01-09"
 
 keywords: HA,DR,high availability,disaster recovery, restoring classifiers
 
@@ -21,7 +21,7 @@ subcollection: natural-language-classifier
 {:screen: .screen}
 {:table: .aria-labeledby="caption"}
 
-# High availability and disaster recovery
+# Understanding high availability and disaster recovery for {{site.data.keyword.nlclassifiershort}}
 {: #ha-dr-top}
 
 The {{site.data.keyword.nlclassifierfull}} service is highly available within multiple IBM Cloud locations (for example, Dallas and Washington, DC). However, recovering from potential disasters that affect an entire location requires planning and preparation.
