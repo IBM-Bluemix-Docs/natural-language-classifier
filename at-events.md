@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2015, 2020
-lastupdated: "2020-08-28"
+  years: 2015, 2021
+lastupdated: "2021-03-31"
 
-keywords: IBM, activity tracker, LogDNA, event, security, natural language classifier
+keywords: IBM, activity tracker, event, security, natural language classifier
 
 subcollection: natural-language-classifier
 
